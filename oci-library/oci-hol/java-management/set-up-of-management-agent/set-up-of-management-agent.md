@@ -18,7 +18,7 @@ In this lab, you will:
 
 ### Prerequisites:
 * You have signed up for an account with Oracle Cloud Infrastructure and have received your sign-in credentials.
-* You are using a Linux Operating system or virtual machine for this workshop.
+* You are using an Oracle Linux image on your host machine or compute instance for this workshop.
 * Access to the cloud environment and resources configured in Lab 2 
 
 ## Task 1: Transfer of files to Compute Instance

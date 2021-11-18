@@ -10,6 +10,7 @@ Before you begin, review the prerequisites and the overview of the steps.
 Estimated Time: 15 min
 
 ### Objectives
+In this lab, you will:
 
 - Set up Oracle Cloud Infrastructure for new Java Management Service users by configuring the prerequisite OCI resources to get started including:
     - Create a compartment for your JMS resources.

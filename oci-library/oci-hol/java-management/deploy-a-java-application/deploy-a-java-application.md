@@ -12,9 +12,9 @@ In this lab, you will:
 * Deploy a simple Java application
 
 ### Prerequisites:
-- You have signed up for an account with Oracle Cloud Infrastructure and have received your sign-in credentials.
-- You are using a Linux/Windows Operating system or virtual machine for this workshop.
-- Access to the cloud environment and resources configured in Lab 1 
+* You have signed up for an account with Oracle Cloud Infrastructure and have received your sign-in credentials.
+* You are using an Oracle Linux image on your host machine or compute instance for this workshop.
+* Access to the cloud environment and resources configured in Lab 1 
 
 ## Task 1: Deploy a simple Java application 
 

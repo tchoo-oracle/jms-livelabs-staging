@@ -7,12 +7,15 @@ This lab walks you through the steps to set up the configuration on your local h
 Estimated Time: 10 minutes
 
 ### Objectives
+In this lab, you will:
+
 * Generate an API Signing Key 
 * Install Oracle Cloud Interface (OCI)
 * Access REST API via OCI CLI
 
 ### Prerequisites:
 * You have signed up for an account with Oracle Cloud Infrastructure and have received your sign-in credentials.
+* You are using an Oracle Linux image on your host machine or compute instance for this workshop.
 *  Python version 3.6 and later is installed on your local machine
 
 ## Task 1: Generate an API Signing Key
