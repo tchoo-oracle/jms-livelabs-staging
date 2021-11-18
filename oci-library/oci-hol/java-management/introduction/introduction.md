@@ -6,16 +6,16 @@ Java Management Service (JMS) is a reporting and management infrastructure integ
 
 As a customer, you can:
 
-- Use insights from JMS to optimize your workloads across your enterprise (desktop, server, cloud); and
-- Protect your Java SE investments by identifying outdated Java installations and unauthorized applications.
+* Use insights from JMS to optimize your workloads across your enterprise (desktop, server, cloud); and
+* Protect your Java SE investments by identifying outdated Java installations and unauthorized applications.
 
 JMS helps systems administrators to answer questions such as:
 
-- What are all the versions of Java I have running in development and production?
-- Which vendors are providing the Java installations in my environment?
-- Are my applications using their intended Java installations?
-- Are unauthorized applications running?
-- How many outdated Java installations do I have?
+* What are all the versions of Java I have running in development and production?
+* Which vendors are providing the Java installations in my environment?
+* Are my applications using their intended Java installations?
+* Are unauthorized applications running?
+* How many outdated Java installations do I have?
 
 As the stewards of Java, Oracle can provide answers to these questions. Oracle uniquely leverages its expertise to gain critical insights into Java application behavior, compliance, and performance.
 ## About this Workshop
@@ -25,21 +25,21 @@ As the stewards of Java, Oracle can provide answers to these questions. Oracle u
 *Estimated Time:* 100 minutes
 ### Objectives
 
-- Setting Up Oracle Cloud Infrastructure for JMS
-- Creating a Fleet and installing management agent on your host
-- Deploy Java application and view usage in JMS
-- Access and Utilise JMS SDKs
-- Track Java Usage in a Container
+* Setting Up Oracle Cloud Infrastructure for JMS
+* Creating a Fleet and installing management agent on your host
+* Deploy Java application and view usage in JMS
+* Access and Utilise JMS SDKs
+* Track Java Usage in a Container
 
 ### Prerequisites:
-- An Oracle Cloud Infrastructure account with valid credentials
-- A host(desktop/laptop/server/virtual machine) with Linux/Windows Operating System
+* An Oracle Cloud Infrastructure account with valid credentials
+* A host(desktop/laptop/server/virtual machine) with Linux/Windows Operating System
 
 ## Learn More
-- [Getting Started with Java Management Service](https://docs.oracle.com/en-us/iaas/jms/doc/getting-started-java-management-service.html)
-- [Announcing Java Management Service](https://blogs.oracle.com/java/post/announcing-java-management-service)
+* [Getting Started with Java Management Service](https://docs.oracle.com/en-us/iaas/jms/doc/getting-started-java-management-service.html)
+* [Announcing Java Management Service](https://blogs.oracle.com/java/post/announcing-java-management-service)
 
 ## Acknowledgements
 
-- **Author** - Alvin Lam, Java Management Service
-- **Last Updated By/Date** - Teck Kian Choo, November 2021
+* **Author** - Alvin Lam, Java Management Service
+* **Last Updated By/Date** - Teck Kian Choo, November 2021

@@ -266,7 +266,7 @@ This section will provide guidance on creating a Docker image running a Oracle J
     
     ![image of dockerfile in nano text editor](/../images/dockerfile.png)
 
-  - When done, save and exit the Nano text editor by pressing **CTRL+x** then **y** and then **ENTER**.
+  * When done, save and exit the Nano text editor by pressing **CTRL+x** then **y** and then **ENTER**.
 <!--  -->
 5. In the OddNumbers folder, run the following command for Docker to build the image. This step may take a few minutes.
 
