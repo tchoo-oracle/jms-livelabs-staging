@@ -16,31 +16,31 @@
         },
         {
             "title": "Lab 1: Setting Up Oracle Cloud Infrastructure for Java Management Service",
-            "filename": "../../lab1-setting-up-oci-for-jms/Lab1.md"
+            "filename": "../../set-up-oci-for-jms/set-up-oci-for-jms.md"
         },
         {
             "title": "Lab 2: Deploy a Java Application",
-            "filename": "../../lab2-deploy-a-java-application/Lab2.md"
+            "filename": "../../deploy-a-java-application/deploy-a-java-application.md"
         },
         {
             "title": "Lab 3: Set Up a Fleet",
-            "filename": "../../lab3-setup-a-fleet/Lab3.md"
+            "filename": "../../setup-a-fleet/setup-a-fleet.md"
         },
         {
             "title": "Lab 4: Setting Up of Management Agent",
-            "filename": "../../lab4-set-up-of-management-agent/Lab4.md"
+            "filename": "../../set-up-of-management-agent/set-up-of-management-agent.md"
         },
         {
             "title": "Lab 5: Access and Utilise REST API via OCI CLI",
-            "filename": "../../lab5-access-and-utilise-rest-api-via-oci-cli/Lab5.md"
+            "filename": "../../access-and-utilise-rest-api-via-oci-cli/access-and-utilise-rest-api-via-oci-cli.md"
         },
         {
             "title": "Lab 6: Access and Utilise REST API via JMS SDKs and Postman",
-            "filename": "../../lab6-access-and-utilise-rest-api-via-jms-sdk-postman/Lab6.md"
+            "filename": "../../access-and-utilise-rest-api-via-jms-sdk-postman/access-and-utilise-rest-api-via-jms-sdk-postman.md"
         },
         {
             "title": "Lab 7: Tracking Java Usage in a Container",
-            "filename":"../../lab7-tracking-java-usage-in-a-container/Lab7.md"
+            "filename":"../../track-java-usage-in-a-container/track-java-usage-in-a-container.md"
             
         },
         {

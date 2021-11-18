@@ -1,4 +1,4 @@
-# Setting Up Oracle Cloud Infrastructure for Java Management Service
+# Set Up Oracle Cloud Infrastructure for Java Management Service
 
 ## Introduction
 Before you can use Java Management Service, you must ensure that your Oracle Cloud Infrastructure environment is set up correctly to allow the communication flow between all required components and cloud services.
@@ -76,7 +76,7 @@ Using the Onboarding Wizard to automatically creates the necessary resources.
         ![image of console navigation to dynamic groups](/../images/console-navigation-dynamic-groups.png)
     &nbsp;
     - Confirm the creation of new dynamic group labelled `JMS_DYNAMIC_GROUP`.
-        ![image of new group](/../images/new-dynamic-group.png)
+        ![image of new dynamic group](/../images/new-dynamic-group.png)
     &nbsp;
     - In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Policies**.
         ![image of console navigation to policies](/../images/console-navigation-policies.png)
