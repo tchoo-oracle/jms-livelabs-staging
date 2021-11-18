@@ -9,11 +9,12 @@ Estimated Time: 5 minutes
 ### Objectives
 In this lab, you will:
 
-* Set up a Java Management Service Fleet 
+* Set up a Fleet using the Java Management Service user interface
+* Create and configure an install key for installing Management Agents on your host machine
 
 ### Prerequisites:
 * You have signed up for an account with Oracle Cloud Infrastructure and have received your sign-in credentials.
-* You are using a Linux/Windows Operating system or virtual machine for this workshop.
+* You are using an Oracle Linux image on your host machine or compute instance for this workshop.
 * Access to the cloud environment and resources configured in Lab 2 
 
 ## Task 1: Set Up Java Management Service Fleet
@@ -58,19 +59,17 @@ In this lab, you will:
 
   ![image of download management agent software](/../images/download-management-agent-software-os.png)
 
-  Click **Done** once both files have been downloaded.
+  Click **Done** once both files have been downloaded. They will be used in the next lab.
 
 You may now **proceed to the next lab.**
 
 ## Want to Learn More?
 
-You may proceed to the next lab for installing management agent on your host and JMS Agent Plugin.
+* Refer to the [Fleet Management](https://docs.oracle.com/en-us/iaas/jms/doc/fleet-management.html) section of the JMS documentation for more details.
 
-Refer to the [Fleet Management](https://docs.oracle.com/en-us/iaas/jms/doc/fleet-management.html) section of the JMS documentation for more details.
+* Use the [Troubleshooting](https://docs.oracle.com/en-us/iaas/jms/doc/troubleshooting.html#GUID-2D613C72-10F3-4905-A306-4F2673FB1CD3) chapter for explanations on how to diagnose and resolve common problems encountered when installing or using Java Management Service.
 
-Use the [Troubleshooting](https://docs.oracle.com/en-us/iaas/jms/doc/troubleshooting.html#GUID-2D613C72-10F3-4905-A306-4F2673FB1CD3) chapter for explanations on how to diagnose and resolve common problems encountered when installing or using Java Management Service. 
-
-If the problem still persists or if the problem you are facing is not listed, please refer to the [Getting Help and Contacting Support](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/contactingsupport.htm) section or you may open a a support service request using the **Help** menu in the OCI console.
+* If the problem still persists or if the problem you are facing is not listed, please refer to the [Getting Help and Contacting Support](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/contactingsupport.htm) section or you may open a a support service request using the **Help** menu in the OCI console.
 
 ## Acknowledgements
 * **Author** - Esther Neoh, Java Management Service
