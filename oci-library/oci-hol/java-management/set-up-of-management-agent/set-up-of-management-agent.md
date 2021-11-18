@@ -208,7 +208,7 @@ Install Management Agent (If your host is Windows, skip to **For Windows** Secti
     </copy>
     ```
 
-2. This script creates the file `/etc/oracle/java/usagetracker.properties` with appropriate permissions. - By default, the file contains the following lines:
+2. This script creates the file `/etc/oracle/java/usagetracker.properties` with appropriate permissions. By default, the file contains the following lines:
     ```
     com.oracle.usagetracker.logToFile = /var/log/java/usagetracker.log
     com.oracle.usagetracker.additionalProperties = java.runtime.name

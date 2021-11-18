@@ -54,7 +54,7 @@ Using the Onboarding Wizard to automatically creates the necessary resources.
 
 7. You will see a screen informing you that the prerequisites have been successfully set-up. Click **Done** to close the window.
     ![image of onboarding wizard success window](/../images/fleets-setup-success.png)
-    **Note:** If an error occurs in the creation process, you will see the error message being displayed. Resolve the error and restart the Onboarding Wizard to continue.
+    > **Note:** If an error occurs in the creation process, you will see the error message being displayed. Resolve the error and restart the Onboarding Wizard to continue.
     &nbsp;
 
 8. Verify creation of prerequisite resources (Optional)

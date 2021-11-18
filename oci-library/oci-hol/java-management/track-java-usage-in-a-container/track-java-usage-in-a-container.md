@@ -198,7 +198,7 @@ You have now created a simple Java application.
 ## Task 3: Create a Docker image with Oracle JDK
 This section will provide guidance on creating a Docker image running a Oracle JDK within the compute instance. If you already have a Docker image with Oracle JDK on it, you may pull your image into the compute instance, skip this task and proceed with Task 4.
 
-**Note:** Currently, only containers with Oracle JDKs are able to be detected by the Java Usage Tracker.
+> **Note:** Currently, only containers with Oracle JDKs are able to be detected by the Java Usage Tracker.
 
 1. Ensure that you are already in your compute instance. If not, perform an SSH login.
 

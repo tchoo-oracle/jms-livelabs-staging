@@ -26,7 +26,7 @@ In this workshop, you will:
 <!--  -->
 3. To get started installing your instance with the **Create a VM Instance** wizard, follow these steps:
   From the main landing page, select **Create a VM Instance** wizard. 
-    ![image of quick actions menu on the main landing page](/../images/01action-menu.png)
+    ![image of quick actions menu on the main landing page](/../images/action-menu.png)
     
     The **Create Compute Instance** page is displayed. It has a section for **Placement**, **Image and shape**, **Networking**, **Add SSH keys**, and **Boot volume**.
 

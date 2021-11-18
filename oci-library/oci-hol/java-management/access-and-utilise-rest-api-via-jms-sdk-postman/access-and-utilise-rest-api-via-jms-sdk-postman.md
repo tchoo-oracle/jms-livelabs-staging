@@ -86,7 +86,7 @@ lab
 
 5. Create a `get_fleet_example.py` file in the SDK downloaded and copy the example SDK code into it. 
     
-    ![image of python sdk example code](/../images/get_fleet.png)
+    ![image of python sdk example code](/../images/get-fleet.png)
 
 6. Ensure the file path for the newly created file adheres to the sample SDK code. 
 
