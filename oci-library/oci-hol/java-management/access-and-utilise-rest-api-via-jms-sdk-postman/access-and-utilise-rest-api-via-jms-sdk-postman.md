@@ -173,7 +173,7 @@ You may now **proceed to the next lab.**
 
 ## Want to Learn More?
 
-If you encounter further issues, review the [Troubleshooting](https://docs.oracle.com/en-us/iaas/jms/doc/troubleshooting.html#GUID-2D613C72-10F3-4905-A306-4F2673FB1CD3) page.
+- If you encounter further issues, review the [Troubleshooting](https://docs.oracle.com/en-us/iaas/jms/doc/troubleshooting.html#GUID-2D613C72-10F3-4905-A306-4F2673FB1CD3) page.
 
 Alternatively, you may seek help for 
     - [SDK Configuration](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm)
@@ -185,9 +185,9 @@ Alternatively, you may seek help for
     - [Typescript SDK](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/gosdk.htm)
     - [JMS REST APIs](https://docs.oracle.com/en-us/iaas/api/#/en/jms/20210610/)
 
-You may review [Getting Help and Contacting Support](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/contactingsupport.htm) in the OCI documentation.
+- You may review [Getting Help and Contacting Support](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/contactingsupport.htm) in the OCI documentation.
 
-If you are still unable to resolve your issue, you may open a a support service request using the **Help** menu in the OCI console. 
+- If you are still unable to resolve your issue, you may open a a support service request using the **Help** menu in the OCI console. 
 
 ## Acknowledgements
 * **Author** - Esther Neoh, Java Management Service
