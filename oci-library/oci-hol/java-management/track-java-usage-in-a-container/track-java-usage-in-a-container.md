@@ -1,4 +1,4 @@
-# Tracking Java Usage in a Container
+# Track Java Usage in a Container
 
 ## Introduction
 This lab will guide you in creating a Docker image on your compute instance and how to enable Java Management Service to track Java usage in a container.

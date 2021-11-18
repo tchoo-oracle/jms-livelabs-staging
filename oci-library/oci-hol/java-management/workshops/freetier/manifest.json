@@ -15,7 +15,7 @@
             "filename": "https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/cloud-login/pre-register-free-tier-account.md"
         },
         {
-            "title": "Lab 1: Setting Up Oracle Cloud Infrastructure for Java Management Service",
+            "title": "Lab 1: Set Up Oracle Cloud Infrastructure for Java Management Service",
             "filename": "../../set-up-oci-for-jms/set-up-oci-for-jms.md"
         },
         {
@@ -27,7 +27,7 @@
             "filename": "../../setup-a-fleet/setup-a-fleet.md"
         },
         {
-            "title": "Lab 4: Setting Up of Management Agent",
+            "title": "Lab 4: Set Up of Management Agent",
             "filename": "../../set-up-of-management-agent/set-up-of-management-agent.md"
         },
         {
@@ -39,7 +39,7 @@
             "filename": "../../access-and-utilise-rest-api-via-jms-sdk-postman/access-and-utilise-rest-api-via-jms-sdk-postman.md"
         },
         {
-            "title": "Lab 7: Tracking Java Usage in a Container",
+            "title": "Lab 7: Track Java Usage in a Container",
             "filename":"../../track-java-usage-in-a-container/track-java-usage-in-a-container.md"
             
         },

@@ -7,8 +7,6 @@ This lab walks you through the steps to set up the configuration on your local h
 Estimated Time: 10 minutes
 
 ### Objectives
-In this lab, you will:
-
 * Generate an API Signing Key 
 * Install Oracle Cloud Interface (OCI)
 * Access REST API via OCI CLI
@@ -65,30 +63,29 @@ Open a terminal.
 
 To run the installer script, run the following command.
   ```
-  bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
+  <copy> bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)" </copy>
   ```
-- Respond to the Installation Script prompts
+Respond to the Installation Script prompts
 
 #### For Oracle Linux 8 
 
 Use dnf to install the CLI
   ```
-  sudo dnf -y install oraclelinux-developer-release-el8
-  sudo dnf install python36-oci-cli 
-
+  <copy> sudo dnf -y install oraclelinux-developer-release-el8
+  sudo dnf install python36-oci-cli </copy> 
   ```
 #### For Oracle Linux 7 
 
 Use yum to install the CLI
   ```
-  sudo yum install python36-oci-cli
+  <copy> sudo yum install python36-oci-cli </copy>
   ```
 
 #### Mac OS X
 To install the CLI on Mac OS X with [Homebrew](https://docs.brew.sh/Installation):
 
   ```
-  brew update && brew install oci-cli
+  <copy> brew update && brew install oci-cli </copy>
   ```
 #### Windows
 Open the PowerShell console using the **Run as Administrator** option.
@@ -98,31 +95,31 @@ The installer enables auto-complete by installing and running a script. To allow
 To configure the remote execution policy for PowerShell, run the following command.
 
   ```
-  Set-ExecutionPolicy RemoteSigned
+  <copy> Set-ExecutionPolicy RemoteSigned </copy>
   ```
 
 Force PowerShell to use TLS 1.2 for Windows 2012 and Windows 2016: [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 
 
 Download the installer script:
   ```
-  Invoke-WebRequest https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1 -OutFile install.ps1 
+  <copy> Invoke-WebRequest https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1 -OutFile install.ps1 </copy>
   ```
 
 Run the installer script with or without prompts:
 To run the installer script with prompts, run the following command:
   ```
-  iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1'))
+  <copy> iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1')) </copy>
   ```
 To run the installer script without prompting the user, accepting the default settings, run the following command:
   ```
-  install.ps1 -AcceptAllDefaults
+  <copy>install.ps1 -AcceptAllDefaults </copy>
   ```
 
 #### Verify that CLI is installed
 
 To get a namespace, run the following command.
   ```
-  oci os ns get 
+  <copy>oci os ns get</copy> 
   ```
 
 If successful, the following will be returned, with xx as your unique namespace. 
@@ -139,19 +136,19 @@ Open a **Terminal** or **Command Prompt**
 To get **fleet information**, run the following command. 
 
   ```
-  oci jms fleet get --fleet-id "ocid1.jmsfleet.oc1..<unique_ID>"
+  <copy> oci jms fleet get --fleet-id "ocid1.jmsfleet.oc1..<unique_ID>"</copy>
   ```
 
 To get **jre usage**, run the following command. 
 
   ```
-  oci jms jre-usage summarize --fleet-id "ocid1.jmsfleet.oc1..<unique_ID>"
+  <copy> oci jms jre-usage summarize --fleet-id "ocid1.jmsfleet.oc1..<unique_ID>" </copy>
   ```
 
 To get **application usage**, run the following command. 
 
   ```
-  oci jms application-usage summarize --fleet-id "ocid1.jmsfleet.oc1..<unique_ID>"
+  <copy> oci jms application-usage summarize --fleet-id "ocid1.jmsfleet.oc1..<unique_ID>" </copy>
   ```
 Refer to the [CLI for JMS](https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.0.5/oci_cli_docs/cmdref/jms.html) for viewing and managing fleets.
 
