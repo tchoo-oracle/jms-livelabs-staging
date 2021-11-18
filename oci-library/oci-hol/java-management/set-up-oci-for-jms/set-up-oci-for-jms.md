@@ -12,15 +12,15 @@ Estimated Time: 15 min
 ### Objectives
 In this lab, you will:
 
-- Set up Oracle Cloud Infrastructure for new Java Management Service users by configuring the prerequisite OCI resources to get started including:
-    - Create a compartment for your JMS resources.
-    - Create a new tag namespace.
-    - Create a new tag key.
-    - Create a user group for your JMS users.
-    - Create one or more user accounts for your JMS users.
-    - Create policies
-    - Create a dynamic group of all agents.
-    - Create policies for agent communication.
+* Set up Oracle Cloud Infrastructure for new Java Management Service users by configuring the prerequisite OCI resources to get started including:
+    * Create a compartment for your JMS resources.
+    * Create a new tag namespace.
+    * Create a new tag key.
+    * Create a user group for your JMS users.
+    * Create one or more user accounts for your JMS users.
+    * Create policies
+    * Create a dynamic group of all agents.
+    * Create policies for agent communication.
 
 ### Prerequisites
 You will need an OCI account with administrative privileges to complete this lab. If you do not have one, you may sign up [here](https://www.oracle.com/cloud/free/) for a free-tier account.
@@ -61,34 +61,34 @@ Using the Onboarding Wizard to automatically creates the necessary resources.
 
     You can confirm the prerequisite resources have been created through your OCI console.
     &nbsp;
-    - In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Compartments**.
+    * In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Compartments**.
         ![image of console navigation to compartments](/../images/console-navigation-compartments.png)
     &nbsp;
-    - Confirm the creation of new compartment labelled `Fleet_Compartment`.
+    * Confirm the creation of new compartment labelled `Fleet_Compartment`.
         ![image of new compartment](/../images/new-compartment.png)
     &nbsp;
-    - In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Groups**.
+    * In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Groups**.
         ![image of console navigation to groups](/../images/console-navigation-groups.png)
     &nbsp;
-    - You can see the new user group labelled `FLEET_MANAGERS`.
+    * You can see the new user group labelled `FLEET_MANAGERS`.
         ![image of new group](/../images/new-group.png)
     &nbsp;
-    - In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Dynamic Groups**.
+    * In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Dynamic Groups**.
         ![image of console navigation to dynamic groups](/../images/console-navigation-dynamic-groups.png)
     &nbsp;
-    - Confirm the creation of new dynamic group labelled `JMS_DYNAMIC_GROUP`.
+    * Confirm the creation of new dynamic group labelled `JMS_DYNAMIC_GROUP`.
         ![image of new dynamic group](/../images/new-dynamic-group.png)
     &nbsp;
-    - In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Policies**.
+    * In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Policies**.
         ![image of console navigation to policies](/../images/console-navigation-policies.png)
     &nbsp;
-    - Confirm the creation of new policy labelled `JMS_Policy`.
+    * Confirm the creation of new policy labelled `JMS_Policy`.
         ![image of new jms policy](/../images/new-jms-policy.png)
     &nbsp;
-    - In the Oracle Cloud Console, open the navigation menu and click **Governance & Administration**. Under **Governance**, click **Tag Namespaces**.
+    * In the Oracle Cloud Console, open the navigation menu and click **Governance & Administration**. Under **Governance**, click **Tag Namespaces**.
         ![image of console navigation to tag namespaces](/../images/console-navigation-tag-namespaces.png)
     &nbsp;
-    - Confirm the creation of new tag namespace and tag key.
+    * Confirm the creation of new tag namespace and tag key.
         ![image of new tag namespace and tag key](/../images/new-tag-namespace.png)
 
 
@@ -100,20 +100,20 @@ Sign in to the Oracle Cloud Console as an administrator using the credentials pr
 
     When you sign up for OCI, Oracle creates your tenancy with a root compartment that holds all of your cloud resources. You can think of the root compartment like the root folder in a file system. Oracle recommends that you set up a dedicated compartment for each project so you can associate a compartment with a particular activity or task.
     &nbsp;
-    - In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Compartments**.
+    * In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Compartments**.
         ![image of console navigation to compartments](/../images/console-navigation-compartments.png)
     &nbsp;
-    - Click **Create Compartment**.
+    * Click **Create Compartment**.
         ![image of compartments main page](/../images/compartments-main-page.png)
     &nbsp;
-    - In the Create Compartment dialog box, enter a name for the compartment (for example, `Fleet_Compartment`), and a description. The compartment name is required when you create policies. (See later.)
+    * In the Create Compartment dialog box, enter a name for the compartment (for example, `Fleet_Compartment`), and a description. The compartment name is required when you create policies. (See later.)
         &nbsp;
-    - Specify the parent compartment: select the root compartment for your tenancy from the drop-down list.
+    * Specify the parent compartment: select the root compartment for your tenancy from the drop-down list.
         ![image of create compartments page](/../images/compartment-create-example.png)
         &nbsp;
-    - Click **Create Compartment**.
+    * Click **Create Compartment**.
         &nbsp;
-    - Find your new compartment in the table of compartments, then hover over the compartment's OCID. Click **Copy** to copy the OCID into the clipboard and then paste it into a text editor. You will require it in a later step.
+    * Find your new compartment in the table of compartments, then hover over the compartment's OCID. Click **Copy** to copy the OCID into the clipboard and then paste it into a text editor. You will require it in a later step.
         &nbsp;
         ![image of compartments main page after creation](/../images/compartment-main-page-after-create.png)
         &nbsp;
@@ -122,51 +122,51 @@ Sign in to the Oracle Cloud Console as an administrator using the credentials pr
 
 2. Create a new tag namespace
 
-    - In the Oracle Cloud Console, open the navigation menu and click **Governance & Administration**. Under **Governance**, click **Tag Namespaces**.
+    * In the Oracle Cloud Console, open the navigation menu and click **Governance & Administration**. Under **Governance**, click **Tag Namespaces**.
         ![image of console navigation to tag namespaces](/../images/console-navigation-tag-namespaces.png)
     &nbsp;
-    - Click **Create Namespace Definition**.
+    * Click **Create Namespace Definition**.
         ![image of tag namespaces main page](/../images/tag-namespaces-main-page.png)
     &nbsp;
-    - In the Create Namespace Definition dialog box select the root compartment for your tenancy from the drop-down list.
+    * In the Create Namespace Definition dialog box select the root compartment for your tenancy from the drop-down list.
         &nbsp;
-    - In the Namespace Definition Name field, enter `jms`.
+    * In the Namespace Definition Name field, enter `jms`.
         &nbsp;
-    - In the Description field, enter `For OCI Java Management use only`.
+    * In the Description field, enter `For OCI Java Management use only`.
         ![image of tag namespaces create page](/../images/tag-namespaces-create-example.png)
         &nbsp;
-    - Click **Create Namespace Definition**.
+    * Click **Create Namespace Definition**.
         &nbsp;
     For more information, see [Managing Tags and Tag Namespaces](https://docs.oracle.com/en-us/iaas/Content/Tagging/Tasks/managingtagsandtagnamespaces.htm).
     &nbsp;
 
 3. Create a new tag key definition in the new tag namespace.
 
-    - In the Oracle Cloud Console, open the navigation menu and click **Governance & Administration**. Under **Governance**, click **Tag Namespaces**.
+    * In the Oracle Cloud Console, open the navigation menu and click **Governance & Administration**. Under **Governance**, click **Tag Namespaces**.
         &nbsp;
-    - From the list of namespaces, click **jms**.
+    * From the list of namespaces, click **jms**.
         ![image of tag namespaces main page after creation](/../images/tag-namespaces-main-page-after-creating.png)
         &nbsp;
-    - Click **Create Tag Key Definition**.
+    * Click **Create Tag Key Definition**.
         &nbsp;
-    - In the Create Tag Key Definition dialog box, enter the name for the new tag key: `fleet_ocid` and its description: `Use to tag a management agent with JMS fleet membership.`.
+    * In the Create Tag Key Definition dialog box, enter the name for the new tag key: `fleet_ocid` and its description: `Use to tag a management agent with JMS fleet membership.`.
         ![image of tag key create page](/../images/tag-namespaces-jms-tag-key-definition.png)
         &nbsp;
-    - Click **Create Tag Key Definition**.
+    * Click **Create Tag Key Definition**.
         &nbsp;
 
 4. Create a user group.
 
-    - In the Oracle Cloud Console, open the navigation menu and click Identity & Security. Under Identity, click Groups. 
+    * In the Oracle Cloud Console, open the navigation menu and click Identity & Security. Under Identity, click Groups. 
         ![image of console navigation to groups](/../images/console-navigation-groups.png)
         &nbsp;
-    - Click **Create Group**.
+    * Click **Create Group**.
         ![image of groups main page](/../images/groups-main-page.png)
         &nbsp;
-    - In the Create Group dialog box, enter a name for the group (for example, `FLEET_MANAGERS`), and a description.
+    * In the Create Group dialog box, enter a name for the group (for example, `FLEET_MANAGERS`), and a description.
         ![image of groups create page](/../images/groups-create-example.png)
         &nbsp;
-    - Click **Create**.
+    * Click **Create**.
         &nbsp;
         For more information, see [Managing Groups](https://docs.oracle.com/en-us/iaas/Content/Identity/Tasks/managinggroups.htm).
         &nbsp;
@@ -179,49 +179,53 @@ Sign in to the Oracle Cloud Console as an administrator using the credentials pr
 
     Create policies for the user group to access and manage JMS fleets, management agents, agent install keys, metrics, and tag namespaces. A policy allows members of a user group to access and manage OCI resources.
     &nbsp;
-    - In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Policies**.
+    * In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Policies**.
     &nbsp;
-    - Click **Create Policy**.
+    * Click **Create Policy**.
     &nbsp;
-    - In the Create Policy dialog box, enter a name for the policy (for example, `JMS_Policy`), and a description.
+    * In the Create Policy dialog box, enter a name for the policy (for example, `JMS_Policy`), and a description.
     &nbsp;
-    - Select the root compartment for your tenancy from the drop-down list.
+    * Select the root compartment for your tenancy from the drop-down list.
     &nbsp;
-    - Click **Show manual editor**.
+    * Click **Show manual editor**.
     &nbsp;
-    - In the text box, enter the following statements:
+    * In the text box, enter the following statements:
     ```
+    <copy>
         ALLOW GROUP FLEET_MANAGERS TO MANAGE fleet IN COMPARTMENT Fleet_Compartment
         ALLOW GROUP FLEET_MANAGERS TO MANAGE management-agents IN COMPARTMENT Fleet_Compartment
         ALLOW GROUP FLEET_MANAGERS TO MANAGE management-agent-install-keys IN COMPARTMENT Fleet_Compartment
         ALLOW GROUP FLEET_MANAGERS TO READ METRICS IN COMPARTMENT Fleet_Compartment
         ALLOW GROUP FLEET_MANAGERS TO MANAGE tag-namespaces IN TENANCY
+    </copy>
     ```
     ![image of policies create page](/../images/policies-create-example.png)
     &nbsp;
-    - Click **Create**.
+    * Click **Create**.
     &nbsp;
 
 7. Create Dynamic Group
 
     Create a dynamic group of all agents. To interact with the Oracle Cloud Infrastructure service end-points, users must explicitly consent to let the management agents work with JMS. 
     
-    - In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Dynamic Groups**.
+    * In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Dynamic Groups**.
         ![image of console navigation to dynamic groups](/../images/console-navigation-dynamic-groups.png)
         &nbsp;
-    - Click **Create Dynamic Group**.
+    * Click **Create Dynamic Group**.
         ![image of dynamic groups main page](/../images/dynamic-groups-main-page.png)
         &nbsp;
-    - In the Create Dynamic Group dialog box, enter a name for the dynamic group (for example, `JMS_DYNAMIC_GROUP`), a description, and a matching rule.
+    * In the Create Dynamic Group dialog box, enter a name for the dynamic group (for example, `JMS_DYNAMIC_GROUP`), a description, and a matching rule.
 
         For **RULE 1**, enter
         ```
+        <copy>
         ALL {resource.type='managementagent', resource.compartment.id='<fleet_compartment_ocid>'}
+        </copy>
         ```
         Replace `<fleet_compartment_ocid>` with the OCID of the compartment that you created in step 1. (You should have pasted it into a text editor.) 
         ![image of dynamic groups create page](/../images/dynamic-groups-create-example.png)
         &nbsp;
-    - Click **Create**.
+    * Click **Create**.
         &nbsp;
         For more information, see [Managing Dynamic Groups](https://docs.oracle.com/en-us/iaas/Content/Identity/Tasks/managingdynamicgroups.htm). 
         &nbsp;
@@ -230,32 +234,34 @@ Sign in to the Oracle Cloud Console as an administrator using the credentials pr
 
     These policies allow the management agents to interact with JMS, upload data to OCI Monitoring service, and use tag namespaces.
 
-    - In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Policies**.
-    - Click **Create Policy**.
-    - In the Create Policy dialog box, enter a name for the policy (for example, `JMS_Agent_Policy`), and a description.
-    - Select the root compartment for your tenancy from the drop-down list.
-    - Click **Show manual editor**.
-    - In the text box, enter the following statements:
+    * In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Policies**.
+    * Click **Create Policy**.
+    * In the Create Policy dialog box, enter a name for the policy (for example, `JMS_Agent_Policy`), and a description.
+    * Select the root compartment for your tenancy from the drop-down list.
+    * Click **Show manual editor**.
+    * In the text box, enter the following statements:
         ```
+        <copy>
         ALLOW DYNAMIC-GROUP JMS_DYNAMIC_GROUP TO MANAGE management-agents IN COMPARTMENT Fleet_Compartment
         ALLOW DYNAMIC-GROUP JMS_DYNAMIC_GROUP TO USE METRICS IN COMPARTMENT Fleet_Compartment
         ALLOW DYNAMIC-GROUP JMS_DYNAMIC_GROUP TO USE tag-namespaces IN TENANCY
+        </copy>
         ```
         ![image of create jms policy page](/../images/policies-jms-create-example.png)
         &nbsp;
-    - Click **Create**.
+    * Click **Create**.
 
-    - You may now **proceed to the next lab**.
+    * You may now **proceed to the next lab**.
 
 ## Want to Learn More?
 
-- Refer to the [Getting Started with Java Management Service](https://docs.oracle.com/en-us/iaas/jms/doc/getting-started-java-management-service.html) section of the JMS documentation for more details.
+* Refer to the [Getting Started with Java Management Service](https://docs.oracle.com/en-us/iaas/jms/doc/getting-started-java-management-service.html) section of the JMS documentation for more details.
 
-- Use the [Troubleshooting](https://docs.oracle.com/en-us/iaas/jms/doc/troubleshooting.html#GUID-2D613C72-10F3-4905-A306-4F2673FB1CD3) chapter for explanations on how to diagnose and resolve common problems encountered when installing or using Java Management Service. 
+* Use the [Troubleshooting](https://docs.oracle.com/en-us/iaas/jms/doc/troubleshooting.html#GUID-2D613C72-10F3-4905-A306-4F2673FB1CD3) chapter for explanations on how to diagnose and resolve common problems encountered when installing or using Java Management Service. 
 
-- If the problem still persists or if the problem you are facing is not listed, please refer to the [Getting Help and Contacting Support](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/contactingsupport.htm) section or you may open a a support service request using the **Help** menu in the OCI console.
+* If the problem still persists or if the problem you are facing is not listed, please refer to the [Getting Help and Contacting Support](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/contactingsupport.htm) section or you may open a a support service request using the **Help** menu in the OCI console.
 
 ## Acknowledgements
 
-- **Author** - Alvin Lam, Java Management Service
-- **Last Updated By/Date** - Alvin Lam, November 2021
+* **Author** - Alvin Lam, Java Management Service
+* **Last Updated By/Date** - Alvin Lam, November 2021

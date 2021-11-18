@@ -8,16 +8,16 @@ Estimated Time: 30 minutes
 ### Objectives
 In this lab, you will:
 
-- Install Docker on your compute instance
-- Create a simple Java application
-- Create a Docker image with Oracle JDK on your compute instance
-- Configure Java Usage Tracker Location
-- Verify Configuration
+* Install Docker on your compute instance
+* Create a simple Java application
+* Create a Docker image with Oracle JDK on your compute instance
+* Configure Java Usage Tracker Location
+* Verify Configuration
 
 ### Prerequisites
 
-- An Oracle Free Tier, Always Free, Paid or LiveLabs Cloud Account
-- A compute instance with the resources configured in Lab 1 to Lab 4 (Management Agent, Fleet, Compartments, SSH key pair login). The compute instance should also have **Oracle JDK 8** installed.
+* An Oracle Free Tier, Always Free, Paid or LiveLabs Cloud Account
+* A compute instance with the resources configured in Lab 1 to Lab 4 (Management Agent, Fleet, Compartments, SSH key pair login). The compute instance should also have **Oracle JDK 8** installed.
 
 ## Task 1: Install Docker on your compute instance
 The following steps will describe installation of Docker on a compute instance running Oracle Linux 7, which was covered in Lab 2.
@@ -103,14 +103,14 @@ This task will guide you on how to create a simple Java application that can be 
 
 2. Create a Java application and package it into a jar file by following the below steps.
 
-  - If you are not already in the home directory of your compute instance, navigate there by running this.
+  * If you are not already in the home directory of your compute instance, navigate there by running this.
     ```
     <copy>
     cd ~ 
     </copy>
     ```
   
-  - For the purposes of this lab, we will create a simple Java application in your home directory which prints odd numbers. Create a new directory and enter it with your terminal.
+  * For the purposes of this lab, we will create a simple Java application in your home directory which prints odd numbers. Create a new directory and enter it with your terminal.
     
     ```
     <copy>
@@ -123,7 +123,7 @@ This task will guide you on how to create a simple Java application that can be 
     </copy>
     ```
     
-  - Create a simple application that prints odd numbers by entering these commands.
+  * Create a simple application that prints odd numbers by entering these commands.
     
     ```
     <copy>
@@ -152,7 +152,7 @@ This task will guide you on how to create a simple Java application that can be 
     </copy>
     ```
     
-  - Compile the Java code using this command. 
+  * Compile the Java code using this command. 
     
     ```
     <copy>
@@ -162,7 +162,7 @@ This task will guide you on how to create a simple Java application that can be 
     Another file called OddNumbers.class should appear after the command.
     &nbsp;
     
-  - Run the following command to create a jar file.
+  * Run the following command to create a jar file.
     
     ```
     <copy>
@@ -170,7 +170,7 @@ This task will guide you on how to create a simple Java application that can be 
     </copy>
     ```
     
-  - Test the jar file to see if the output and entry point is correct. Sample output shown below. For more information on jar file creation, see this [article](https://docs.oracle.com/    javase/tutorial/deployment/jar/build.html).
+  * Test the jar file to see if the output and entry point is correct. Sample output shown below. For more information on jar file creation, see this [article](https://docs.oracle.com/    javase/tutorial/deployment/jar/build.html).
     
     ```
     <copy>
@@ -230,7 +230,7 @@ This section will provide guidance on creating a Docker image running a Oracle J
     </copy>
     ```
 
-  - Ensure that the Dockerfile was successfully copied to the OddNumbers folder created in Task 2. You should see the Dockerfile present after the `ls` command inside the OddNumbers folder.
+  * Ensure that the Dockerfile was successfully copied to the OddNumbers folder created in Task 2. You should see the Dockerfile present after the `ls` command inside the OddNumbers folder.
 
     ```
     <copy>
@@ -254,7 +254,7 @@ This section will provide guidance on creating a Docker image running a Oracle J
     sudo nano Dockerfile
     </copy>
     ```
-- The inbuilt Nano text editor is now open. Scroll down to near the end of the Dockerfile and insert the following lines.
+* The inbuilt Nano text editor is now open. Scroll down to near the end of the Dockerfile and insert the following lines.
 
     ```
     <copy>
@@ -335,7 +335,7 @@ You should now have a compute instance with Docker installed and a Docker image 
   ![image of fleet details page showing jar file in container](/../images/fleets-details-docker.png)
 
 ## Want to Learn More?
-- You may also find more Oracle resources for your containers at the Oracle Github repository [here](https://github.com/oracle/docker-images).
+* You may also find more Oracle resources for your containers at the Oracle Github repository [here](https://github.com/oracle/docker-images).
 
 ## Acknowledgements
 * **Author** - Alvin Lam, Java Management Service
