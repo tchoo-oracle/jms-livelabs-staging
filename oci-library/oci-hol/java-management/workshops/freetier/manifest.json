@@ -20,15 +20,15 @@
         },
         {
             "title": "Lab 2: Deploy a Java Application",
-            "filename": "../../lab2-deploy-a-java-application/Lab2.md"
+            "filename": "../../deploy-a-java-application/deploy-a-java-application.md"
         },
         {
             "title": "Lab 3: Set Up a Fleet",
             "filename": "../../lab3-setup-a-fleet/Lab3.md"
         },
         {
-            "title": "Lab 4: Setting Up of Management Agent",
-            "filename": "../../lab4-set-up-of-management-agent/Lab4.md"
+            "title": "Lab 4: Set Up of Management Agent",
+            "filename": "../../set-up-of-management-agent/set-up-of-management-agent.md"
         },
         {
             "title": "Lab 5: Access and Utilise REST API via OCI CLI",
@@ -36,7 +36,7 @@
         },
         {
             "title": "Lab 6: Access and Utilise REST API via JMS SDKs and Postman",
-            "filename": "../../lab6-access-and-utilise-rest-api-via-jms-sdk-postman/Lab6.md"
+            "filename": "../../access-and-utilise-rest-api-via-jms-sdk-postman/access-and-utilise-rest-api-via-jms-sdk-postman.md"
         },
         {
             "title": "Lab 7: Tracking Java Usage in a Container",
