@@ -151,7 +151,7 @@ In this workshop, you will:
 ### For **Windows**
 
 1. Install JDK 8 in your instance.
-  Visit the [official Oracle page](https://www.oracle.com/java/technologies/downloads/#java8-windows) to download Java 8.
+  Visit the [official Oracle page](https://www.oracle.com/java/technologies/downloads/#java8-windows) to download Java 8. Download the x64 installer `jdk-8u<VERSION>-windows-x64.exe`.
 
   Run the downloaded file and follow the instruction of installer. Leave default options, take note of the jdk installation path.
 
@@ -159,13 +159,21 @@ In this workshop, you will:
 
   Set the **JAVA\_HOME** environment variable. To set it, go to **System variables** form -> click **New** -> enter **JAVA\_HOME** for **Variable name:** and **path/to/jdk** for **Variable value:** (for example: C:\Program Files\Java\jdk1.8.0_161).
 
-  To check if Java has been installed, in **Command Prompt** window, enter this command.
+  To check if Java has been installed, in **Command Prompt** window, enter the following command.
     ```
     <copy>
     javac -help
     </copy>
     ```
-2. If there is a list of options, Java is installed.
+    There should be a list of options. Now, enter the following:
+
+    ```
+    <copy>
+    java -version
+    </copy>
+    ```
+
+2. If there is information about your Java runtime, Java is installed.
 
 3. Build your Java application.
 
