@@ -340,41 +340,6 @@ We shall demonstrate the detection of the Java compiler and HelloWorld applicati
 
   You may now **proceed to the next lab.**
 
-## Troubleshoot Management Agent Installation Issues
-
-**For Task 1**
-* If you are unable to download the management agent software using `wget`, you may download the software from the Oracle Cloud Console to your local machine and transfer it over to your compute using Secure Copy Protocol (SCP).
-
-* First, open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**. Select the fleet that you have created.
-  ![image of console navigation to java management service](/../images/console-navigation-jms.png)
-
-* Click **Set Up Management Agent**.
-  ![image of fleet details page](/../images/fleet-details-page.png)
-* Click **Download management agent software**.
-  ![image of set up management agent page](/../images/fleet-set-up-management-agent.png)
-* Open up a **Terminal** or **Command Prompt** window in the local machine where the management agent software file is saved.
-* Enter the following command to transfer the management agent software file via scp into the remote host compute instance.
-
-    ```
-    <copy>
-    scp <full_path_of_file_to_be_transferred_on_local_host> opc@<public_IP_Address>:<full_path_of_remote_directory_transferred_to>
-    </copy>
-    ```
-  * In your compute instance, verify that the file transfer is successful by entering the following. You should see your management agent software file.
-    ```
-    <copy>
-    ls
-    </copy>
-    ```
-
-**For Task 2**
-
-* Ensure that /usr/share folder has write permissions.
-* Uninstall and reinstall the management agent after permissions for the /usr/share folder have been updated.
-
-**For Task 3**
-
-* Transfer the response file to /tmp folder where read permissions are allowed.
 
 ## Want to Learn More?
 * Refer to the [Management Agent Concepts](https://docs.oracle.com/en-us/iaas/management-agents/doc/you-begin.html), [Installation of Management Agents](https://docs.oracle.com/en-us/iaas/management-agents/doc/install-management-agent-chapter.html) and
