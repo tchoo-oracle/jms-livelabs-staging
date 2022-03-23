@@ -205,7 +205,7 @@ In this workshop, you will:
 
 4. Go to the File option and click the Save button to save the file. Close the notepad window. Move to the command prompt window again.
 
-### **For All Operating Systems:**
+<!-- ### **For All Operating Systems:**
 
 5. Run your Java application.
 
@@ -236,7 +236,7 @@ In this workshop, you will:
     14
     ```
 
-6. The Java application is now deployed in your compute instance.
+6. The Java application is now deployed in your compute instance. -->
 
 ## Task 4: Shutdown Compute
 

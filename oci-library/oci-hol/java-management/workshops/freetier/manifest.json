@@ -18,31 +18,41 @@
             "title": "Lab 1: Set Up Oracle Cloud Infrastructure for Java Management Service",
             "filename": "../../set-up-oci-for-jms/set-up-oci-for-jms.md"
         },
+     
+
+
         {
-            "title": "Lab 2: Deploy a Java Application",
-            "filename": "../../deploy-a-java-application/deploy-a-java-application.md"
-        },
-        {
-            "title": "Lab 3: Set Up a Fleet",
+            "title": "Lab 2: Set Up a Fleet",
             "filename": "../../setup-a-fleet/setup-a-fleet.md"
         },
         {
-            "title": "Lab 4: Set Up of Management Agent",
-            "filename": "../../set-up-of-management-agent/set-up-of-management-agent.md"
+            "title": "Lab 3: Deploy a Java Application",
+            "filename": "../../deploy-a-java-application/deploy-a-java-application.md"
         },
         {
-            "title": "Lab 5: Access and Utilise REST API via OCI CLI",
-            "filename": "../../access-and-utilise-rest-api-via-oci-cli/access-and-utilise-rest-api-via-oci-cli.md"
+            "title": "Lab 4: Understand Concepts Related to Management Agent Installation",
+            "filename": "../../understand-concepts-related-to-management-agent/understand-concepts-related-to-management-agent.md"
         },
         {
-            "title": "Lab 6: Access and Utilise REST API via JMS SDKs and Postman",
-            "filename": "../../access-and-utilise-rest-api-via-jms-sdk-postman/access-and-utilise-rest-api-via-jms-sdk-postman.md"
+            "title": "Lab 5: Set Up of Management Agent (Linux)",
+            "filename": "../../set-up-of-management-agent-linux/set-up-of-management-agent-linux.md"
         },
         {
-            "title": "Lab 7: Track Java Usage in a Container",
-            "filename":"../../track-java-usage-in-a-container/track-java-usage-in-a-container.md"
-            
+            "title": "Lab 6: Set Up of Management Agent (Windows)",
+            "filename": "../../set-up-of-management-agent-windows/set-up-of-management-agent-windows.md"
         },
+        {
+            "title": "Lab 7: Set Up of Management Agent using OCA",
+            "filename": "../../set-up-of-management-agent-oca/set-up-of-management-agent-oca.md"
+        },
+        {
+            "title": "Lab 8: Setup Multiple Managed Instances and Management Gateway",
+            "filename": "../../track-java-usage-in-a-container/track-java-usage-in-a-container.md"
+        },
+
+
+
+
         {
             "title": "Need Help?",
             "description": "Solutions to Common Problems and Directions for Receiving Live Help",
