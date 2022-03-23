@@ -99,7 +99,7 @@ In this workshop, you will:
     ```    
 5. Since you identified your public key when you created the instance, this command logs you into your instance. You can now issue commands to install and start your server.
 
-## Task 3: Install Java 8 and run Java Application
+## Task 3: Install Java 8 
 
 ### For **Linux**
 

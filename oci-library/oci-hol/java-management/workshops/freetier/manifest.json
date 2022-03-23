@@ -34,11 +34,11 @@
             "filename": "../../understand-concepts-related-to-management-agent/understand-concepts-related-to-management-agent.md"
         },
         {
-            "title": "Lab 5: Set Up of Management Agent (Linux)",
+            "title": "Lab 5: Install Management Agent on non-OCI Hosts - Linux ",
             "filename": "../../set-up-of-management-agent-linux/set-up-of-management-agent-linux.md"
         },
         {
-            "title": "Lab 6: Set Up of Management Agent (Windows)",
+            "title": "Lab 6: Install Management Agent on non-OCI Hosts - Linux ",
             "filename": "../../set-up-of-management-agent-windows/set-up-of-management-agent-windows.md"
         },
         {
@@ -47,7 +47,7 @@
         },
         {
             "title": "Lab 8: Setup Multiple Managed Instances and Management Gateway",
-            "filename": "../../track-java-usage-in-a-container/track-java-usage-in-a-container.md"
+            "filename": "../../set-up-multiple-managed-instances/set-up-multiple-managed-instances.md"
         },
 
 

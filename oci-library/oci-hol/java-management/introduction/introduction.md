@@ -4,6 +4,12 @@
 
 Java Management Service (JMS) is a reporting and management infrastructure integrated with Oracle Cloud Infrastructure Platform services to observe and manage your use of Java SE (on-premises or in the Cloud).
 
+Watch the video below for an introduction to Java Management Service and a brief demo. <em>Note, screens and flow may have changed</em>
+
+[](youtube:YCgJxqvglCI)
+
+
+
 As a customer, you can:
 
 * Use insights from JMS to optimize your workloads across your enterprise (desktop, server, cloud); and
