@@ -340,6 +340,8 @@ You should now have a compute instance with Docker installed and a Docker image 
 2. You may now check your Fleet in OCI console to see if your Docker container was detected. You should be able to see the OddNumbers.jar under **Applications**.
   ![image of fleet details page showing jar file in container](/../images/fleets-details-docker.png)
 
+You may now **proceed to the next lab.**
+
 ## Troubleshoot Docker Issues
 
 **For Task 1**
