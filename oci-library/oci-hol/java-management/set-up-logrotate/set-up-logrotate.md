@@ -56,11 +56,11 @@ In this lab, you will:
 
 4. To save the file, press **CTRL+x**. Before exiting, nano will ask you if you wish to save the file: Type **y** to save and exit, type **n** to abandon your changes and exit.
 
-## Task 2: Set up logrotatewin on Windows instances
+## Task 2: Set up Logrotatewin on Windows instances
 
-Logrotatewin is a Windows implementation of the logrotate utility found in Linux platforms. The goal is to use the same command line parameters and files as the Linux version. It is not provided by JMS and you will need to install it separately.
+Logrotatewin is a Windows implementation of the Logrotate utility found in Linux platforms. The goal is to use the same command line parameters and files as the Linux version. It is not provided by JMS and you will need to install it separately.
 
-1. Download logrotatewin from [https://sourceforge.net/projects/logrotatewin/files/](https://sourceforge.net/projects/logrotatewin/files/)
+1. Download Logrotatewin from [https://sourceforge.net/projects/logrotatewin/files/](https://sourceforge.net/projects/logrotatewin/files/)
 
 2. Extract the downloaded zip file and run `logrotateSetup` to start the installer. In this example, we changed the install destination to `C:\Program Files\LogRotate\` 
     * ![image of logrotatewin install destination](/../images/logrotate-installation-example.png)
@@ -68,13 +68,15 @@ Logrotatewin is a Windows implementation of the logrotate utility found in Linux
     * The executable file will be in `C:\Program Files\LogRotate\logrotate.exe`
     * The configuration file will be in `C:\Program Files\LogRotate\Content\logrotate.conf`
 
-3. We want to setup logrotate for the `usagetracker.log` file.
-    * Determine the path to the `usagetracker.log` file on your machine by looking for the `com.oracle.usagetracker.logToFile` parameter in the Java Usage Tracker config file.
-    * The Java Usage Tracker config file is located by default in `C:\Program Files\Java\conf\usagetracker.properties`
-    * Right-click on the config file and open with notepad to inspect it:
+3. Setup logrotate for the `usagetracker.log` file.
+    * The path to the `usagetracker.log` file can be determined from the Java Usage Tracker config file, which is located by default in `C:\Program Files\Java\conf\usagetracker.properties`
+    * Right-click on the Java Usage Tracker config file and open with notepad to inspect it.
+    * The path to the `usagetracker.log` file on your machine is identified by looking for the `com.oracle.usagetracker.logToFile` parameter in the Java Usage Tracker config file.
     * ![image of a sample usagetracker.properties file](/../images/usagetracker-properties-example.png)
 
-4. Once you have identified the path of `usagetracker.log`, edit `C:\Program Files\LogRotate\Content\logrotate.conf` using notepad.
+     > **Note:** The path to the `usagetracker.log` file in this example is `C:\ProgramData\Oracle\Java\usagetracker.log`
+
+4. Once you have identified the path of the `usagetracker.log` file, update `C:\Program Files\LogRotate\Content\logrotate.conf` with the correct path.
     * Login as an **Administrator** and open a Command Prompt window:
         * To check if you are currently running the Command Prompt as an Administrator, enter the following
         ```
@@ -93,14 +95,14 @@ Logrotatewin is a Windows implementation of the logrotate utility found in Linux
         ```
 
         * If permissions are insufficient, close and reopen the Command Prompt as an Administrator, and perform the check again.
-    * Open `logrotate.conf` :
+    * Edit `logrotate.conf` with notepad :
         ```
         <copy>
         notepad C:\PROGRA~1\LogRotate\Content\logrotate.conf
         </copy>
         ```
 
-    * Copy and paste the following to the bottom of the file, then save:
+    * Copy and paste the following to the bottom of the `logrotate.conf` file, then click save:
 
         ```
         <copy> 
