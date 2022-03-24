@@ -1,4 +1,4 @@
-# Track Java Usage in a Container
+# Track Java Usage in a container
 
 ## Introduction
 
