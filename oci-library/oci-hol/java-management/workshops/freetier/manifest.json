@@ -1,8 +1,10 @@
 {
     "workshoptitle": "Manage Java Runtimes with Java Management Service",
-    "include": {"starter-file.sql":"../../data-load/files/starter-file.sql",
-                "sample.json":"../../data-load/files/sample.json",
-                "step2.md":"../../data-load/files/step2.md"},
+    "include": {
+        "starter-file.sql": "../../data-load/files/starter-file.sql",
+        "sample.json": "../../data-load/files/sample.json",
+        "step2.md": "../../data-load/files/step2.md"
+    },
     "help": "livelabs-help-**enterarea**_us@oracle.com",
     "tutorials": [
         {
@@ -18,9 +20,6 @@
             "title": "Lab 1: Set Up Oracle Cloud Infrastructure for Java Management Service",
             "filename": "../../set-up-oci-for-jms/set-up-oci-for-jms.md"
         },
-     
-
-
         {
             "title": "Lab 2: Set Up a Fleet",
             "filename": "../../setup-a-fleet/setup-a-fleet.md"
@@ -42,21 +41,17 @@
             "filename": "../../set-up-of-management-agent-windows/set-up-of-management-agent-windows.md"
         },
         {
-            "title": "Lab 7: Set Up of Management Agent using OCA",
+            "title": "Lab 7: Install Management Agent on OCI-computes - Oracle Cloud Agent (OCA)",
             "filename": "../../set-up-of-management-agent-oca/set-up-of-management-agent-oca.md"
         },
         {
             "title": "Lab 8: Setup Multiple Managed Instances and Management Gateway",
             "filename": "../../set-up-multiple-managed-instances/set-up-multiple-managed-instances.md"
         },
-
-
-
-
         {
             "title": "Need Help?",
             "description": "Solutions to Common Problems and Directions for Receiving Live Help",
-            "filename":"https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/need-help/need-help-freetier.md"
+            "filename": "https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/need-help/need-help-freetier.md"
         }
     ]
 }
