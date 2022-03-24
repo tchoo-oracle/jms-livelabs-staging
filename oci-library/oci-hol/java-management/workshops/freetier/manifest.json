@@ -1,5 +1,5 @@
 {
-    "workshoptitle": "Manage Java Runtimes with Java Management Service",
+    "workshoptitle": "Java Management Service - Java Runtime and Applications Inventory",
     "include": {
         "starter-file.sql": "../../data-load/files/starter-file.sql",
         "sample.json": "../../data-load/files/sample.json",
