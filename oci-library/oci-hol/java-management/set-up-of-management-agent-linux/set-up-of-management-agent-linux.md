@@ -278,7 +278,7 @@ We shall demonstrate the detection of the Java compiler and HelloWorld applicati
   ![image of fleet details page](/../images/fleet-details-page.png)
 * Click **Download management agent software**.
   ![image of set up management agent page](/../images/fleet-set-up-management-agent.png)
-* Open up a **Terminal** or **Command Prompt** window in the local machine where the management agent software file is saved.
+* Open up a **Terminal** window in the local machine where the management agent software file is saved.
 * Enter the following command to transfer the management agent software file via scp into the remote host compute instance.
 
     ```
