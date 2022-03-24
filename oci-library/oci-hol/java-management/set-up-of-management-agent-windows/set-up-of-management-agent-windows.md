@@ -1,4 +1,4 @@
-# Install Management Agent on non-OCI Hosts - Linux 
+# Install Management Agent on non-OCI Hosts - Windows
 
 ## Introduction
 
@@ -23,17 +23,21 @@ In this lab, you will:
 * You are using an Oracle Linux image on your host machine or compute instance for this workshop.
 * Access to the cloud environment and resources configured in Lab 2
 
-## Task 1: Prepare agent software and response file for Management Agent installation
+## Task 1: Prepare agent software for Management Agent installation
 
 
-  Replace the link with the link for your operating system found on the [official documentation](https://docs.oracle.com/en-us/iaas/management-agents/doc/install-management-agent-chapter.html). Under **Download the Agent Software Using a URL**, **right-click** and click **Copy Link Address** to copy the correct link.
+ 1. First, open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**. Select the fleet that you have created.
+  ![image of console navigation to java management service](/../images/console-navigation-jms.png)
 
-  ![image of obtaining link for management agent software](/../images/link-management-agent-software.png)
+2. Click **Set Up Management Agent**.
+  ![image of fleet details page](/../images/fleet-details-page.png)
+3. Click **Download management agent software** and download the software for Windows (Windows-x86_64).
+  ![image of set up management agent page](/../images/fleet-set-up-management-agent.png)
 
 
 ## Task 2: Install Management Agent
 
-Install Management Agent (If your host is Linux, skip to **For Linux** Section)
+Install Management Agent (If your host is Linux, skip to skip to Lab 5: Install Management Agent on non-OCI Hosts - Linux).
 
 1. To install the management agent software on Windows, perform the following steps:
 
@@ -45,6 +49,8 @@ Install Management Agent (If your host is Linux, skip to **For Linux** Section)
     To check if you are currently running the Command Prompt as an Administrator, enter the following:
     ```
     <copy>
+    SETLOCAL 
+    PATH=C:\Windows\system32;%PATH% 
     ECHO Administrative permissions required for installation of management agent. Detecting permissions...
 
     NET SESSION >nul 2>&1
@@ -187,6 +193,8 @@ Install Management Agent (If your host is Linux, skip to **For Linux** Section)
     In the future agent can be started by directly running: NET START mgmt_agent
     Please make sure that you delete C:\Users\input.rsp or store it in secure location.
     ```
+
+
 
 8. The agent installation process does the following:
 
@@ -339,6 +347,7 @@ We shall demonstrate the detection of the Java compiler and HelloWorld applicati
   ![image of applications after successful installation](/../images/successful-installation-applications.png)
 
   You may now **proceed to the next lab.**
+
 
 
 ## Want to Learn More?

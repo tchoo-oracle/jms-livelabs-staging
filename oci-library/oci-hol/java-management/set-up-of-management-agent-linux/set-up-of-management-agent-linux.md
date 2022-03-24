@@ -1,4 +1,4 @@
-# Install Management Agent on non-OCI Hosts - Linux 
+# Install Management Agent on non-OCI Hosts - Linux
 
 ## Introduction
 
@@ -53,11 +53,11 @@ In this lab, you will:
 
     ![image of input rsp file with agent display name](/../images/input-rsp-add-agent-display-name.png " ")
 
-    To save the file, type **CTRL+x**. Before exiting, nano will ask you if you wish to save the file: Type **y** to save and exit, type **n** to abandon your changes and exit. -->
+    To save the file, type **CTRL+x**. Before exiting, nano will ask you if you wish to save the file: Type **y** to save and exit, type **n** to abandon your changes and exit.
 
 ## Task 2: Install Management Agent
 
-Install Management Agent (If your host is Windows, skip to **For Windows** Lab)
+Install Management Agent (If your host is Windows, skip to Lab 6: Install Management Agent on non-OCI Hosts - Windows).
 
 
 

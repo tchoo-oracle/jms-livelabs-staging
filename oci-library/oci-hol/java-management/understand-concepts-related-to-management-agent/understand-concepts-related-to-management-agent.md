@@ -24,7 +24,7 @@ In this lab, you will:
 * Access to the cloud environment and resources configured in Lab 2
 
 
-## Task 1: Understand agent software and response file for Management Agent installation
+## Task 1: Understand Concepts Related to Management Agent Installation
 
 Before the set up of the Management Agent, it is important to understand the concepts behind the Java Management Service:
 
