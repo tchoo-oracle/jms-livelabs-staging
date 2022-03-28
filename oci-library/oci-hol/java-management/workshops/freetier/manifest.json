@@ -17,7 +17,7 @@
             "filename": "https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/cloud-login/pre-register-free-tier-account.md"
         },
         {
-            "title": "Lab 1: Set Up Oracle Cloud Infrastructure for Java Management Service",
+            "title": "Lab 1: Set up Oracle Cloud Infrastructure for Java Management Service",
             "filename": "../../set-up-oci-for-jms/set-up-oci-for-jms.md"
         },
         {
@@ -47,6 +47,11 @@
         {
             "title": "Lab 8: Setup Multiple Managed Instances and Management Gateway",
             "filename": "../../set-up-multiple-managed-instances/set-up-multiple-managed-instances.md"
+        },
+        {
+            "title": "Lab 8: Set up Logrotate",
+            "filename":"../../set-up-logrotate/set-up-logrotate.md"
+            
         },
         {
             "title": "Need Help?",
