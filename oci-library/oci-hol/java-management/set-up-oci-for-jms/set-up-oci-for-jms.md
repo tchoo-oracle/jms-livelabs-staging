@@ -3,7 +3,7 @@
 ## Introduction
 Before you can use Java Management Service, you must ensure that your Oracle Cloud Infrastructure environment is set up correctly to allow the communication flow between all required components and cloud services.
 
-This section describes the steps to set up Oracle Cloud Infrastructure for Java Management Service. You may choose to use the Onboarding Wizard or perform the steps manually.
+This section describes the steps to set up Oracle Cloud Infrastructure for Java Management Service. You may choose to use the **Onboarding Wizard** or perform the steps **manually**. You can choose **either** the Onboarding Wizard option or Manual Setup option to setup your OCI resources. The Lab provides instructions for both. It is recommended for users new to OCI to use the Onboarding Wizard option.
 
 Before you begin, review the prerequisites and the overview of the steps.
 
@@ -25,13 +25,14 @@ In this lab, you will:
 ### Prerequisites
 You will need an OCI account with administrative privileges to complete this lab. If you do not have one, you may sign up [here](https://www.oracle.com/cloud/free/) for a free-tier account.
 
-## Task 1: Create OCI Resources
+## Task 1: Create OCI Resources - Using Onboarding Wizard
 
-You can choose **either** the Onboarding Wizard option or Manual Setup option to setup your OCI resources. Below, there are instructions for both. It is recommended for users new to OCI to use the Onboarding Wizard option.
-### Option 1: Onboarding Wizard (Recommended for first time users of OCI)
+### Option 1: Using the Onboarding Wizard to automatically creates the necessary resources.
 
-Using the Onboarding Wizard to automatically creates the necessary resources.
-&nbsp;
+<!-- You can choose **either** the Onboarding Wizard option or Manual Setup option to setup your OCI resources. Below, there are instructions for both. It is recommended for users new to OCI to use the Onboarding Wizard option.
+### Option 1: Onboarding Wizard (Recommended for first time users of OCI) -->
+<!-- Using the Onboarding Wizard to automatically creates the necessary resources. -->
+<!-- &nbsp; -->
 1. Sign in to the Oracle Cloud Console as an administrator using the credentials provided by Oracle, as described in [Signing into the Console](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/signingin.htm). See [Using the Console](https://docs.oracle.com/en-us/iaas/Content/GSG/Concepts/console.htm) for more information.
 &nbsp;
 
@@ -91,6 +92,7 @@ Using the Onboarding Wizard to automatically creates the necessary resources.
     * Confirm the creation of new tag namespace and tag key.
         ![image of new tag namespace and tag key](/../images/new-tag-namespace.png)
 
+## Task 2: Create OCI Resources - Manual
 
 ### Option 2: Manual Setup (If customization required)
 
@@ -177,7 +179,9 @@ Sign in to the Oracle Cloud Console as an administrator using the credentials pr
 
 6. Create Policies.
 
-    Create policies for the user group to access and manage JMS fleets, management agents, agent install keys, metrics, and tag namespaces. A policy allows members of a user group to access and manage OCI resources.
+    **Policy**: A policy is a document that specifies who can access which Oracle Cloud Infrastructure resources that your company has, and how. A policy simply allows a group to work in certain ways with specific types of resources  in a particular compartment.
+
+    Create policies for the user group to access and manage JMS fleets, management agents, agent install keys, metrics, and tag namespaces. 
     &nbsp;
     * In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Policies**.
     &nbsp;
@@ -260,6 +264,8 @@ Sign in to the Oracle Cloud Console as an administrator using the credentials pr
 * Use the [Troubleshooting](https://docs.oracle.com/en-us/iaas/jms/doc/troubleshooting.html#GUID-2D613C72-10F3-4905-A306-4F2673FB1CD3) chapter for explanations on how to diagnose and resolve common problems encountered when installing or using Java Management Service.
 
 * If the problem still persists or if the problem you are facing is not listed, please refer to the [Getting Help and Contacting Support](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/contactingsupport.htm) section or you may open a a support service request using the **Help** menu in the OCI console.
+
+* Refer to the [How Policies Work](https://docs.oracle.com/en-us/iaas/Content/Identity/Concepts/policies.htm#How_Policies_Work) section of OCI documentation for more details.
 
 ## Acknowledgements
 
