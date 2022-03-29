@@ -42,9 +42,9 @@ In this lab, you will:
 
   ![image of download api key](/../images/api-key-download.png)
 
-6. The key is added and the **Configuration File Preview** is displayed. Click **Copy** to copy the file snippets and paste it into a text file. Save the file as **config**.
+6. The key is added and the **Configuration File Preview** is displayed. Click **Copy** to copy the file snippets and paste it into a text file. Save the file as **config**. 
 
-7. The file snippet includes required parameters and values you'll need to create your configuration file.
+7. The file snippet includes required parameters and values you'll need to create your configuration file. Such as `key_file`, which should be assigned value of path of private key. Refer to [SDK and CLI Configuration File](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm) to see an example of configuration file and `key_file` entry.
 
   ![image of configuration file](/../images/config-file-preview.png)
 
@@ -55,6 +55,14 @@ In this lab, you will:
 9. Set the root user to have **Read-only** permissions for the config file. No other user should have permissions.
 
   ![image of configuration file permissions](/../images/config-file-permissions.png)
+
+  If user does not have access to GUI then can use terminal to change the permission.
+
+      ```
+      <copy>
+      sudo chmod 400 <config-file-name>
+      </copy>
+      ```
 
 10. An API Key is successfully created.
 
@@ -161,7 +169,7 @@ To get **fleet information**, run the following command.
 
   ```
   <copy>
-  oci jms fleet get --fleet-id "ocid1.jmsfleet.oc1..<unique_ID>"
+  oci jms fleet get --fleet-id "ocid1.jmsfleet.oc1.<unique_ID>"
   </copy>
   ```
 
@@ -169,7 +177,7 @@ To get **jre usage**, run the following command.
 
   ```
   <copy>
-  oci jms jre-usage summarize --fleet-id "ocid1.jmsfleet.oc1..<unique_ID>"
+  oci jms jre-usage summarize --fleet-id "ocid1.jmsfleet.oc1.<unique_ID>"
   </copy>
   ```
 
@@ -177,7 +185,7 @@ To get **application usage**, run the following command.
 
   ```
   <copy>
-  oci jms application-usage summarize --fleet-id "ocid1.jmsfleet.oc1..<unique_ID>"
+  oci jms application-usage summarize --fleet-id "ocid1.jmsfleet.oc1.<unique_ID>"
   </copy>
   ```
 Refer to the [CLI for JMS](https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.0.5/oci_cli_docs/cmdref/jms.html) for viewing and managing fleets.

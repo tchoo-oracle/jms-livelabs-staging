@@ -45,14 +45,15 @@
             "filename": "../../install-management-agent-oca/install-management-agent-oca.md"
         },
         {
-            "title": "Lab 8: Setup Multiple Managed Instances and Management Gateway",
-            "filename": "../../set-up-multiple-managed-instances/set-up-multiple-managed-instances.md"
-        },
-        {
             "title": "Lab 8: Set up Logrotate",
             "filename":"../../set-up-logrotate/set-up-logrotate.md"
             
         },
+        {
+            "title": "Lab 9: Setup Multiple Managed Instances and Management Gateway",
+            "filename": "../../set-up-multiple-managed-instances/set-up-multiple-managed-instances.md"
+        },
+        
         {
             "title": "Need Help?",
             "description": "Solutions to Common Problems and Directions for Receiving Live Help",
