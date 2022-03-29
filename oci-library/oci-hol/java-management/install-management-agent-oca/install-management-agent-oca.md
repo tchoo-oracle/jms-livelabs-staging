@@ -20,71 +20,103 @@ In this lab, you will:
 * You are using an Oracle Linux image on your host machine or compute instance for this workshop.
 * Access to the cloud environment and resources configured in Lab 2
 
-## Task 1: Enable Management Agents on Compute Instances
+## Task 1: Enable Management Agent Plugin on Compute Instances
 
 1. In the Oracle Cloud Console, open the navigation menu, click **Compute**, and then click **Instances**.
 Select the instance that you are interested in.
 
-![image of console navigation to compute instances](/../images/console-navigation-jms.png)
+  ![image of console navigation to compute instances](/../images/console-navigation-instance.png)
 
-2. Click the Oracle Cloud Agent tab. The list of plugins is displayed.
+2. Click the **Oracle Cloud Agent** tab. The list of plugins is displayed. Toggle the Enabled switch for the Management Agent plugin.
 
-3. Toggle the Enabled switch for the Management Agent plugin.
+  ![image of enable management agent plugin](/../images/enable-management-agent-plugin.png)
 
-![image of oracle cloud agent tab](/../images/check-fleet-ocid-page.png)
-
-4. Ensure that the status of the Management Agent plugin is set to **Running**.
-![image of enabled management agent plugin](/../images/check-fleet-ocid-page.png)
+3. Ensure that the status of the Management Agent plugin is set to **Running**.
+  ![image of management agent plugin with running status](/../images/management-agent-plugin-running.png)
 
 5. We will need to verify that our agent is enabled successfully. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and under **Management Agent**, click **Agents**.
 
-![image of enabled management agent plugin](/../images/check-fleet-ocid-page.png)
+  ![image of console navigation to access management agent overview](/../images/management-agent-overview.png)
 
-6. Ensure that your agent is in the list of agents. The name of the Agent should be of the form: **Agent(<YOUR-INSTANCE-NAME>)**.
+6. Ensure that your agent is in the list of agents. The name of the Agent should be of the form of  `Agent(<YOUR-INSTANCE-NAME>)`.
+  ![image of agent in agent overview list](/../images/agent-overview-list.png)
+
 
 
 ## Task 2: Deploy Java Management Service plugin
+1. In your agent, click **Deploy plug-ins**.
+  ![image of agent with deploy plug-ins button](/../images/agent-deploy-plugins.png)
 
+2. Check the **Java Usage Tracking** box and click **Update**.
+  ![image of checking java usage tracking box](/../images/agent-check-java-usage-tracking.png)
 
-## Task 3: Associate Management Agent with your fleet
+## Task 3: Associate the management agent with your fleet
 
+1. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**.
 
-
-## Troubleshoot Management Agent Installation Issues using Oracle Cloud Agent
-
-**For Task 1**
-* If you are unable to download the management agent software using `wget`, you may download the software from the Oracle Cloud Console to your local machine and transfer it over to your compute using Secure Copy Protocol (SCP).
-
-* First, open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**. Select the fleet that you have created.
   ![image of console navigation to java management service](/../images/console-navigation-jms.png)
 
-* Click **Set Up Management Agent**.
-  ![image of fleet details page](/../images/fleet-details-page.png)
-* Click **Download management agent software**.
-  ![image of set up management agent page](/../images/fleet-set-up-management-agent.png)
-* Open up a **Terminal** or **Command Prompt** window in the local machine where the management agent software file is saved.
-* Enter the following command to transfer the management agent software file via scp into the remote host compute instance.
+2. Select the fleet you would like to associate your agent with.
+
+3. Take note of the fleet ocid for your fleet.
+
+  ![image of fleet ocid](/../images/check-fleet-ocid.png)
+
+4. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and under **Management Agent**, click **Agents**.
+
+    ![image of console navigation to access management agent overview](/../images/management-agent-overview.png)
+
+5. Select the agent that you have just enabled in Task 1.
+
+4. Click the **Add Tags** button. Alternatively, you can click the **Tags** tab, followed by **Add Tags**.
+
+  ![image of tag tab](/../images/agent-tags.png)
+
+5. Add a `jms` tag to the management agent with the following details and click **Add Tags** once done:
+    * **Tag namespace**: jms
+    * **Tag key**: fleet_ocid
+    * **Tag value**: the OCID of your fleet
+
+  ![image of add tag to agent](/../images/add-agent-tag.png)
+
+
+## Task 4: Verify detection of Java applications and runtimes
+For the logging of applications to be visible, Java applications must be run again after the installation of the Management Agent. Now that the Management Agent has been set up in your compute instance, it will be able to detect new Java applications that have been executed. This can be observed in the Oracle Cloud Console.
+
+We shall demonstrate the detection of the Java compiler and HelloWorld application created in Lab 2.
+1. First, re-compile the HelloWorld.java file:
 
     ```
     <copy>
-    scp <full_path_of_file_to_be_transferred_on_local_host> opc@<public_IP_Address>:<full_path_of_remote_directory_transferred_to>
+    javac HelloWorld.java
     </copy>
     ```
-  * In your compute instance, verify that the file transfer is successful by entering the following. You should see your management agent software file.
+
+    Then execute the HelloWorld application:
+
     ```
     <copy>
-    ls
+    java HelloWorld
     </copy>
     ```
 
-**For Task 2**
+2. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**.
 
-* Ensure that /usr/share folder has write permissions.
-* Uninstall and reinstall the management agent after permissions for the /usr/share folder have been updated.
+  ![image of console navigation to java management](/../images/console-navigation-jms.png)
 
-**For Task 3**
+3. Select the compartment that the fleet is in and click the fleet.
 
-* Transfer the response file to /tmp folder where read permissions are allowed.
+4. Click **Java Runtimes** under **Resources**. If tagging and installation of management agents is successful, Java Runtimes will be indicated on the Fleet Main Page after 5 minutes.
+
+  You should see only one Java Runtime. This corresponds to the Java 8 installation from Lab 2.
+
+  ![image of successful installation](/../images/successful-installation.png)
+
+12. Click **Applications** under **Resources**. You should now see two applications. The first is from the javac compiler command and the second is from the HelloWorld application.
+
+  ![image of applications after successful installation](/../images/successful-installation-applications.png)
+
+  You may now **proceed to the next lab.**
 
 ## Want to Learn More?
 * Refer to the [Management Agent Concepts](https://docs.oracle.com/en-us/iaas/management-agents/doc/you-begin.html), [Installation of Management Agents](https://docs.oracle.com/en-us/iaas/management-agents/doc/install-management-agent-chapter.html) and
@@ -96,5 +128,5 @@ Select the instance that you are interested in.
 
 ## Acknowledgements
 
-* **Author** - Esther Neoh, Java Management Service
-* **Last Updated By** - Xin Yi Tay, February 2022
+* **Author** - Xin Yi Tay, Java Management Service
+* **Last Updated By** - Xin Yi Tay, March 2022
