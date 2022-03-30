@@ -44,7 +44,7 @@ In this lab, you will:
 
 6. The key is added and the **Configuration File Preview** is displayed. Click **Copy** to copy the file snippets and paste it into a text file. Save the file as **config**. 
 
-7. The file snippet includes required parameters and values you'll need to create your configuration file. Such as `key_file`, which should be assigned value of path of private key. Refer to [SDK and CLI Configuration File](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm) to see an example of configuration file and `key_file` entry.
+7. The file snippet includes required parameters and values you'll need to create your configuration file. Refer to [SDK and CLI Configuration File](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm) to see an example of configuration file and `key_file` entry.
 
   ![image of configuration file](/../images/config-file-preview.png)
 
@@ -56,7 +56,7 @@ In this lab, you will:
 
   ![image of configuration file permissions](/../images/config-file-permissions.png)
 
-  If user does not have access to GUI then can use terminal to change the permission.
+  Alternatively, you may use the Terminal to change the permissions.
 
       ```
       <copy>

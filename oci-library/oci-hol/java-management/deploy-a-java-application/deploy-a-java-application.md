@@ -159,7 +159,7 @@ In this workshop, you will:
 
   Set the **JAVA\_HOME** environment variable. To set it, go to **System variables** form -> click **New** -> enter **JAVA\_HOME** for **Variable name:** and **path/to/jdk** for **Variable value:** (for example: C:\Program Files\Java\jdk1.8.0_161).
 
-  To check if Java has been installed, in **Command Prompt** window, enter the following command. Make sure to open a new Command Prompt as the recent changes in environment variables may not reflect in previously opened Command Prompt.
+  To check if Java has been installed, in **Command Prompt** window, enter the following command. Make sure to open a new Command Prompt as the recent changes in environment variables may not be reflected in previous Command Prompt winodws.
     ```
     <copy>
     javac -help
