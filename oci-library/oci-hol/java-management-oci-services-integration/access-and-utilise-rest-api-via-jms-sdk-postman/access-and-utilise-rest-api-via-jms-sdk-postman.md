@@ -32,7 +32,7 @@ In this lab, you will:
 
     ![image of java sdk filepath](/../images/java-sdk-filepath.png)
 
-4. Add code to print the response at the end of the sample SDK code.
+4. Add the following at the end of the sample SDK code:
     ```
     <copy>
     String responseHeader = response.getEtag();

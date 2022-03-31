@@ -44,7 +44,7 @@ In this lab, you will:
 
 6. The key is added and the **Configuration File Preview** is displayed. Click **Copy** to copy the file snippets and paste it into a text file. Save the file as **config**. 
 
-7. The file snippet includes required parameters and values you'll need to create your configuration file. Refer to the [SDK and CLI Configuration File](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm) to see an example of the configuration file and `key_file` entry.
+7. The file snippet includes required parameters and values you'll need to create your configuration file. Refer to [SDK and CLI Configuration File](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm) to see an example of configuration file and `key_file` entry.
 
   ![image of configuration file](/../images/config-file-preview.png)
 
@@ -163,22 +163,7 @@ If successful, the following will be returned, with xx as your unique namespace.
   ```
 ## Task 3: Access REST API via OCI CLI
 
- Find the **fleet OCI** before accessing the REST API via OCI CLI.
-
-  * In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**.
-
-  ![image of console navigation to java management service](/../images/console-navigation-jms.png)
-
-  * Select the compartment and then the fleet. Refer to Workshop 1 if you have not setup a Fleet yet.
-
-  ![image of fleet page](/../images/check-fleet-ocid-page.png)
-
-  * Copy the fleet OCID.
-
-  ![image of fleet ocid](/../images/check-fleet-ocid.png)
-<!--  -->
-
-Now, open a Terminal or Command Prompt
+Open a **Terminal** or **Command Prompt**
 
 To get **fleet information**, run the following command.
 
@@ -203,9 +188,6 @@ To get **application usage**, run the following command.
   oci jms application-usage summarize --fleet-id "<fleet_OCID>"
   </copy>
   ```
-
-
-
 Refer to the [CLI for JMS](https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.0.5/oci_cli_docs/cmdref/jms.html) for viewing and managing fleets.
 
 ## Want to Learn More?
