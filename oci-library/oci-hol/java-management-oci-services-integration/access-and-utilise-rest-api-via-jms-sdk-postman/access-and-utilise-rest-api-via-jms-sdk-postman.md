@@ -28,46 +28,11 @@ In this lab, you will:
 
     ![image of java sdk example code](/../images/java-sdk-own.png)
 
-3. Copy the example SDK code into a .java File in the SDK downloaded. Ensure the file path for the newly created file adheres to the sample SDK code.
+3. Copy the example SDK code into a .java File in the SDK downloaded. Ensure the file path for the newly created file adheres to the sample SDK code. 
 
     ![image of java sdk filepath](/../images/java-sdk-filepath.png)
 
-4. Run it.
-
-    ![image of java sdk run](/../images/java-sdk-run.png)
-
-5. A response is generated.
-
-    ![image of java sdk output](/../images/java-sdk-response.png)
-
-### Access Java SDK for JMS via Terminal
-1. Download the latest SDK using Yum.
-
-    For Oracle Linux 7:
-    ```
-    <copy>
-    sudo yum-config-manager --enable ol7_developer
-    sudo yum install java-oci-sdk
-    </copy>
-    ```
-    
-    For Oracle Linux 8:
-    ```
-    <copy>
-    sudo yum-config-manager --enable ol8_developer
-    sudo yum install java-oci-sdk
-    </copy>
-    ```
-    These commands will download the Java SDK at `usr/lib64/java-oci-sdk/lib/oci-java-sdk-full-<version>.jar`, where the version is referring to the latest SDK version.
-
-2. Access the sample [API](https://docs.oracle.com/en-us/iaas/api/#/en/jms/20210610/Fleet/GetFleet). Copy the API code, then make a new file and name it `GetFleetExample.java` and paste the code in it.
-    ```
-    <copy>
-    sudo nano GetFleetExample.java
-    </copy> 
-    ```
-
-3. While the text editor is still open, add value for `<unique_ID>` and code to print the response in the end of file.
+4. Add code to print the response at the end of the sample SDK code.
     ```
     <copy>
     String responseHeader = response.getEtag();
@@ -77,27 +42,16 @@ In this lab, you will:
     System.out.println(responseBody);
     </copy> 
     ```
-    To save the file, press **CTRL+x**. Before exiting, nano will ask you if you wish to save the file: Type **y** to save and exit, type **n** to abandon your changes and exit.
 
-4. Compile the `GetFleetExample.java` program.
-    ```
-    <copy>
-    javac -cp "/usr/lib64/java-oci-sdk/lib/oci-java-sdk-full-<version>.jar:/usr/lib64 java-oci-sdk/third-party/lib/*" GetFleetExample.java
-    </copy> 
-    ```
-5. Run the `GetFleetExample` program.
-    ```
-    <copy>
-    java GetFleetExample
-    </copy> 
-    ```
-    You should see the response message in Terminal output. In case of error, refer to error code.
-    Refer to [Java SDK getting started](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/javasdkgettingstarted.htm) for more information.
+    ![image of java sdk example code](/../images/java-sdk-sample-code.png)
 
+4. Run it.
 
+    ![image of java sdk run](/../images/java-sdk-run.png)
 
+5. A response is generated.
 
-
+    ![image of java sdk output](/../images/java-sdk-response.png)
 
 
 

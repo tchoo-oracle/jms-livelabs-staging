@@ -169,7 +169,7 @@ To get **fleet information**, run the following command.
 
   ```
   <copy>
-  oci jms fleet get --fleet-id "ocid1.jmsfleet.oc1.<unique_ID>"
+  oci jms fleet get --fleet-id "<fleet_OCID>"
   </copy>
   ```
 
@@ -177,7 +177,7 @@ To get **jre usage**, run the following command.
 
   ```
   <copy>
-  oci jms jre-usage summarize --fleet-id "ocid1.jmsfleet.oc1.<unique_ID>"
+  oci jms jre-usage summarize --fleet-id "<fleet_OCID>"
   </copy>
   ```
 
@@ -185,7 +185,7 @@ To get **application usage**, run the following command.
 
   ```
   <copy>
-  oci jms application-usage summarize --fleet-id "ocid1.jmsfleet.oc1.<unique_ID>"
+  oci jms application-usage summarize --fleet-id "<fleet_OCID>"
   </copy>
   ```
 Refer to the [CLI for JMS](https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.0.5/oci_cli_docs/cmdref/jms.html) for viewing and managing fleets.
