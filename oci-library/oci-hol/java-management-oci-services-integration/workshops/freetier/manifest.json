@@ -1,5 +1,5 @@
 {
-    "workshoptitle": "Java Management Service - OCI Services Integration",
+    "workshoptitle": "Integrating OCI Services with Java Management Service",
     "include": {"starter-file.sql":"../../data-load/files/starter-file.sql",
                 "sample.json":"../../data-load/files/sample.json",
                 "step2.md":"../../data-load/files/step2.md"},
@@ -21,25 +21,7 @@
         {
             "title": "Lab 2: Access and Utilise REST API via JMS SDKs and Postman",
             "filename": "../../access-and-utilise-rest-api-via-jms-sdk-postman/access-and-utilise-rest-api-via-jms-sdk-postman.md"
-        },
-        {
-            "title": "Lab 3: Track Java Usage in a Container",
-            "filename": "../../track-java-usage-in-a-container/track-java-usage-in-a-container.md"
-        },
-       
-    
-        {
-            "title": "Lab 4: Site to Site",
-            "filename": "../../coming-soon/coming-soon.md"
-        },
-        {
-            "title": "Lab 5: Scripts for sales",
-            "filename": "../../coming-soon/coming-soon.md"
-        },
-
-        {
-            "title": "Lab 6: Monitoring Runtime and Alarms",
-            "filename": "../../coming-soon/coming-soon.md"
         }
+
     ]
 }
