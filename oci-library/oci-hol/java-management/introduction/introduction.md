@@ -37,6 +37,7 @@ As the stewards of Java, Oracle can provide answers to these questions. Oracle u
 * Creating a Fleet and installing management agent on your host
 * Deploy Java application and view usage in JMS
 * Understand vital concepts related to Management Agent installation
+* Installing Management Agent on non-OCI computes
 * Installing Management Agent on OCI computes using Oracle Cloud Agent (OCA)
 * Track Java Usage in a Container
 * Setup multiple managed instances and Management Gateway
@@ -47,6 +48,7 @@ As the stewards of Java, Oracle can provide answers to these questions. Oracle u
 * An Oracle Cloud Infrastructure account with valid credentials
 * A host(desktop/laptop/server/virtual machine) with Linux/Windows Operating System
 
+
 ## Learn More
 
 * [Getting Started with Java Management Service](https://docs.oracle.com/en-us/iaas/jms/doc/getting-started-java-management-service.html)
@@ -55,4 +57,4 @@ As the stewards of Java, Oracle can provide answers to these questions. Oracle u
 ## Acknowledgements
 
 * **Author** - Alvin Lam, Java Management Service
-* **Last Updated By/Date** - Teck Kian Choo, November 2021
+* **Last Updated By/Date** - Xin Yi Tay, March 2022

@@ -42,7 +42,6 @@ Select the instance that you are interested in.
   ![image of agent in agent overview list](/../images/agent-overview-list.png)
 
 
-
 ## Task 2: Deploy Java Management Service plugin
 1. In your agent, click **Deploy plug-ins**.
   ![image of agent with deploy plug-ins button](/../images/agent-deploy-plugins.png)
@@ -119,8 +118,8 @@ We shall demonstrate the detection of the Java compiler and HelloWorld applicati
   You may now **proceed to the next lab.**
 
 ## Want to Learn More?
-* Refer to the [Management Agent Concepts](https://docs.oracle.com/en-us/iaas/management-agents/doc/you-begin.html), [Installation of Management Agents](https://docs.oracle.com/en-us/iaas/management-agents/doc/install-management-agent-chapter.html) and
-[JMS Plugin for Management Agents](https://docs.oracle.com/en-us/iaas/jms/doc/installing-management-agent-java-management-service.html) sections of the JMS documentation for more details.
+* Refer to the [Management Agent Concepts](https://docs.oracle.com/en-us/iaas/management-agents/doc/you-begin.html) and
+[Configuring a Management Agent on an OCI Compute Instance](https://docs.oracle.com/en-us/iaas/jms/doc/agent-management.html) sections of the JMS documentation for more details.
 
 * Use the [Troubleshooting](https://docs.oracle.com/en-us/iaas/jms/doc/troubleshooting.html#GUID-2D613C72-10F3-4905-A306-4F2673FB1CD3) chapter for explanations on how to diagnose and resolve common problems encountered when installing or using Java Management Service.
 

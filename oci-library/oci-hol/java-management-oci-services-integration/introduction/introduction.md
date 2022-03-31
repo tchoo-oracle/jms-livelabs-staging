@@ -1,45 +1,55 @@
 # Introduction
 
+## About Java Management Service
+
+Java Management Service (JMS) is a reporting and management infrastructure integrated with Oracle Cloud Infrastructure (OCI) Platform services to observe and manage your use of Java SE (on-premises or in the Cloud).
+
+In addition to core JMS functions on the Oracle Cloud console, customers can perform various functions on JMS using OCI APIs, the OCI Command Line Interface (CLI) and JMS Software Development Kits (SDKs). With these tools, customers can obtain additional insights about their use of Java SE to aid decision making when managing Java workloads.
+
+Watch the video below for an introduction to Java Management Service and a brief demo.
+
+[](youtube:YCgJxqvglCI)
+
+As a customer, you can:
+
+* Use insights from OCI APIs to further understand and optimize your workloads across your enterprise (desktop, server, cloud); and
+* Protect your Java SE investments by identifying outdated Java installations and unauthorized applications.
+
+JMS helps systems administrators to answer questions such as:
+
+* What are all the versions of Java I have running in development and production?
+* Which vendors are providing the Java installations in my environment?
+* Are my applications using their intended Java installations?
+* Are unauthorized applications running?
+* How many outdated Java installations do I have?
+
+As the stewards of Java, Oracle can provide answers to these questions. Oracle uniquely leverages its expertise to gain critical insights into Java application behavior, compliance, and performance.
+
+
 ## About this Workshop
 
-This introduction covers the complete "parent" workshop. Use this text to set up the story for the workshop. Be engaging - what will the learner get from spending their time on this workshop?
+ This workshop will walk you through the process of setting up and using various Oracle Cloud Infrastructure (OCI) services for use with Java Management Service (JMS) on OCI. It will first walk you through the set up and use of the OCI Command Line Interface (CLI) to access JMS APIs. It will then walk you through the set up and use of JMS Software Development Kits (SDKs) and Postman to use the JMS APIs.
 
-Estimated Workshop Time: -- hours -- minutes (This estimate is for the entire workshop - it is the sum of the estimates provided for each of the labs included in the workshop.)
-
-*You may add an option video, using this format: [](youtube:YouTube video id)*
-
-  [](youtube:zNKxJjkq0Pw)
+*Estimated Time:* 100 minutes
 
 ### Objectives
 
-*List objectives for the workshop*
+* Access API via SDK for JMS (Java and Python Examples)
+* Access REST API via Postman for JMS
 
-In this workshop, you will learn how to:
-* Provision
-* Setup
-* Load
-* Query
+### Prerequisites
 
-### Prerequisites (Optional)
-
-*List the prerequisites for this lab using the format below. Fill in whatever knowledge, accounts, etc. is needed to complete the lab. **Do NOT list** each previous lab as a prerequisite.*
-
-This lab assumes you have:
-* An Oracle account
-* All previous labs successfully completed
-
-*This is the "fold" - below items are collapsed by default*
-
-In general, the Introduction does not have Steps.
+* An Oracle Cloud Infrastructure account with valid credentials
+* A host(desktop/laptop/server/virtual machine) with Linux/Windows Operating System
+* Completion of the [Manage Java Runtimes with Java Management Service](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=912) workshop
 
 ## Learn More
 
-*(optional - include links to docs, white papers, blogs, etc)*
-
-* [URL text 1](http://docs.oracle.com)
-* [URL text 2](http://docs.oracle.com)
+* [Oracle Cloud Infrastructure APIs](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/usingapi.htm)
+* [Command Line Interface](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/cliconcepts.htm)
+* [Software Development Kits](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm)
 
 ## Acknowledgements
-* **Author** - <Name, Title, Group>
-* **Contributors** -  <Name, Group> -- optional
-* **Last Updated By/Date** - <Name, Month Year>
+
+* **Author** - Xin Yi Tay, Java Management Service
+* **Last Updated By/Date** - Xin Yi Tay, March 2022
