@@ -37,7 +37,7 @@ As the stewards of Java, Oracle can provide answers to these questions. Oracle u
 * Creating a Fleet and installing management agent on your host
 * Deploy Java application and view usage in JMS
 * Understand vital concepts related to Management Agent installation
-* Installing Management Agent on non-OCI computes 
+* Installing Management Agent on non-OCI computes
 * Installing Management Agent on OCI computes using Oracle Cloud Agent (OCA)
 * Track Java Usage in a Container
 * Setup multiple managed instances and Management Gateway
@@ -48,10 +48,6 @@ As the stewards of Java, Oracle can provide answers to these questions. Oracle u
 * An Oracle Cloud Infrastructure account with valid credentials
 * A host(desktop/laptop/server/virtual machine) with Linux/Windows Operating System
 
-## Extension Workshops
-After the completion of this workshop, you may proceed to explore further workshops that demonstrate the advanced features that JMS has to offer with [Java Lifecycle Management with Java Management Service](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=912) and [Java Downloads with Java Management Service](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=912).
-
-If you would like to learn more about using JMS together with other OCI services, you may explore [Integrating OCI Services with Java Management Service](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=912).
 
 ## Learn More
 

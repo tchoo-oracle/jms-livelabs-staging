@@ -35,9 +35,6 @@ As the stewards of Java, Oracle can provide answers to these questions. Oracle u
 
 * Access API via SDK for JMS (Java and Python Examples)
 * Access REST API via Postman for JMS
-* Generate reports for JMS Fleets
-* Set up Site-to-Site VPNs for secure data transmission
-* Set up alarms for JMS
 
 ### Prerequisites
 
