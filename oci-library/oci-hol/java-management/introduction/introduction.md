@@ -47,6 +47,11 @@ As the stewards of Java, Oracle can provide answers to these questions. Oracle u
 * An Oracle Cloud Infrastructure account with valid credentials
 * A host(desktop/laptop/server/virtual machine) with Linux/Windows Operating System
 
+## Extension Workshops
+After the completion of this workshop, you may proceed to explore further workshops that demonstrate the advanced features that JMS has to offer with [Java Lifecycle Management with Java Management Service](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=912) and [Java Downloads with Java Management Service](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=912).
+
+If you would like to learn more about using JMS together with other OCI services, you may explore [Integrating OCI Services with Java Management Service](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=912).
+
 ## Learn More
 
 * [Getting Started with Java Management Service](https://docs.oracle.com/en-us/iaas/jms/doc/getting-started-java-management-service.html)
@@ -55,4 +60,4 @@ As the stewards of Java, Oracle can provide answers to these questions. Oracle u
 ## Acknowledgements
 
 * **Author** - Alvin Lam, Java Management Service
-* **Last Updated By/Date** - Teck Kian Choo, November 2021
+* **Last Updated By/Date** - Xin Yi Tay, March 2022
