@@ -2,17 +2,17 @@
 
 ## About Java Management Service
 
-Java Management Service (JMS) is a reporting and management infrastructure integrated with Oracle Cloud Infrastructure Platform services to observe and manage your use of Java SE (on-premises or in the Cloud).
+Java Management Service (JMS) is a reporting and management infrastructure integrated with Oracle Cloud Infrastructure (OCI) Platform services to observe and manage your use of Java SE (on-premises or in the Cloud).
+
+In addition to core JMS functions on the Oracle Cloud console, customers can perform various functions on JMS using OCI APIs, the OCI Command Line Interface (CLI) and JMS Software Development Kits (SDKs). With these tools, customers can obtain additional insights about their use of Java SE to aid decision making when managing Java workloads.
 
 Watch the video below for an introduction to Java Management Service and a brief demo.
 
 [](youtube:YCgJxqvglCI)
 
-
-
 As a customer, you can:
 
-* Use insights from JMS to optimize your workloads across your enterprise (desktop, server, cloud); and
+* Use insights from OCI APIs to further understand and optimize your workloads across your enterprise (desktop, server, cloud); and
 * Protect your Java SE investments by identifying outdated Java installations and unauthorized applications.
 
 JMS helps systems administrators to answer questions such as:
@@ -25,9 +25,10 @@ JMS helps systems administrators to answer questions such as:
 
 As the stewards of Java, Oracle can provide answers to these questions. Oracle uniquely leverages its expertise to gain critical insights into Java application behavior, compliance, and performance.
 
+
 ## About this Workshop
 
- This workshop will walk you through the process of setting up and using various Oracle Cloud Infrastructure (OCI) services for use with Java Management Service (JMS) on OCI. It will first walk you through the set up and use of the OCI Command Line Interface (CLI) to access JMS APIs. It will then walk you through the set up and use of JMS Software Development Kits (SDKs) and Postman to use the JMS APIs. Next, you will learn how to use scripts to generate reports for JMS Fleets. Later, you will learn how to set up a Site-to-Site Virtual Private Network (VPN) to secure data transmission between OCI networks and your on-premises hosts. Finally, you will learn how to set up alarms for JMS using the OCI Monitoring Service.
+ This workshop will walk you through the process of setting up and using various Oracle Cloud Infrastructure (OCI) services for use with Java Management Service (JMS) on OCI. It will first walk you through the set up and use of the OCI Command Line Interface (CLI) to access JMS APIs. It will then walk you through the set up and use of JMS Software Development Kits (SDKs) and Postman to use the JMS APIs.
 
 *Estimated Time:* 100 minutes
 
@@ -44,8 +45,9 @@ As the stewards of Java, Oracle can provide answers to these questions. Oracle u
 
 ## Learn More
 
-* [Getting Started with Java Management Service](https://docs.oracle.com/en-us/iaas/jms/doc/getting-started-java-management-service.html)
-* [Announcing Java Management Service](https://blogs.oracle.com/java/post/announcing-java-management-service)
+* [Oracle Cloud Infrastructure APIs](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/usingapi.htm)
+* [Command Line Interface](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/cliconcepts.htm)
+* [Software Development Kits](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm)
 
 ## Acknowledgements
 
