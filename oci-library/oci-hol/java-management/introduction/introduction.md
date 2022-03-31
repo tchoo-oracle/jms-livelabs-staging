@@ -37,6 +37,7 @@ As the stewards of Java, Oracle can provide answers to these questions. Oracle u
 * Creating a Fleet and installing management agent on your host
 * Deploy Java application and view usage in JMS
 * Understand vital concepts related to Management Agent installation
+* Installing Management Agent on non-OCI computes 
 * Installing Management Agent on OCI computes using Oracle Cloud Agent (OCA)
 * Track Java Usage in a Container
 * Setup multiple managed instances and Management Gateway
