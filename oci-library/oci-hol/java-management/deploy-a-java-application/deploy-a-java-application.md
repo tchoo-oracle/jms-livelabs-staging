@@ -62,7 +62,7 @@ In this workshop, you will:
     Review the **Networking** settings. Take the default values provided by the wizard.
 
     **Virtual cloud network**: vcn-'date'-'time'
-    * **Subnet**: vcn-'date'-'time'
+    * **Subnet**: subnet-'date'-'time'
     * **Assign a public IPv4 address**: Yes
 
     Review the **Add SSH** keys settings. Take the default values provided by the wizard.
@@ -73,7 +73,7 @@ In this workshop, you will:
 
     If you want to use your own SSH keys, select one of the options to provide your public key. Put your private and public key files in a safe location. You cannot retrieve keys again after the compute instance has been created.
 
-    Review the **Boot volume** settings. Take the default values provided by the wizard. Leave all check boxes **unchecked**.
+    Review the **Boot volume** settings. Take the default values provided by the wizard.
 
 4. Click **Create** to create the instance. Provisioning the system might take several minutes.
 
@@ -159,7 +159,7 @@ In this workshop, you will:
 
   Set the **JAVA\_HOME** environment variable. To set it, go to **System variables** form -> click **New** -> enter **JAVA\_HOME** for **Variable name:** and **path/to/jdk** for **Variable value:** (for example: C:\Program Files\Java\jdk1.8.0_161).
 
-  To check if Java has been installed, in **Command Prompt** window, enter the following command.
+  To check if Java has been installed, in **Command Prompt** window, enter the following command. Make sure to open a new Command Prompt as the recent changes in environment variables may not be reflected in previous Command Prompt winodws.
     ```
     <copy>
     javac -help
@@ -196,6 +196,7 @@ In this workshop, you will:
           //if i%2 is equal to zero, the number is even  
           if (i%2==0) {
             System.out.println(i);
+            Thread.sleep(2000);
           }
         }  
       }//End of main

@@ -28,9 +28,22 @@ In this lab, you will:
 
     ![image of java sdk example code](/../images/java-sdk-own.png)
 
-3. Copy the example SDK code into a .java File in the SDK downloaded. Ensure the file path for the newly created file adheres to the sample SDK code.
+3. Copy the example SDK code into a .java File in the SDK downloaded. Ensure the file path for the newly created file adheres to the sample SDK code. 
 
     ![image of java sdk filepath](/../images/java-sdk-filepath.png)
+
+4. Add the following at the end of the sample SDK code:
+    ```
+    <copy>
+    String responseHeader = response.getEtag();
+    String responseBody = response.toString();
+
+    System.out.println(responseHeader);
+    System.out.println(responseBody);
+    </copy> 
+    ```
+
+    ![image of java sdk example code](/../images/java-sdk-sample-code.png)
 
 4. Run it.
 
@@ -39,6 +52,8 @@ In this lab, you will:
 5. A response is generated.
 
     ![image of java sdk output](/../images/java-sdk-response.png)
+
+
 
 ### Access Python SDK for JMS
 

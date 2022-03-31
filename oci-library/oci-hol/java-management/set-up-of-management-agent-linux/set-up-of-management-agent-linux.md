@@ -11,7 +11,7 @@ Estimated Time: 15 minutes
 In this lab, you will:
 
 * Configure a response file
-* Install a management agent on a Linux / Windows compute instance host
+* Install a management agent on a Linux compute instance host
 * Verify management agent
 * Configure Java Usage Tracker
 * Tag Management Agent and Compute Instance
