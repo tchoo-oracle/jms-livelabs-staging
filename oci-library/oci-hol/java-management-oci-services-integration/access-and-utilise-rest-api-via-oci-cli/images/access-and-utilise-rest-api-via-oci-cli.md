@@ -165,6 +165,22 @@ If successful, the following will be returned, with xx as your unique namespace.
 
 Open a **Terminal** or **Command Prompt**
 
+Find the fleet OCID
+
+1. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**.
+
+  ![image of console navigation to java management service](/../images/console-navigation-jms.png)
+
+  * Select the Fleet created in Lab 3.
+
+  ![image of fleet page](/../images/check-fleet-ocid-page.png)
+
+  * Take note of the fleet ocid for steps 2-4.
+
+  ![image of fleet ocid](/../images/check-fleet-ocid.png)
+<!--  -->
+
+
 To get **fleet information**, run the following command.
 
   ```
@@ -188,6 +204,9 @@ To get **application usage**, run the following command.
   oci jms application-usage summarize --fleet-id "<fleet_OCID>"
   </copy>
   ```
+
+
+
 Refer to the [CLI for JMS](https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.0.5/oci_cli_docs/cmdref/jms.html) for viewing and managing fleets.
 
 ## Want to Learn More?
