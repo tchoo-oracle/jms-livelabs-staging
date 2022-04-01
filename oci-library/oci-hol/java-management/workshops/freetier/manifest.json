@@ -54,11 +54,6 @@
 
         },
         {
-            "title": "Lab 10: Setup Multiple Managed Instances and Management Gateway",
-            "filename": "../../set-up-multiple-managed-instances/set-up-multiple-managed-instances.md"
-        },
-        
-        {
             "title": "Need Help?",
             "description": "Solutions to Common Problems and Directions for Receiving Live Help",
             "filename": "https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/need-help/need-help-freetier.md"
