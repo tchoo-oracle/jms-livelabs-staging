@@ -42,7 +42,7 @@ In this lab, you will:
 
   ![image of download api key](/../images/api-key-download.png)
 
-6. The key is added and the **Configuration File Preview** is displayed. Click **Copy** to copy the file snippets and paste it into a text file. Save the file as **config**. 
+6. The key is added and the **Configuration File Preview** is displayed. Click **Copy** to copy the file snippets and paste it into a text file. Save the file as **config**.
 
 7. The file snippet includes required parameters and values you'll need to create your configuration file. Refer to the [SDK and CLI Configuration File](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm) to see an example of the configuration file and `key_file` entry.
 
@@ -204,9 +204,9 @@ To get **application usage**, run the following command.
   </copy>
   ```
 
-
-
 Refer to the [CLI for JMS](https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.0.5/oci_cli_docs/cmdref/jms.html) for viewing and managing fleets.
+
+You may now **proceed to the next lab.**
 
 ## Want to Learn More?
 
