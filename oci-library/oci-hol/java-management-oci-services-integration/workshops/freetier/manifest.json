@@ -21,22 +21,11 @@
         {
             "title": "Lab 2: Access and Utilise REST API via JMS SDKs and Postman",
             "filename": "../../access-and-utilise-rest-api-via-jms-sdk-postman/access-and-utilise-rest-api-via-jms-sdk-postman.md"
-
-        },
-       
-        {
-            "title": "Lab 3: Site to Site",
-            "filename": "../../coming-soon/coming-soon.md"
         },
         {
-            "title": "Lab 4: Scripts for sales",
-            "filename": "../../coming-soon/coming-soon.md"
-        },
-
-        {
-            "title": "Lab 5: Monitoring Runtime and Alarms",
-            "filename": "../../coming-soon/coming-soon.md"
+            "title": "Need Help?",
+            "description": "Solutions to Common Problems and Directions for Receiving Live Help",
+            "filename": "https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/need-help/need-help-freetier.md"
         }
-
     ]
 }

@@ -42,7 +42,7 @@ In this lab, you will:
 
   ![image of download api key](/../images/api-key-download.png)
 
-6. The key is added and the **Configuration File Preview** is displayed. Click **Copy** to copy the file snippets and paste it into a text file. Save the file as **config**. 
+6. The key is added and the **Configuration File Preview** is displayed. Click **Copy** to copy the file snippets and paste it into a text file. Save the file as **config**.
 
 7. The file snippet includes required parameters and values you'll need to create your configuration file. Refer to the [SDK and CLI Configuration File](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm) to see an example of the configuration file and `key_file` entry.
 
@@ -163,7 +163,7 @@ If successful, the following will be returned, with xx as your unique namespace.
   ```
 ## Task 3: Access REST API via OCI CLI
 
- Find the **fleet OCI** before accessing the REST API via OCI CLI.
+ 1. Obtain the **fleet OCID** before accessing the REST API via OCI CLI.
 
   * In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**.
 
@@ -178,35 +178,35 @@ If successful, the following will be returned, with xx as your unique namespace.
   ![image of fleet ocid](/../images/check-fleet-ocid.png)
 <!--  -->
 
-Now, open a Terminal or Command Prompt
+2. Open a Terminal or Command Prompt window.
 
-To get **fleet information**, run the following command.
+  To get **fleet information**, run the following command.
 
-  ```
-  <copy>
-  oci jms fleet get --fleet-id "<fleet_OCID>"
-  </copy>
-  ```
+    ```
+    <copy>
+    oci jms fleet get --fleet-id "<fleet_OCID>"
+    </copy>
+    ```
 
-To get **jre usage**, run the following command.
+  To get **jre usage**, run the following command.
 
-  ```
-  <copy>
-  oci jms jre-usage summarize --fleet-id "<fleet_OCID>"
-  </copy>
-  ```
+    ```
+    <copy>
+    oci jms jre-usage summarize --fleet-id "<fleet_OCID>"
+    </copy>
+    ```
 
-To get **application usage**, run the following command.
+  To get **application usage**, run the following command.
 
-  ```
-  <copy>
-  oci jms application-usage summarize --fleet-id "<fleet_OCID>"
-  </copy>
-  ```
-
-
+    ```
+    <copy>
+    oci jms application-usage summarize --fleet-id "<fleet_OCID>"
+    </copy>
+    ```
 
 Refer to the [CLI for JMS](https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.0.5/oci_cli_docs/cmdref/jms.html) for viewing and managing fleets.
+
+You may now **proceed to the next lab.**
 
 ## Want to Learn More?
 
