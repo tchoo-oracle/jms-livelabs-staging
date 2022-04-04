@@ -10,8 +10,8 @@ Estimated Time: 15 minutes
 
 In this lab, you will:
 
-* Create a Delete Java Runtime work request using the Java Management Service user interface
-* Create and configure an install key for installing Management Agents on your host machine
+* Create and cancel a Delete Java Runtime work request using the Java Management Service user interface
+* View and monitor the status of Delete Java Runtime work requests created using the Java Management Service user interface
 
 ### Prerequisites
 
