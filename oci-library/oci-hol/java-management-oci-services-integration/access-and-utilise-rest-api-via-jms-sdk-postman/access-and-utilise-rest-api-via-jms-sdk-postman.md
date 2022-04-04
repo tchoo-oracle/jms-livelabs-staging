@@ -22,37 +22,111 @@ In this lab, you will:
 ## Task 1: Access SDKs for JMS
 
 ### Access Java SDK for JMS
-1. Download the [SDK](https://github.com/oracle/oci-java-sdk/releases) and extract it.
 
-2. Access the sample [API](https://docs.oracle.com/en-us/iaas/api/#/en/jms/20210610/Fleet/GetFleet).
+1. Copy the sample code. The sample code initializes a `GetFleetRequest` object using `fleet_OCID` and requests details of Fleet to OCI. The response should contain Fleet name and details.
+
+    ```
+    <copy>
+    /** This is a sample code.
+    To make this code sample work in your Oracle Cloud tenancy,
+    please replace the values for any parameters whose current values do not fit
+    your use case (such as resource IDs, strings containing ‘EXAMPLE’ or ‘fleet_OCID’, and
+    boolean, number, and enum parameters with values not fitting your use case).
+    */
+    
+    import com.oracle.bmc.ConfigFileReader;
+    import com.oracle.bmc.auth.AuthenticationDetailsProvider;
+    import com.oracle.bmc.auth.ConfigFileAuthenticationDetailsProvider;
+    import com.oracle.bmc.jms.JavaManagementServiceClient;
+    import com.oracle.bmc.jms.model.*;
+    import com.oracle.bmc.jms.requests.*;
+    import com.oracle.bmc.jms.responses.*;
+    
+    
+    public class GetFleetExample {
+        public static void main(String[] args) throws Exception {
+    
+            /**
+            * Create a default authentication provider that uses the DEFAULT
+            * profile in the configuration file.
+            * Refer to <see href="https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm#SDK_and_CLI_Configuration_File>the public documentation</see> on how to prepare a configuration file.
+            */
+            final ConfigFileReader.ConfigFile configFile = ConfigFileReader.parseDefault();
+            final AuthenticationDetailsProvider provider = new ConfigFileAuthenticationDetailsProvider(configFile);
+    
+            /* Create a service client */
+            JavaManagementServiceClient client = new JavaManagementServiceClient(provider);
+    
+            /* Create a request and dependent object(s). */
+            GetFleetRequest getFleetRequest = GetFleetRequest.builder()
+                    .fleetId("<fleet_OCID>")
+                    .build();
+    
+            /* Send request to the Client */
+            GetFleetResponse response = client.getFleet(getFleetRequest);
+    
+            System.out.println(response.toString());
+            Fleet fleet = response.getFleet();
+            System.out.println(fleet.getDisplayName());
+        }
+    }
+    </copy>
+    ```
+    
+    Refer to [API Reference and Endpoints](https://docs.oracle.com/en-us/iaas/api/#/en/jms/20210610/Fleet/GetFleet) for more detail related to the sample API code.
+
+
+2. Create a new Java Maven project. Name it as **GetFleetExample** and paste the sample API code in it. Add the Fleet OCID at **fleet_OCID** placeholder. Refer to Task 1 to check how to find the fleet OCID
 
     ![image of java sdk example code](/../images/java-sdk-own.png)
 
-3. Copy the example SDK code into a .java File in the SDK downloaded. Ensure the file path for the newly created file adheres to the sample SDK code.
-
-    ![image of java sdk filepath](/../images/java-sdk-filepath.png)
-
-4. Add the following at the end of the sample SDK code:
+3. In pom.xml file add the dependencies and build the project.
     ```
     <copy>
-    String responseHeader = response.getEtag();
-    String responseBody = response.toString();
-
-    System.out.println(responseHeader);
-    System.out.println(responseBody);
-    </copy>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <project xmlns="http://maven.apache.org/POM/4.0.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        <modelVersion>4.0.0</modelVersion>
+    
+        <groupId>org.example</groupId>
+        <artifactId>GetFleetExample</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    
+        <properties>
+            <maven.compiler.source>8</maven.compiler.source>
+            <maven.compiler.target>8</maven.compiler.target>
+        </properties>
+    
+        <dependencyManagement>
+            <dependencies>
+                <dependency>
+                    <groupId>com.oracle.oci.sdk</groupId>
+                    <artifactId>oci-java-sdk-bom</artifactId>
+                    <!-- Version 2.21.0 is the latest version at the time of writing-->
+                    <!-- Obtain the latest sdk version from https://github.com/oracle/oci-java-sdk/releases-->
+                    <version>2.21.0</version>
+                    <type>pom</type>
+                    <scope>import</scope>
+                </dependency>
+            </dependencies>
+        </dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.oracle.oci.sdk</groupId>
+                <artifactId>oci-java-sdk-jms</artifactId>
+            </dependency>
+        </dependencies>
+    
+    </project>
+    </copy> 
     ```
+    
+    Check for latest version of oci-java-sdk-bom from [Github oci-java-sdk ](https://github.com/oracle/oci-java-sdk/releases) .
 
-    ![image of java sdk example code](/../images/java-sdk-sample-code.png)
+4. Run the program. You should see the response in output.
 
-4. Run it.
-
-    ![image of java sdk run](/../images/java-sdk-run.png)
-
-5. A response is generated.
-
-    ![image of java sdk output](/../images/java-sdk-response.png)
-
+     ![image of java sdk output](/../images/java-sdk-response.png)
 
 
 ### Access Python SDK for JMS
