@@ -17,7 +17,7 @@ In this lab, you will:
 
 * You have signed up for an account with Oracle Cloud Infrastructure and have received your sign-in credentials.
 * You are using an Oracle Linux image on your host machine or compute instance for this workshop.
-* Access to the cloud environment and resources configured in Lab 5
+* Access to the cloud environment and resources configured in Lab 1
 
 ## Task 1: Access SDKs for JMS
 
@@ -199,8 +199,6 @@ The steps above can be applied for the Typescript, .NET, Ruby and GO SDKs.
 3. Fleet information will be retrieved and a 200 response reported.
 
     ![image of get fleet response](/../images/get-fleet-200.png)
-
-You may now **proceed to the next lab.**
 
 ## Troubleshoot Postman Issues
 

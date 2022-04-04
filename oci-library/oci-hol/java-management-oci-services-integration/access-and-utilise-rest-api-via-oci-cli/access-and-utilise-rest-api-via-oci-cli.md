@@ -204,9 +204,9 @@ If successful, the following will be returned, with xx as your unique namespace.
     </copy>
     ```
 
-
-
 Refer to the [CLI for JMS](https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.0.5/oci_cli_docs/cmdref/jms.html) for viewing and managing fleets.
+
+You may now **proceed to the next lab.**
 
 ## Want to Learn More?
 
