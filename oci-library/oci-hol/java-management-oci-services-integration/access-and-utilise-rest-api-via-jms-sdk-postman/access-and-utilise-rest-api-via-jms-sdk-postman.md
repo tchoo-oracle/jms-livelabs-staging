@@ -33,7 +33,7 @@ In this lab, you will:
     your use case (such as resource IDs, strings containing ‘EXAMPLE’ or ‘fleet_OCID’, and
     boolean, number, and enum parameters with values not fitting your use case).
     */
-    
+
     import com.oracle.bmc.ConfigFileReader;
     import com.oracle.bmc.auth.AuthenticationDetailsProvider;
     import com.oracle.bmc.auth.ConfigFileAuthenticationDetailsProvider;
@@ -41,11 +41,11 @@ In this lab, you will:
     import com.oracle.bmc.jms.model.*;
     import com.oracle.bmc.jms.requests.*;
     import com.oracle.bmc.jms.responses.*;
-    
-    
+
+
     public class GetFleetExample {
         public static void main(String[] args) throws Exception {
-    
+
             /**
             * Create a default authentication provider that uses the DEFAULT
             * profile in the configuration file.
@@ -53,18 +53,18 @@ In this lab, you will:
             */
             final ConfigFileReader.ConfigFile configFile = ConfigFileReader.parseDefault();
             final AuthenticationDetailsProvider provider = new ConfigFileAuthenticationDetailsProvider(configFile);
-    
+
             /* Create a service client */
             JavaManagementServiceClient client = new JavaManagementServiceClient(provider);
-    
+
             /* Create a request and dependent object(s). */
             GetFleetRequest getFleetRequest = GetFleetRequest.builder()
                     .fleetId("<fleet_OCID>")
                     .build();
-    
+
             /* Send request to the Client */
             GetFleetResponse response = client.getFleet(getFleetRequest);
-    
+
             System.out.println(response.toString());
             Fleet fleet = response.getFleet();
             System.out.println(fleet.getDisplayName());
@@ -72,7 +72,7 @@ In this lab, you will:
     }
     </copy>
     ```
-    
+
     Refer to [API Reference and Endpoints](https://docs.oracle.com/en-us/iaas/api/#/en/jms/20210610/Fleet/GetFleet) for more detail related to the sample API code.
 
 
@@ -88,16 +88,16 @@ In this lab, you will:
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
         <modelVersion>4.0.0</modelVersion>
-    
+
         <groupId>org.example</groupId>
         <artifactId>GetFleetExample</artifactId>
         <version>1.0-SNAPSHOT</version>
-    
+
         <properties>
             <maven.compiler.source>8</maven.compiler.source>
             <maven.compiler.target>8</maven.compiler.target>
         </properties>
-    
+
         <dependencyManagement>
             <dependencies>
                 <dependency>
@@ -117,11 +117,11 @@ In this lab, you will:
                 <artifactId>oci-java-sdk-jms</artifactId>
             </dependency>
         </dependencies>
-    
+
     </project>
-    </copy> 
+    </copy>
     ```
-    
+
     Check for latest version of oci-java-sdk-bom from [Github oci-java-sdk ](https://github.com/oracle/oci-java-sdk/releases) .
 
 4. Run the program. You should see the response in output.
