@@ -34,7 +34,7 @@ This key has been automatically created for you in Lab 2, where the "Create New 
 
   ![image of create fleet options page](/../images/create-fleet.png)
 
-* **Response File**: For Management Agent installation to take place, a response file is also required. In Lab 2, we clicked **Download Install Key** during the creation of our fleet. The file that we downloaded is the response file which contains the install key, as observed in the `ManagementAgentInstallKey` field. The last line of our response file `Service.plugin.jms.download=true` will also download and enable the JMS plugin.
+* **Response File**: For Management Agent installation to take place, a response file is also required. In Lab 2, we clicked **Download Install Key** during the creation of our fleet. The file that we downloaded is the response file which contains the install key, as observed in the `ManagementAgentInstallKey` field. The line in our response file `Service.plugin.jms.download=true` will also download and enable the JMS plugin.
 
   ![image of input rsp file](/../images/input-rsp-updated.png)
 
