@@ -85,12 +85,12 @@ Do not disturb the setup in this time and only proceed after the status of the M
 1. Configure Java Usage Tracker by executing the following JMS service plug-in setup scripts:
     ```
     <copy>
-    VERSION=$(sudo ls /opt/oracle/mgmt_agent/agent_inst/config/destinations/OCI/services/jms/)
+    VERSION=$(sudo ls /var/lib/oracle-cloud-agent/plugins/oci-managementagent/polaris/agent_inst/config/destinations/OCI/services/jms/)
     </copy>
     ```
     ```
     <copy>
-    sudo bash /opt/oracle/mgmt_agent/agent_inst/config/destinations/OCI/services/jms/"${VERSION}"/scripts/setup.sh
+    sudo bash /var/lib/oracle-cloud-agent/plugins/oci-managementagent/polaris/agent_inst/config/destinations/OCI/services/jms/"${VERSION}"/scripts/setup.sh
     </copy>
     ```
 
