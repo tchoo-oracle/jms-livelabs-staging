@@ -29,7 +29,7 @@ Select the instance that you are interested in.
 
   ![image of console navigation to compute instances](/../images/console-navigation-instance.png)
 
-2. Click the **Oracle Cloud Agent** tab. The list of plugins is displayed. Toggle the Enabled switch for the Management Agent plugin.
+2. Click the **Oracle Cloud Agent** (OCA) tab. The list of OCA plugins is displayed. Toggle the Enabled switch for the Management Agent plugin.
 
   ![image of enable management agent plugin](/../images/enable-management-agent-plugin.png)
 
@@ -49,7 +49,7 @@ Do not disturb the setup in this time and only proceed after the status of the M
 1. In your agent, click **Deploy plug-ins**.
   ![image of agent with deploy plug-ins button](/../images/agent-deploy-plugins.png)
 
-2. Check the **Java Usage Tracking** box and click **Update**.
+2. Check the **Java Usage Tracking** box and click **Update**. This will deploy the Java Usage Tracking service plugin.
   ![image of checking java usage tracking box](/../images/agent-check-java-usage-tracking.png)
 
 ## Task 3: Associate the management agent with your fleet
