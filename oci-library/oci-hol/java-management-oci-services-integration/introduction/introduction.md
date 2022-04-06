@@ -2,6 +2,7 @@
 
 ## About Java Management Service
 
+
 Java Management Service (JMS) is a reporting and management infrastructure integrated with Oracle Cloud Infrastructure (OCI) Platform services to observe and manage your use of Java SE (on-premises or in the Cloud).
 
 In addition to core JMS functions on the Oracle Cloud console, customers can perform various functions on JMS using OCI APIs, the OCI Command Line Interface (CLI) and JMS Software Development Kits (SDKs). With these tools, customers can obtain additional insights about their use of Java SE to aid decision making when managing Java workloads.
@@ -42,6 +43,8 @@ As the stewards of Java, Oracle can provide answers to these questions. Oracle u
 * An Oracle Cloud Infrastructure account with valid credentials
 * A host(desktop/laptop/server/virtual machine) with Linux/Windows Operating System
 * Completion of the [Manage Java Runtimes with Java Management Service](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=912) workshop
+* [dynamic test link. please ignore](?lab=deploy-a-java-application.md)
+
 
 ## Learn More
 
