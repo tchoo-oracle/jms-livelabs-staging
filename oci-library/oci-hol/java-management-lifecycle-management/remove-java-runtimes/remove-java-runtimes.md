@@ -10,8 +10,9 @@ Estimated Time: 15 minutes
 
 In this lab, you will:
 
-* Create and cancel a Delete Java Runtime work request using the Java Management Service user interface
-* View and monitor the status of Delete Java Runtime work requests created using the Java Management Service user interface
+* Create a Delete Java Runtime Work Request using the Java Management Service user interface
+* Cancel a Delete Java Runtime Work Request using the same user interface
+
 
 ### Prerequisites
 
@@ -19,7 +20,7 @@ In this lab, you will:
 * You are using an Oracle Linux image on your host machine or compute instance for this workshop.
 * Access to the cloud environment and resources configured in Lab 1.
 
-## Task 1: Submit Delete Java Runtime work request
+## Task 1: Submit Delete Java Runtime Work Request
 
 1. First, open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**. Select the fleet that you are interested in.
  ![image of console navigation to java management service](/../images/console-navigation-jms.png)
@@ -40,12 +41,12 @@ In this lab, you will:
   If your request is submitted successfully, you should receive a notification in green as seen below:
   ![image of submitted delete java runtime work request](/../images/delete-java-runtime-work-request-submitted.png)
 
-## Task 2: Cancel Delete work request
-1. In the same **Java Management** page, under **Resources**, select **Work Requests**. You should see the Delete Java Runtime work request you submitted in Task 1. Click on the work request to view its details.
+## Task 2: Cancel Delete Work Request
+1. In the same **Java Management** page, under **Resources**, select **Work Requests**. You should see the Delete Java Runtime Work Request you submitted in Task 1. Click on the Work Request to view its details.
  ![image of work request summary page](/../images/work-request-summary-page.png)
 
 
-2. If your work request is still in progress and you would like to cancel it, click **Cancel Work Request**.
+2. If your Work Request is still in progress and you would like to cancel it, click **Cancel Work Request**.
   ![image of work request details page](/../images/delete-work-request-details-page.png)
 
 3. Click **Cancel work request** again to confirm.
@@ -54,23 +55,11 @@ In this lab, you will:
 4. If your request has been canceled successfully, you should see that the **Status** of the request is marked as **Canceled**.
   ![image of cancelled delete work request](/../images/canceled-delete-work-request.png)
 
-## Task 3: View status and logs related to Delete work request
-1. In the same **Java Management** page, under **Resources**, select **Work Requests**. You should see the Delete Java Runtime work request you submitted in Task 1. Click on the work request to view its details.
- ![image of work request summary page](/../images/work-request-summary-page.png)
-
-2. If your request was successful, you should see that the **Status** of the request is marked as **Succeeded** and **Completed without errors**.
- ![image of successful delete work request](/../images/delete-java-runtime-succeeded.png)
-
-3. If you would like to view the log messages for the Delete Java Runtime work request, select **Log Messages** under **Resources**. You should see the log messages in detail.
- ![image of delete work request log messages](/../images/delete-work-request-log-messages.png)
-
-
- For a more detailed overview of viewing and monitoring work requests, you may refer to Lab 3.
 
  You may now **proceed to the next lab.**
 
 ## Want to Learn More?
-* Refer to the [Fleet Management](https://docs.oracle.com/en-us/iaas/jms/doc/fleet-management.html) section of the JMS documentation for more details.
+* Refer to the [Java Runtime Lifecycle Management](https://docs.oracle.com/en-us/iaas/jms/doc/java-runtime-lifecycle-management.html), [Work Request](https://docs.oracle.com/en-us/iaas/jms/doc/getting-started-java-management-service.html#GUID-47C63464-BC0C-4059-B552-ED9F33E77ED3) and [Viewing a Work Request](https://docs.oracle.com/en-us/iaas/jms/doc/fleet-views.html#GUID-F649F0E5-DD54-4DEC-A0F1-942FE3552C93) sections of the JMS documentation for more details.
 
 * Use the [Troubleshooting](https://docs.oracle.com/en-us/iaas/jms/doc/troubleshooting.html#GUID-2D613C72-10F3-4905-A306-4F2673FB1CD3) chapter for explanations on how to diagnose and resolve common problems encountered when installing or using Java Management Service.
 
