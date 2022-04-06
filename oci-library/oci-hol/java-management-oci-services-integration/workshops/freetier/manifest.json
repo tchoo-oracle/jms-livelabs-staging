@@ -2,7 +2,9 @@
     "workshoptitle": "Integrating OCI Services with Java Management Service",
     "include": {"starter-file.sql":"../../data-load/files/starter-file.sql",
                 "sample.json":"../../data-load/files/sample.json",
-                "step2.md":"../../data-load/files/step2.md"},
+                "step2.md":"../../data-load/files/step2.md",
+    "deploy-a-java-application.md":"../../../java-management/deploy-a-java-application/deploy-a-java-application.md"},
+    
     "help": "livelabs-help-**enterarea**_us@oracle.com",
     "tutorials": [
         {
