@@ -1,45 +1,43 @@
 # Introduction
 
-## About this Workshop
+## About the Java Runtime Lifecycle Management
 
-This introduction covers the complete "parent" workshop. Use this text to set up the story for the workshop. Be engaging - what will the learner get from spending their time on this workshop?
+Lifecycle Management (LCM) is a part of JMS's reporting and management infrastructure. JMS enables users to observe and manage the lifecycles of their Java SE runtimes (on-premises or in the Cloud) by performing LCM operations such as Removing Java Runtimes.
 
-Estimated Workshop Time: -- hours -- minutes (This estimate is for the entire workshop - it is the sum of the estimates provided for each of the labs included in the workshop.)
+As a customer, you can:
+  * View and Identify the Java Runtimes.
+  * Remove unwanted Java Runtimes.
+  * View and understand various status and logs related to LCM work requests.
 
-*You may add an option video, using this format: [](youtube:YouTube video id)*
+## About this Workshop 
 
-  [](youtube:zNKxJjkq0Pw)
+Java Management Service (JMS) is a reporting and management infrastructure integrated with Oracle Cloud Infrastructure Platform services to observe and manage your use of Java SE (on-premises or in the Cloud). Java Runtime can be viewed and identified in fleet after successful JMS setup on Host. Further, these Java Runtimes can be managed by performing various Lifecycle Management (LCM) operations.
+
+In order to perform these LCM operations almost no or minor configuration changes are required. This workshop will walk you through the steps to verify the installation of OCA (Oracle Cloud Agent) and required plugins on OCI computer instances, followed by configuration changes in non-OCI hosts. Next, you will learn how to review and identify the Java Runtimes in OCI console, this is where you will perform most of the LCM operations. Later, you will learn how to remove a Java Runtime using OCI console and cancel or view a work request. You will also get to view status and logs related to delete work requests. Finally, the workshop will show you how to view and monitor Lifecycle Management requests.
+
+<em>Estimated Time:</em> 60 minutes 
 
 ### Objectives
 
-*List objectives for the workshop*
+* Configuring and Verifying the Host for LCM
+* View and Identify the Java Runtimes
+* Understand LCM Operations
+* Demonstrate Remove Java Runtimes LCM operation
+* View and Monitor LCM Work Requests
 
-In this workshop, you will learn how to:
-* Provision
-* Setup
-* Load
-* Query
 
-### Prerequisites (Optional)
+### Prerequisites 
 
-*List the prerequisites for this lab using the format below. Fill in whatever knowledge, accounts, etc. is needed to complete the lab. **Do NOT list** each previous lab as a prerequisite.*
+  * You have signed up for an account with Oracle Cloud Infrastructure and have received your sign-in credentials.
+  * You are using an Oracle Linux image on your host machine or compute instance for this workshop.
+  * Access to the cloud environment and resources configured in [Workshop 1](../../java-management/workshops/freetier/index.html?lab=set-up-oci-for-jms/set-up-oci-for-jms).
 
-This lab assumes you have:
-* An Oracle account
-* All previous labs successfully completed
 
-*This is the "fold" - below items are collapsed by default*
-
-In general, the Introduction does not have Steps.
 
 ## Learn More
 
-*(optional - include links to docs, white papers, blogs, etc)*
-
-* [URL text 1](http://docs.oracle.com)
-* [URL text 2](http://docs.oracle.com)
+* [Java Runtime Lifecycle Management](https://docs.oracle.com/en-us/iaas/jms/doc/java-runtime-lifecycle-management.html)
 
 ## Acknowledgements
-* **Author** - <Name, Title, Group>
-* **Contributors** -  <Name, Group> -- optional
-* **Last Updated By/Date** - <Name, Month Year>
+* **Author** - Bhuvesh Kumar, Java Management Service
+* **Last Updated By** - Bhuvesh Kumar, April 2022
