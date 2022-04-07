@@ -46,12 +46,12 @@ Before the set up of the Management Agent, it is important to understand the con
 
 * **Management Agents**: Can be installed on a host to allow a service plug-in to collect data from the host where you installed the Management Agent. In the case of JMS, the management agent allows the **Java Usage Tracking service plugin** to track your use of Java.
 
-  As part of the set up of JMS on an OCI compute instance, you will need to deploy the Management Agent. This can be deployed through the **Management Agent plugin** in the **Oracle Cloud Agent**.
-    ![image of oca with management agent plugin](/../images/oca-management-agent-plugin.png)
+* **Oracle Cloud Agent (OCA)**: A lightweight process that manages **OCA plugins** running on compute instances. When you are using compute instances, you can deploy Management Agents by using the Oracle Cloud Agent.
 
-* **Oracle Cloud Agent (OCA)**: A lightweight process that manages **OCA plugins** running on compute instances.
+    As part of the set up of JMS on an OCI compute instance, the Management Agent will be deployed through the **Management Agent plugin** in OCA.
+    ![image of oca with management agent plugin](/../images/oca-management-agent-plugin.png)
 
 * **Management Agent OCA plugin**: Helps to collect data from resources such as OSs, applications, and infrastructure resources for Oracle Cloud Infrastructure services that are integrated with Management Agent. Data can include observability, log, configuration, capacity, and health data.
 
-* **Java Usage Tracking service plugin**: A service plugin that collects data about Java Applications, Java Runtimes and Installations from the host which can be either on-premises or in the Cloud. It is important to note that this is a service plugin that is deployed as part of the Management Agent, and is different from OCA plugins.
+* **Java Usage Tracking service plugin**: A Service Plugin allows Management Agents to interact with data sources and send the data back to the cloud service. In the case of the Java Usage Tracking service plugin, data about Java Applications, Java Runtimes and Installations is collected from the host which can be either on-premises or in the Cloud. It is important to note that this is a service plugin that is deployed to interact with the Management Agent, and is different from OCA plugins.
   ![image of java usage tracking service plugin](/../images/java-usage-tracking-service-plugin.png)
