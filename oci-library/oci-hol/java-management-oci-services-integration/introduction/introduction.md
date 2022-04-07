@@ -40,7 +40,7 @@ _Estimated Time:_ 100 minutes
 
 - An Oracle Cloud Infrastructure account with valid credentials
 - A host(desktop/laptop/server/virtual machine) with Linux/Windows Operating System
-- Completion of the [Manage Java Runtimes with Java Management Service](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=912) workshop
+- Completion of the [Manage Java Runtimes with Java Management Service](../../java-management/workshops/freetier/index.html?lab=introduction/introduction) workshop
 
 ## Learn More
 
