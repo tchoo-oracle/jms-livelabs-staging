@@ -49,8 +49,8 @@ Install Management Agent (If your host is Linux, skip to skip to Lab 5: Install 
     To check if you are currently running the Command Prompt as an Administrator, enter the following:
     ```
     <copy>
-    SETLOCAL 
-    PATH=C:\Windows\system32;%PATH% 
+    SETLOCAL
+    PATH=C:\Windows\system32;%PATH%
     ECHO Administrative permissions required for installation of management agent. Detecting permissions...
 
     NET SESSION >nul 2>&1
@@ -81,7 +81,7 @@ Install Management Agent (If your host is Linux, skip to skip to Lab 5: Install 
     REM Temporary prefix path variable with system32 to prefer system commands
     SETLOCAL
     PATH=C:\Windows\system32;%PATH%
-    
+
     REM STEP1: CHECKING FOR ADMINISTRATOR PERMISSIONS
     ECHO Administrative permissions required for installation of management agent. Detecting permissions...
     NET SESSION >nul 2>&1
@@ -91,25 +91,25 @@ Install Management Agent (If your host is Linux, skip to skip to Lab 5: Install 
       ECHO Failure: Current permissions insufficient. Please reopen the Command Prompt with administrative permissions.
       EXIT /B 1
     )
-    
+
     SET argC=0
     SET javaHome=%1
     SET rspPath=%2
-    
+
     set rspPath=%rspPath:"=%
     set javaHome=%javaHome:"=%
-    
+
     FOR %%x in (%*) do Set /A argC+=1
-    
+
     IF %argC% LSS 2 (
         ECHO Minimum arguments are missing
         ECHO Usage:- To execute: installer-wrapper.bat "<Java Home path>" "<Full_Path_To_Input.rsp>"
         ECHO Usage:- Use system env variables for paths: "C:\PROGRA~1" instead of "C:\Program Files" and "C:\PROGRA~2" instead of "C:\Program Files (x86)"
         EXIT /b 1
       )
-    
+
     REM ECHO parameters passed : %*
-    
+
     REM STEP2: SET JAVA HOME
     ECHO setting JAVA_HOME to %javaHome%
     REM Check if bin\java exists
@@ -121,7 +121,7 @@ Install Management Agent (If your host is Linux, skip to skip to Lab 5: Install 
         ECHO Usage:- Use system env variables for paths: "C:\PROGRA~1" instead of "C:\Program Files" and "C:\PROGRA~2" instead of "C:\Program Files (x86)"
         EXIT /b 1
       )
-    
+
     REM STEP3: SET VERSION CHECK
     SET OVERRIDE_VERSION_CHECK=true
     REM STEP4: INSTALL AGENT
@@ -338,7 +338,7 @@ We shall demonstrate the detection of the Java compiler and HelloWorld applicati
 
 4. Click **Java Runtimes** under **Resources**. If tagging and installation of management agents is successful, Java Runtimes will be indicated on the Fleet Main Page after 5 minutes.
 
-  You should see only one Java Runtime. This corresponds to the Java 8 installation from Lab 2.
+  You should see only one Java Runtime. This corresponds to the Java 8 installation from Lab 3.
 
   ![image of successful installation](/../images/successful-installation.png)
 

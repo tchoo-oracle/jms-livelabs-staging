@@ -31,7 +31,7 @@ In this lab, you will:
 
 2. Enter the following command to download the management agent software file via wget into the remote host compute instance.
 
-  
+
   Download the management agent software using wget:
 
     ```
@@ -40,7 +40,7 @@ In this lab, you will:
     </copy>
     ```
 
- 
+
 3. Create an input.rsp response file on your instance. This will be used by the Management Agent installation script to read the agent parameters specific to your environment.
 
     ```
@@ -256,7 +256,7 @@ We shall demonstrate the detection of the Java compiler and HelloWorld applicati
 
 4. Click **Java Runtimes** under **Resources**. If tagging and installation of management agents is successful, Java Runtimes will be indicated on the Fleet Main Page after 5 minutes.
 
-  You should see only one Java Runtime. This corresponds to the Java 8 installation from Lab 2.
+  You should see only one Java Runtime. This corresponds to the Java 8 installation from Lab 3.
 
   ![image of successful installation](/../images/successful-installation.png)
 
