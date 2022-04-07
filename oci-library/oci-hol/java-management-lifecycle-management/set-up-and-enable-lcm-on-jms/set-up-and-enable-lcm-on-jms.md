@@ -2,128 +2,153 @@
 
 ## Introduction
 
-This lab walks you through the steps to set up and enable Lifecycle Management operations on your Fleet for use with Java Management Service (JMS).
+Before you can use Lifecycle Management operations, you must ensure that your Oracle Cloud Infrastructure environment is set up correctly to allow the communication flow between all required components and cloud services. 
 
-Estimated Time: TO BE FILLED IN
+
+<em>Estimated Time:</em> 30 minutes
 
 ### Objectives
 
 In this lab, you will:
 
-*
-*
-*
+  *  Configure an existing OCI or non-OCI host to enable LCM operations.
+  *  View and identify installed Java Runtimes
+  *  Understanding various specifications of Java Runtimes
+
+
+
+  
 
 ### Prerequisites
+ 
+ * You have signed up for an account with Oracle Cloud Infrastructure and have received your sign-in credentials.
+ * You are using an Oracle Linux image on your host machine or compute instance for this workshop.
+ * Access to the cloud environment and resources configured in [Workshop 1](../../java-management/workshops/freetier/index.html?lab=set-up-oci-for-jms/set-up-oci-for-jms).
+ * You have successfully completed setup of Install Management task in [Workshop 1](../../java-management/workshops/freetier/index.html?lab=understand-concepts-related-to-management-agent/understand-concepts-related-to-management-agent) and installed Management Agent on your OCI host or non-OCI host.
 
-* You have signed up for an account with Oracle Cloud Infrastructure and have received your sign-in credentials.
-* You are using an Oracle Linux image on your host machine or compute instance for this workshop.
-* ADD AS NEEDED
+## Task 1: Configure an existing OCI or non-OCI host to enable LCM operations
 
-## Task 1: Enable Management Agent Plugin on Compute Instances
+As mentioned in prerequisites, the Host should have setup and installed Management Agent successfully. Please complete the [Workshop 1](../../java-management/workshops/freetier/index.html?lab=understand-concepts-related-to-management-agent/understand-concepts-related-to-management-agent), if you have not finished Management Agent Installation yet. Otherwise, follow the steps below to verify and enable LCM operations.
 
-1. In the Oracle Cloud Console, open the navigation menu, click **Compute**, and then click **Instances**.
-Select the instance that you are interested in.
+### **Existing OCI Compute Instance host**
+If you are using an OCI compute instance and it already has the Management Agent installation using OCA and plugin deployed, then you can already start using LCM features.
 
-  ![image of console navigation to compute instances](/../images/console-navigation-instance.png)
+The below given steps will help you verify the OCA installation package version and update it, if an update is available.
 
-2. Click the **Oracle Cloud Agent** tab. The list of plugins is displayed. Toggle the Enabled switch for the Management Agent plugin.
+1. Access OCI Computer Instance via SSH.
 
-  ![image of enable management agent plugin](/../images/enable-management-agent-plugin.png)
-
-3. Ensure that the status of the Management Agent plugin is set to **Running**.
-  ![image of management agent plugin with running status](/../images/management-agent-plugin-running.png)
-
-5. We will need to verify that our agent is enabled successfully. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and under **Management Agent**, click **Agents**.
-
-  ![image of console navigation to access management agent overview](/../images/management-agent-overview.png)
-
-6. Ensure that your agent is in the list of agents. The name of the Agent should be of the form of  `Agent(<YOUR-INSTANCE-NAME>)`.
-  ![image of agent in agent overview list](/../images/agent-overview-list.png)
-
-
-## Task 2: Deploy Java Management Service plugin
-1. In your agent, click **Deploy plug-ins**.
-  ![image of agent with deploy plug-ins button](/../images/agent-deploy-plugins.png)
-
-2. Check the **Java Usage Tracking** box and click **Update**.
-  ![image of checking java usage tracking box](/../images/agent-check-java-usage-tracking.png)
-
-## Task 3: Associate the management agent with your fleet
-
-1. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**.
-
-  ![image of console navigation to java management service](/../images/console-navigation-jms.png)
-
-2. Select the fleet you would like to associate your agent with.
-
-3. Take note of the fleet ocid for your fleet.
-
-  ![image of fleet ocid](/../images/check-fleet-ocid.png)
-
-4. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and under **Management Agent**, click **Agents**.
-
-    ![image of console navigation to access management agent overview](/../images/management-agent-overview.png)
-
-5. Select the agent that you have just enabled in Task 1.
-
-4. Click the **Add Tags** button. Alternatively, you can click the **Tags** tab, followed by **Add Tags**.
-
-  ![image of tag tab](/../images/agent-tags.png)
-
-5. Add a `jms` tag to the management agent with the following details and click **Add Tags** once done:
-    * **Tag namespace**: jms
-    * **Tag key**: fleet_ocid
-    * **Tag value**: the OCID of your fleet
-
-  ![image of add tag to agent](/../images/add-agent-tag.png)
-
-
-## Task 4: Verify detection of Java applications and runtimes
-For the logging of applications to be visible, Java applications must be run again after the installation of the Management Agent. Now that the Management Agent has been set up in your compute instance, it will be able to detect new Java applications that have been executed. This can be observed in the Oracle Cloud Console.
-
-We shall demonstrate the detection of the Java compiler and HelloWorld application created in Lab 2.
-1. First, re-compile the HelloWorld.java file:
-
+2. Check the version of current OCA installation package.
     ```
     <copy>
-    javac HelloWorld.java
+    yum info oracle-cloud-agent
+    </copy>
+    ```
+  If current version of the OCA installation package is the latest one, then no further steps are required. Else you should see output something like this:
+    ![image of terminal showing how to check for available oca packages](/../images/oca-version-checking-console.png)
+
+3. Update the OCA Installation Package.
+    ```
+    <copy>
+    rpm -qa | grep oracle-cloud-agent
+
+    yum update oracle-cloud-agent -y
     </copy>
     ```
 
-    Then execute the HelloWorld application:
+### **Existing non-OCI Host**
+If you are using a non-OCI Host and it has the Management Agent installation done following the steps in the [Workshop 1](../../java-management/workshops/freetier/index.html?lab=understand-concepts-related-to-management-agent/understand-concepts-related-to-management-agent), then you just need to make a few changes to start using LCM features.
+
+1. Uninstall the Management Agent.
 
     ```
     <copy>
-    java HelloWorld
+    sudo rpm -e oracle.mgmt_agent
     </copy>
     ```
 
-2. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**.
+2. Edit the response file and add `Service.plugin.jm.download=true` at the bottom and then save the file. Please refer to instructions in [Understand Concepts Related to Management Agent Installation lab](../../java-management/workshops/freetier/index.html?lab=understand-concepts-related-to-management-agent/understand-concepts-related-to-management-agent) on how to create a response file.
 
-  ![image of console navigation to java management](/../images/console-navigation-jms.png)
+3. Open the `/etc/sudoers` file 
+    ```
+    <copy>
+    sudo nano /etc/sudoers
+    </copy>
+    ```
 
-3. Select the compartment that the fleet is in and click the fleet.
+  Add the following to the end of the file:
+    ```
+    <copy>
+    #To change ownership of the Java Management Service plugin to root 
+    mgmt_agent ALL=(ALL) NOPASSWD:/opt/oracle/mgmt_agent/agent_inst/bin/chown_recursive_ep.sh 
+    #To run the Java Management Service plugin under root user 
+    mgmt_agent ALL=(root) NOPASSWD: ALL
+    </copy>
+    ```
 
-4. Click **Java Runtimes** under **Resources**. If tagging and installation of management agents is successful, Java Runtimes will be indicated on the Fleet Main Page after 5 minutes.
+    To save the file, press **CTRL+x**. Before exiting, nano will ask you if you wish to save the file: Type **y** to save and exit, type **n** to abandon your changes and exit.
 
-  You should see only one Java Runtime. This corresponds to the Java 8 installation from Lab 2.
+4. Reinstall the Management Agent following the steps in [Install Management Agent on non-OCI Hosts - Linux  lab](../../java-management/workshops/freetier/index.html?lab=set-up-of-management-agent-linux/set-up-of-management-agent-linux).
 
-  ![image of successful installation](/../images/successful-installation.png)
 
-12. Click **Applications** under **Resources**. You should now see two applications. The first is from the javac compiler command and the second is from the HelloWorld application.
+## Task 2: View and identify installed Java Runtimes
 
-  ![image of applications after successful installation](/../images/successful-installation-applications.png)
+1. Sign in to the Oracle Cloud Console as an administrator using the credentials provided by Oracle, as described in Signing into the Console. See Using the Console for more information.  
 
-  You may now **proceed to the next lab.**
+2. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Fleets** under Java Management.
+
+  ![image of oci console to navigate to fleet](/../images/oci-console-navigation-fleet.png)
+
+3. Select the compartment created for JMS resources in Workshop 1, in this case, it should be Fleet_Compartment, and then click on the fleet name.
+
+  ![image of fleet dashboard where user is instructed to select compartment and then appropriate fleet](/../images/fleet-selection-page.png)
+
+  You will be able to view the detailed fleet page. 
+
+4. Now, click in **Java Runtimes** option under **Resources**.
+  ![image of fleet page with all the fleet metrics](/../images/fleet-details-page.png)
+   
+   You will be able to see details of all the **Java Runtimes** in a table form.
+  ![image of Java Runtimes table](/../images/java-runtimes-viewtable.png)
+
+
+  The information available in Java Runtimes Table:
+    * Version, such as 1.8.0_322
+    * Name of distribution to which it belongs, such as OpenJDK Runtime Environment
+    * Security state, one of: Unknown, Upgrade Required, Update Available, or Up to Date
+    * Vendor, such as Oracle Corporation
+    * Date and time when it was first reported
+    * Date and time when it was last reported
+
+5. If you want to learn more about the available Java Runtimes in detail, you can click on one of them.
+  ![image of selection of one of the available Java RunTimes](/../images/individual-java-runtimes-details.png)
+
+    You will be able to see a new page with details of selected Java Runtime.
+
+    ![image of details of selected Java Runtime](/../images/java-runtime-mertics.png)
+
+
+  A brief definition of various details available for **Java Runtime**: 
+
+    * **Java Runtime metrics:** Provides you with an insight into the behavior of the Java Runtime during a specified time period.  
+
+    * **Java Runtime Installations:** The Java Runtime installations data is aggregated daily and presented in a table. 
+        
+    * **Applications:** Presents a list of applications that have been started and run for more than one second during a specified time period.
+        
+    * **Managed Instances:** Presents a list of managed instances that have reported the presence of a Java installation or the start of a Java application.
+
+
+
+
+You may now **proceed to the next lab.**
 
 ## Want to Learn More?
-* Refer to the [Java Runtime Lifecycle Management](https://docs.oracle.com/en-us/iaas/jms/doc/java-runtime-lifecycle-management.html), [Work Request](https://docs.oracle.com/en-us/iaas/jms/doc/getting-started-java-management-service.html#GUID-47C63464-BC0C-4059-B552-ED9F33E77ED3) and [Viewing a Work Request](https://docs.oracle.com/en-us/iaas/jms/doc/fleet-views.html#GUID-F649F0E5-DD54-4DEC-A0F1-942FE3552C93) sections of the JMS documentation for more details.
 
-* Use the [Troubleshooting](https://docs.oracle.com/en-us/iaas/jms/doc/troubleshooting.html#GUID-2D613C72-10F3-4905-A306-4F2673FB1CD3) chapter for explanations on how to diagnose and resolve common problems encountered when installing or using Java Management Service.
+* [Managing Plugins with Oracle Cloud Agent ](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/manage-plugins.htm#console)
+* [Install Management Agents ](https://docs.oracle.com/en-us/iaas/management-agents/doc/install-management-agent-chapter.htm)
+* [Viewing a Java Runtime](https://docs.oracle.com/en-us/iaas/jms/doc/fleet-views.html#GUID-F57179D9-C736-4058-B381-9ECAC776895F)
 
-* If the problem still persists or if the problem you are facing is not listed, please refer to the [Getting Help and Contacting Support](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/contactingsupport.htm) section or you may open a a support service request using the **Help** menu in the OCI console.
-
+ 
 ## Acknowledgements
 
 * **Author** - Bhuvesh Kumar, Java Management Service
