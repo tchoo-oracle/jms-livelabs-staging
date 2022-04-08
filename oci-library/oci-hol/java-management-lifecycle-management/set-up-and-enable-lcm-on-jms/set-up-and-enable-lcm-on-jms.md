@@ -31,9 +31,8 @@ In this lab, you will:
 As mentioned in prerequisites, the Host should have setup and installed Management Agent successfully. Please complete the [Workshop 1](../../java-management/workshops/freetier/index.html?lab=understand-concepts-related-to-management-agent/understand-concepts-related-to-management-agent), if you have not finished Management Agent Installation yet. Otherwise, follow the steps below to verify and enable LCM operations.
 
 ### **Existing OCI Compute Instance host**
-If you are using an OCI compute instance and it already has the Management Agent installation using OCA and plugin deployed, then you can already start using LCM features.
+If you are using an OCI compute instance and it already has the Management Agent installation using OCA and plugin deployed, then follow the steps to verify the OCA installation package version and update it, if an update is available, and enable Oracle Java Management plugin.
 
-The below given steps will help you verify the OCA installation package version and update it, if an update is available.
 
 1. Access OCI Computer Instance via SSH.
 
@@ -55,27 +54,35 @@ The below given steps will help you verify the OCA installation package version 
     </copy>
     ```
 
+4. Login to the Oracle Cloud Console. Then, open the navigation menu, click **Computer**, and then click **Instances**..
+navigate-to-computer-instance
+  ![image of navigate from OCI console menu to computer instances](/../images/navigate-to-computer-instance.png)
+
+
+
+5. Select the Instance you are working on.
+
+6. Click the **Oracle Cloud Agent** tab. The list of plugins is displayed. Toggle the Enabled switch for the Oracle Java Management Service plugin.
+  ![image of enabling Oracle Java Management Service plugin](/../images/oci-console-oracle-java-mgmt-service.png)
+
+  This will enable the LCM operations for chosen OCI Compute Instance.
+
+
+
+
+
 ### **Existing non-OCI Host**
 If you are using a non-OCI Host and it has the Management Agent installation done following the steps in the [Workshop 1](../../java-management/workshops/freetier/index.html?lab=understand-concepts-related-to-management-agent/understand-concepts-related-to-management-agent), then you just need to make a few changes to start using LCM features.
 
-1. Uninstall the Management Agent.
 
-    ```
-    <copy>
-    sudo rpm -e oracle.mgmt_agent
-    </copy>
-    ```
-
-2. Edit the response file and add `Service.plugin.jm.download=true` at the bottom and then save the file. Please refer to instructions in [Understand Concepts Related to Management Agent Installation lab](../../java-management/workshops/freetier/index.html?lab=understand-concepts-related-to-management-agent/understand-concepts-related-to-management-agent) on how to create a response file.
-
-3. Open the `/etc/sudoers` file 
+1. Open the `/etc/sudoers` file. 
     ```
     <copy>
     sudo nano /etc/sudoers
     </copy>
     ```
 
-  Add the following to the end of the file:
+  Add the following lines to the end of the file:
     ```
     <copy>
     #To change ownership of the Java Management Service plugin to root 
@@ -85,9 +92,7 @@ If you are using a non-OCI Host and it has the Management Agent installation don
     </copy>
     ```
 
-    To save the file, press **CTRL+x**. Before exiting, nano will ask you if you wish to save the file: Type **y** to save and exit, type **n** to abandon your changes and exit.
-
-4. Reinstall the Management Agent following the steps in [Install Management Agent on non-OCI Hosts - Linux  lab](../../java-management/workshops/freetier/index.html?lab=set-up-of-management-agent-linux/set-up-of-management-agent-linux).
+  2. To save the file, press **CTRL+x**. Before exiting, nano will ask you if you wish to save the file: Type **y** to save and exit, type **n** to abandon your changes and exit.
 
 
 ## Task 2: View and identify installed Java Runtimes
