@@ -27,9 +27,12 @@ As the stewards of Java, Oracle can provide answers to these questions. Oracle u
 
 ## About this Workshop
 
+This workshop is a follow up workshop to the [Manage Java Runtimes with Java Management Service](../../java-management/workshops/freetier/index.html?lab=introduction/introduction) workshop, which we recommend to be completed before beginning this workshop about Integrating OCI Services with Java Management Service.
+
 This workshop will walk you through the process of setting up and using various Oracle Cloud Infrastructure (OCI) services for use with Java Management Service (JMS) on OCI. It will first walk you through the set up and use of the OCI Command Line Interface (CLI) to access JMS APIs. It will then walk you through the set up and use of JMS Software Development Kits (SDKs) and Postman to use the JMS APIs.
 
-_Estimated Time:_ 100 minutes
+
+_Estimated Time:_ 30 minutes
 
 ### Objectives
 

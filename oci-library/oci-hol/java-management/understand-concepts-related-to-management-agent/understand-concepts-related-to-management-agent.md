@@ -4,6 +4,16 @@
 
 This lab walks you through the key concepts that need to be understood before installing a management agent on your compute instance host as part of the set up for Java Management Service (JMS).
 
+If you are using **non-OCI hosts** such as on-premises hosts, or hosts in the Cloud, the management agent can be installed using the RPM (Red Hat Package Manager) only. Please refer to the following segments:
+ * [Task 1: Understand Concepts Related To Management Agent Installation on non-OCI hosts](?lab=understand-concepts-related-to-management-agent#task1understandconceptsrelatedtomanagementagentinstallationonnonocihosts)
+ * [Install Management Agent on non-OCI Hosts - Linux](?lab=set-up-of-management-agent-linux)
+ * [Install Management Agent on non-OCI Hosts - Windows](?lab=set-up-of-management-agent-windows)
+
+If you are using **OCI Compute Instance hosts**, the management agent can be installed using either the RPM or the Oracle Cloud Agent (OCA). For installation using OCA, please refer to the following segments:
+ * [Task 2: Understand Concepts Related To Management Agent Installation on OCI Compute Instance hosts](?lab=understand-concepts-related-to-management-agent#task2understandconceptsrelatedtomanagementagentinstallationonocicomputeinstancehosts)
+ * [Install Management Agent on OCI-computes - Oracle Cloud Agent (OCA)](?lab=install-management-agent-oca)
+
+
 Estimated Time: 15 minutes
 
 ### Objectives
@@ -38,7 +48,7 @@ This key has been automatically created for you in Lab 2, where the "Create New 
 
   ![image of input rsp file](/../images/input-rsp-updated.png)
 
-## Task 2: Understand Concepts Related to Management Agent Installation OCI Compute Instance hosts
+## Task 2: Understand Concepts Related to Management Agent Installation on OCI Compute Instance hosts
 
 Before the set up of the Management Agent, it is important to understand the concepts behind the Java Management Service:
 
