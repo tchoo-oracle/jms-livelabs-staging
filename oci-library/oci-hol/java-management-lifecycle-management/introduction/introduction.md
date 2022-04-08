@@ -1,32 +1,32 @@
 # Introduction
 
-## About the Java Runtime Lifecycle Management
+## About Java Runtime Lifecycle Management
 
 Lifecycle Management (LCM) is a part of JMS's reporting and management infrastructure. JMS enables users to observe and manage the lifecycles of their Java SE runtimes (on-premises or in the Cloud) by performing LCM operations such as Removing Java Runtimes.
 
 As a customer, you can:
-  * View and Identify the Java Runtimes.
+  * View and identify the Java Runtimes.
   * Remove unwanted Java Runtimes.
   * View and understand various status and logs related to LCM work requests.
 
-## About this Workshop 
+## About this Workshop
 
 Java Management Service (JMS) is a reporting and management infrastructure integrated with Oracle Cloud Infrastructure Platform services to observe and manage your use of Java SE (on-premises or in the Cloud). Java Runtime can be viewed and identified in fleet after successful JMS setup on Host. Further, these Java Runtimes can be managed by performing various Lifecycle Management (LCM) operations.
 
 In order to perform these LCM operations almost no or minor configuration changes are required. This workshop will walk you through the steps to verify the installation of OCA (Oracle Cloud Agent) and required plugins on OCI computer instances, followed by configuration changes in non-OCI hosts. Next, you will learn how to review and identify the Java Runtimes in OCI console, this is where you will perform most of the LCM operations. Later, you will learn how to remove a Java Runtime using OCI console and cancel or view a work request. You will also get to view status and logs related to delete work requests. Finally, the workshop will show you how to view and monitor Lifecycle Management requests.
 
-<em>Estimated Time:</em> 60 minutes 
+<em>Estimated Time:</em> 60 minutes
 
 ### Objectives
 
 * Configuring and Verifying the Host for LCM
 * View and Identify the Java Runtimes
 * Understand LCM Operations
-* Demonstrate Remove Java Runtimes LCM operation
+* Remove Java Runtimes
 * View and Monitor LCM Work Requests
 
 
-### Prerequisites 
+### Prerequisites
 
   * You have signed up for an account with Oracle Cloud Infrastructure and have received your sign-in credentials.
   * You are using an Oracle Linux image on your host machine or compute instance for this workshop.
