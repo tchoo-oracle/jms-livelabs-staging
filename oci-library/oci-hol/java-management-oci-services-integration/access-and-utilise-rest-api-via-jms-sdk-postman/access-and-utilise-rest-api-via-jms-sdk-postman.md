@@ -76,7 +76,7 @@ In this lab, you will:
     Refer to [API Reference and Endpoints](https://docs.oracle.com/en-us/iaas/api/#/en/jms/20210610/Fleet/GetFleet) for more detail related to the sample API code.
 
 
-2. Create a new Java Maven project. Name it as **GetFleetExample** and paste the sample API code in it. Add the Fleet OCID at **fleet_OCID** placeholder. Refer to Task 1 to check how to find the fleet OCID
+2. Create a new Java Maven project. Name it as **GetFleetExample** and paste the sample API code in it. Add the Fleet OCID at **fleet_OCID** placeholder. Refer to [Lab 1 Task 3](?lab=access-and-utilise-rest-api-via-oci-cli#Task3:AccessRESTAPIviaOCICLI) to check how to find the fleet OCID.
 
     ![image of java sdk example code](/../images/java-sdk-own.png)
 
