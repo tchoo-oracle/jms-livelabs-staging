@@ -23,7 +23,54 @@ In this lab, you will:
 
 ### Access Java SDK for JMS
 
-1. Copy the sample code. The sample code initializes a `GetFleetRequest` object using `fleet_OCID` and requests details of Fleet to OCI. The response should contain Fleet name and details.
+
+1. Create a new Java Maven project. Name it **GetFleetExample**.
+
+2. In pom.xml file add the dependencies and reload the maven changes. 
+    ```
+    <copy>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <project xmlns="http://maven.apache.org/POM/4.0.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        <modelVersion>4.0.0</modelVersion>
+
+        <groupId>org.example</groupId>
+        <artifactId>GetFleetExample</artifactId>
+        <version>1.0-SNAPSHOT</version>
+
+        <properties>
+            <maven.compiler.source>8</maven.compiler.source>
+            <maven.compiler.target>8</maven.compiler.target>
+        </properties>
+
+        <dependencyManagement>
+            <dependencies>
+                <dependency>
+                    <groupId>com.oracle.oci.sdk</groupId>
+                    <artifactId>oci-java-sdk-bom</artifactId>
+                    <!-- Version 2.21.0 is the latest version at the time of writing-->
+                    <!-- Obtain the latest sdk version from https://github.com/oracle/oci-java-sdk/releases-->
+                    <version>2.21.0</version>
+                    <type>pom</type>
+                    <scope>import</scope>
+                </dependency>
+            </dependencies>
+        </dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.oracle.oci.sdk</groupId>
+                <artifactId>oci-java-sdk-jms</artifactId>
+            </dependency>
+        </dependencies>
+
+    </project>
+    </copy>
+    ```
+
+    Check for latest version of oci-java-sdk-bom from [Github oci-java-sdk ](https://github.com/oracle/oci-java-sdk/releases) .
+
+3. Copy the sample code. The sample code initializes a `GetFleetRequest` object using `fleet_OCID` and requests details of Fleet to OCI. The response should contain Fleet name and details.
 
     ```
     <copy>
@@ -75,56 +122,14 @@ In this lab, you will:
 
     Refer to [API Reference and Endpoints](https://docs.oracle.com/en-us/iaas/api/#/en/jms/20210610/Fleet/GetFleet) for more detail related to the sample API code.
 
-
-2. Create a new Java Maven project. Name it as **GetFleetExample** and paste the sample API code in it. Add the Fleet OCID at **fleet_OCID** placeholder. Refer to [Lab 1 Task 3](?lab=access-and-utilise-rest-api-via-oci-cli#Task3:AccessRESTAPIviaOCICLI) to check how to find the fleet OCID.
+4. Paste the sample API code in `GetFleetExample` Project. Add the Fleet OCID at **fleet_OCID** placeholder. Refer to [Lab 1 Task 3](?lab=access-and-utilise-rest-api-via-oci-cli#Task3:AccessRESTAPIviaOCICLI) to check how to find the fleet OCID.
 
     ![image of java sdk example code](/../images/java-sdk-own.png)
 
-3. In pom.xml file add the dependencies and build the project.
-    ```
-    <copy>
-    <?xml version="1.0" encoding="UTF-8"?>
-    <project xmlns="http://maven.apache.org/POM/4.0.0"
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-        <modelVersion>4.0.0</modelVersion>
 
-        <groupId>org.example</groupId>
-        <artifactId>GetFleetExample</artifactId>
-        <version>1.0-SNAPSHOT</version>
 
-        <properties>
-            <maven.compiler.source>8</maven.compiler.source>
-            <maven.compiler.target>8</maven.compiler.target>
-        </properties>
 
-        <dependencyManagement>
-            <dependencies>
-                <dependency>
-                    <groupId>com.oracle.oci.sdk</groupId>
-                    <artifactId>oci-java-sdk-bom</artifactId>
-                    <!-- Version 2.21.0 is the latest version at the time of writing-->
-                    <!-- Obtain the latest sdk version from https://github.com/oracle/oci-java-sdk/releases-->
-                    <version>2.21.0</version>
-                    <type>pom</type>
-                    <scope>import</scope>
-                </dependency>
-            </dependencies>
-        </dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.oracle.oci.sdk</groupId>
-                <artifactId>oci-java-sdk-jms</artifactId>
-            </dependency>
-        </dependencies>
-
-    </project>
-    </copy>
-    ```
-
-    Check for latest version of oci-java-sdk-bom from [Github oci-java-sdk ](https://github.com/oracle/oci-java-sdk/releases) .
-
-4. Run the program. You should see the response in output.
+5. Run the program. You should see the response in output.
 
      ![image of java sdk output](/../images/java-sdk-response.png)
 
