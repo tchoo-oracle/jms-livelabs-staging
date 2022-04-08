@@ -38,6 +38,9 @@ In this workshop, you will:
     **Initial Options**
     * **Name**: `<name-for-the-instance>`
     * **Create in compartment**: `<your-compartment>`
+
+     > **Note:** It is important for Compute Instance to be in the same Compartment as the other OCI Resources such as Policies. Select the `Fleet_Compartment` Compartment if you selected Onboarding Wizard option in Task 1, otherwise select the Compartment that you created.
+
     Enter a value for the name or leave the system supplied default.
 
     Review the Placement settings. Take the default values provided by the wizard. The following is sample data. The actual values change over time or differ in a different data center.

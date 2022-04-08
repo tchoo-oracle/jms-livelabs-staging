@@ -206,11 +206,11 @@ Install Management Agent (If your host is Linux, skip to skip to Lab 5: Install 
 
 1. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Agents** under **Management Agent**.
 
-  ![image of console navigation to access management agent overview](/../images/management-agent-overview.png)
+  ![image of console navigation to access management agent overview](/../images/agents-main-page-new.png)
+
 
 2. From the Agents list, look for the agent that was recently installed.
 
-  ![image of management agent list](/../images/management-agent-list.png)
 
 ## Task 4: Configure Java Usage Tracker
 
@@ -272,9 +272,10 @@ Install Management Agent (If your host is Linux, skip to skip to Lab 5: Install 
 
   ![image of console navigation to java management service](/../images/console-navigation-jms.png)
 
-  * Select the Fleet created in Lab 3.
+  * Select the Fleet created in [Lab 2](?lab=setup-a-fleet).
 
   ![image of fleet page](/../images/check-fleet-ocid-page.png)
+
 
   * Take note of the fleet ocid for steps 2-4.
 
