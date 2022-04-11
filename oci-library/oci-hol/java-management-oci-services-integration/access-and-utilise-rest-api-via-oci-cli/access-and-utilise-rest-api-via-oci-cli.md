@@ -204,7 +204,57 @@ If successful, the following will be returned, with xx as your unique namespace.
     </copy>
     ```
 
-Refer to the [CLI for JMS](https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.0.5/oci_cli_docs/cmdref/jms.html) for viewing and managing fleets.
+## Task 4: Access REST API via OCI Cloud Shell
+
+ Alternatively, you can use OCI **Cloud Shell**. It is a web browser-based terminal accessible from the Oracle Cloud Console. Cloud Shell provides access to a Linux shell, with a pre-authenticated Oracle Cloud Infrastructure CLI, and other useful pre-installed tools like SQL command line. We are going to access REST API via Cloud shell CLI.
+
+ 1. Login to the Console. 
+
+ 2. Click the Cloud Shell icon in the Console header. This icon is accessible from mostly all the OCI Console pages.
+
+  ![image of location of Cloud Shell icon](/../images/oci-cloud-shell-navigate.png)
+
+  The Cloud shell will open and may look something like this.
+  ![image of Cloud Shell terminal](/../images/oci-cloud-shell-console.png)
+
+  You can use the icons in the upper right corner of the Cloud Shell window to minimize, maximize, and close your Cloud Shell session. 
+  ![image of buttons on Cloud Shell](/../images/oci-cloud-shell-buttons.png)
+
+
+ 3. In cloud shell add the following to get the fleet details. You should have access to fleet_OCID from the last task.
+    ```
+    <copy>
+    oci jms fleet get --fleet-id "<fleet_OCID>"
+    </copy>
+    ```
+    ![image of entering a command in Cloud Shell](/../images/oci-cloud-shell-command.png)
+
+ 
+
+4. You should be able to see the response something like this.
+  ![image of command response in Cloud Shell](/../images/oci-cloud-shell-command-response.png)
+
+
+5. Similarly you can try a few more REST API commands
+
+  To get jre usage, run the following command.
+
+    ```
+    <copy>
+    oci jms jre-usage summarize --fleet-id "<fleet_OCID>"
+    </copy>
+    ```
+  To get application usage, run the following command.
+
+    ```
+    <copy>
+    oci jms application-usage summarize --fleet-id "<fleet_OCID>"
+    </copy>
+    ```
+
+
+
+Refer to the [Using Cloud Shell](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/cloudshellgettingstarted.htm) to learn more about Cloud Shell and various operations which it can perform.
 
 You may now **proceed to the next lab.**
 
@@ -216,9 +266,9 @@ You may now **proceed to the next lab.**
     * [API Key](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm)
     * [Using the CLI](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliusing.htm)
     * You may review [Getting Help and Contacting Support](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/contactingsupport.htm) in the OCI documentation.
-    * If you are still unable to resolve your issue, you may open a a support service request using the **Help** menu in the OCI console.
+    * If you are still unable to resolve your issue, you may open a support service request using the **Help** menu in the OCI console.
 
 ## Acknowledgements
 
 * **Author** - Esther Neoh, Java Management Service
-* **Last Updated By** - Esther Neoh, November 2021
+* **Last Updated By** - Bhuvesh Kumat, April 2022
