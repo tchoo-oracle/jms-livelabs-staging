@@ -196,6 +196,8 @@ Sign in to the Oracle Cloud Console as an administrator using the credentials pr
         ALLOW GROUP FLEET_MANAGERS TO MANAGE management-agent-install-keys IN COMPARTMENT Fleet_Compartment
         ALLOW GROUP FLEET_MANAGERS TO READ METRICS IN COMPARTMENT Fleet_Compartment
         ALLOW GROUP FLEET_MANAGERS TO MANAGE tag-namespaces IN TENANCY
+        ALLOW GROUP FLEET_MANAGERS TO MANAGE instance-family IN COMPARTMENT Fleet_Compartment
+        ALLOW GROUP FLEET_MANAGERS TO READ instance-agent-plugins IN COMPARTMENT Fleet_Compartment
     </copy>
     ```
     ![image of policies create page](/../images/policies-create-example.png)
@@ -241,8 +243,8 @@ Sign in to the Oracle Cloud Console as an administrator using the credentials pr
     * In the text box, enter the following statements:
         ```
         <copy>
-        ALLOW DYNAMIC-GROUP JMS_DYNAMIC_GROUP TO MANAGE management-agents IN COMPARTMENT Fleet_Compartment
-        ALLOW DYNAMIC-GROUP JMS_DYNAMIC_GROUP TO USE METRICS IN COMPARTMENT Fleet_Compartment
+        ALLOW DYNAMIC-GROUP JMS_DYNAMIC_GROUP TO MANAGE management-agents IN COMPARTMENT Fleet_Compartment  
+        ALLOW SERVICE javamanagementservice TO MANAGE metrics IN COMPARTMENT  Fleet_Compartment WHERE  target.metrics.namespace='java_management_service' 
         ALLOW DYNAMIC-GROUP JMS_DYNAMIC_GROUP TO USE tag-namespaces IN TENANCY
         </copy>
         ```
@@ -250,7 +252,50 @@ Sign in to the Oracle Cloud Console as an administrator using the credentials pr
         &nbsp;
     * Click **Create**.
 
-    * You may now **proceed to the next lab**.
+
+9. Create Policies for JMS Logging.
+
+    These policies allows JMS to interact with OCI Logging service for setting up Log Configuration for fleets in the compartment.
+
+     * In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Policies**.
+    * Click **Create Policy**.
+    * In the Create Policy dialog box, enter a name for the policy (for example, `JMS_Logging_Policy`), and a description.
+    * Select the root compartment for your tenancy from the drop-down list.
+    * Click **Show manual editor**.
+    * In the text box, enter the following statements:
+      ```
+        <copy>
+        ALLOW SERVICE javamanagementservice TO MANAGE log-groups IN COMPARTMENT Fleet_Compartment
+        ALLOW SERVICE javamanagementservice TO MANAGE log-content IN COMPARTMENT Fleet_Compartment
+        ALLOW DYNAMIC-GROUP JMS_DYNAMIC_GROUP TO MANAGE log-content IN COMPARTMENT Fleet_Compartment
+        </copy>
+        ```
+        ![image of create jms policy page](/../images/policies-logging-jms-create-example.png)
+        &nbsp;
+    * Click **Create**.
+
+
+10. Create Policies for Java Runtime Lifecycle Management Operations.
+
+     * In the Oracle Cloud Console, open the navigation menu and click **Identity & Security**. Under **Identity**, click **Policies**.
+    * Click **Create Policy**.
+    * In the Create Policy dialog box, enter a name for the policy (for example, `JMS_LCM_Policy`), and a description.
+    * Select the root compartment for your tenancy from the drop-down list.
+    * Click **Show manual editor**.
+    * In the text box, enter the following statements:
+      ```
+        <copy>
+        ALLOW SERVICE javamanagementservice TO READ instances IN tenancy
+        ALLOW SERVICE javamanagementservice TO INSPECT instance-agent-plugins IN tenancy
+        </copy>
+        ```
+        ![image of create jms policy page](/../images/policies-lcm-create-example.png)
+        &nbsp;
+    * Click **Create**.
+
+You may now **proceed to the next lab**.
+
+
 
 ## Want to Learn More?
 
@@ -265,4 +310,4 @@ Sign in to the Oracle Cloud Console as an administrator using the credentials pr
 ## Acknowledgements
 
 * **Author** - Alvin Lam, Java Management Service
-* **Last Updated By/Date** - Alvin Lam, November 2021
+* **Last Updated By/Date** - Bhuvesh Kumar, April 2022
