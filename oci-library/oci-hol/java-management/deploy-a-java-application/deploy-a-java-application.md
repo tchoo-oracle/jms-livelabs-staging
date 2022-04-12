@@ -39,7 +39,9 @@ In this workshop, you will:
     * **Name**: `<name-for-the-instance>`
     * **Create in compartment**: `<your-compartment>`
 
-     > **Note:** It is important for Compute Instance to be in the same Compartment as the other OCI Resources such as Policies. Select the `Fleet_Compartment` Compartment if you selected Onboarding Wizard option in Task 1, otherwise select the Compartment that you created.
+     > **Note:** It is important for Compute Instance to be created in the Compartment with correct set of Policies. So, select the `Fleet_Compartment` Compartment if you selected Onboarding Wizard option in Lab 1, otherwise select the Compartment that you have created.
+     
+      ![image of selecting correct compartment for the Compute Instance](/../images/select-correct-compartment.png)
 
     Enter a value for the name or leave the system supplied default.
 
@@ -276,4 +278,4 @@ You may now **proceed to the next lab.**
 ## Acknowledgements
 
 * **Author** - Esther Neoh, Java Management Service
-* **Last Updated By** - Xin Yi Tay, February 2022
+* **Last Updated By** - Bhuvesh Kumar, April 2022
