@@ -13,6 +13,7 @@ In this lab, you will:
 * Generate an API Signing Key
 * Install Oracle Cloud Interface (OCI)
 * Access REST API via OCI CLI
+* Access REST API via Cloud Shell
 
 ### Prerequisites
 
@@ -214,14 +215,14 @@ If successful, the following will be returned, with xx as your unique namespace.
 
   ![image of location of Cloud Shell icon](/../images/oci-cloud-shell-navigate.png)
 
-  The Cloud shell will open and may look something like this.
+  The Cloud Shell will open and may look something like this.
   ![image of Cloud Shell terminal](/../images/oci-cloud-shell-console.png)
 
   You can use the icons in the upper right corner of the Cloud Shell window to minimize, maximize, and close your Cloud Shell session. 
   ![image of buttons on Cloud Shell](/../images/oci-cloud-shell-buttons.png)
 
 
- 3. In cloud shell add the following to get the fleet details. You should have access to fleet_OCID from the last task.
+ 3. In Cloud Shell add the following to get the fleet details. You should have access to fleet_OCID from the last task.
     ```
     <copy>
     oci jms fleet get --fleet-id "<fleet_OCID>"
@@ -235,7 +236,7 @@ If successful, the following will be returned, with xx as your unique namespace.
   ![image of command response in Cloud Shell](/../images/oci-cloud-shell-command-response.png)
 
 
-5. Similarly you can try a few more REST API commands
+5. Similarly, you can try a few more REST API commands
 
   To get jre usage, run the following command.
 
