@@ -18,10 +18,9 @@ In this lab, you will:
     * Create a new tag key.
     * Create a user group for your JMS users.
     * Create one or more user accounts for your JMS users.
-    * Create policies
     * Create a dynamic group of all agents.
-    * Create policies for agent communication.
-
+    * Create policies.
+ 
 ### Prerequisites
 You will need an OCI account with administrative privileges to complete this lab. If you do not have one, you may sign up [here](https://www.oracle.com/cloud/free/) for a free-tier account.
 

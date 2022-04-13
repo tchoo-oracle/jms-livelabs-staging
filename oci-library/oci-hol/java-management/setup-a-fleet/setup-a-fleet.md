@@ -57,8 +57,7 @@ In this lab, you will:
 
   ![image of page to download management agent software](/../images/download-management-agent-software-new.png)
 
-  Click **Done** once the download is complete. The downloaded file will be used in the next lab for installing the management agent and the management agent software will also be downloaded in the next lab.
-
+  Click **Done** once the download is complete. The downloaded file will be used in the [Install Management Agent on non-OCI Hosts - Linux, Lab](?lab=set-up-of-management-agent-linux) for installing the Management Agent.
 ## Want to Learn More?
 
 * Refer to the [Fleet Management](https://docs.oracle.com/en-us/iaas/jms/doc/fleet-management.html) section of the JMS documentation for more details.

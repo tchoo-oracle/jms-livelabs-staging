@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Before you can start using Lifecycle Management operations, you must ensure that your Oracle Cloud Infrastructure environment is set up correctly by creating all required OCI Resources such as Policies and Compartments. These OCI Resources allow the communication between all the required components and cloud services.
+Before you can start using Lifecycle Management operations, you must ensure that your Oracle Cloud Infrastructure environment is set up correctly by following [Set up Oracle Cloud Infrastructure for Java Management Service, Lab from Workshop 1](../../java-management/workshops/freetier/index.html?lab=set-up-oci-for-jms/set-up-oci-for-jms#Introduction). These OCI Resources allow the communication between all the required components and cloud services.
 
 
 <em>Estimated Time:</em> 30 minutes
@@ -94,7 +94,36 @@ If you are using a non-OCI Host and it has the Management Agent installation don
     </copy>
     ```
 
-  2. To save the file, press **CTRL+x**. Before exiting, nano will ask you if you wish to save the file: Type **y** to save and exit, type **n** to abandon your changes and exit.
+2. To save the file, press **CTRL+x**. Before exiting, nano will ask you if you wish to save the file: Type **y** to save and exit, type **n** to abandon your changes and exit.
+
+3. Login to OCI Console.
+
+4. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Agents** under **Management Agent**.
+  ![image of console navigation to access management agent overview](/../images/management-agent-overview.png)
+
+5. From the Agents list, select for the agent that was recently installed.
+   ![image of agents main page](/../images/agents-main-page.png)
+
+6. In order to enable LCM operations `Java Management Service` Plug-in is required to be enabled. Take note of `Service Plug-ins` field. If `Java Management Service` plug-in missing then follow the next steps, else if `Java Management Service` and `Java Usage Tracker` both plug-ins are available then you can move to the next Task.
+
+  ![image of agent detail page](/../images/check-deploy-plug-ins.png)
+
+
+7. To enable `Java Management Service` plug-in, click on **Deploy plug-ins** button.
+
+  ![image of click on deploy plug-in button](/../images/deploy-plug-in-button.png)
+
+8. Check `Java Management Service` option and click on Update button.
+  ![image of updating the plug-in](/../images/deploy-jms-plug-in.png)
+
+9. After 5-10 minutes, you should see the `Java Management Service` plug-in enabled under `Service Plug-ins` field.
+  ![image of updated plug-in](/../images/deploy-jms-plug-in-done.png)
+
+
+
+
+
+
 
 
 ## Task 2: View and identify installed Java Runtimes
