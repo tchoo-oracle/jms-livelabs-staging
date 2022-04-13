@@ -192,7 +192,7 @@ Sign in to the Oracle Cloud Console as an administrator using the credentials pr
         ALL {resource.type='managementagent', resource.compartment.id='<fleet_compartment_ocid>'}
         </copy>
         ```
-        Then click on `Additional Rule` button and enter **Rule 2**
+        Then click on `Additional Rule` button and add **Rule 2**
         ```
         <copy>
         ANY {instance.compartment.id = '<fleet_compartment_ocid>'}
