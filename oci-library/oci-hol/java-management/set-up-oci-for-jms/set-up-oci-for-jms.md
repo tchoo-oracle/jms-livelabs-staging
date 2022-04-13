@@ -186,12 +186,19 @@ Sign in to the Oracle Cloud Console as an administrator using the credentials pr
         &nbsp;
     * In the Create Dynamic Group dialog box, enter a name for the dynamic group (for example, `JMS_DYNAMIC_GROUP`), a description, and a matching rule.
 
-        For **RULE 1**, enter
+        For **Rule 1**, enter
         ```
         <copy>
         ALL {resource.type='managementagent', resource.compartment.id='<fleet_compartment_ocid>'}
         </copy>
         ```
+        Then click on `Additional Rule` button and enter **Rule 2**
+        ```
+        <copy>
+        ANY {instance.compartment.id = '<fleet_compartment_ocid>'}
+        </copy>
+        ```
+
         Replace `<fleet_compartment_ocid>` with the OCID of the compartment that you created in step 1. (You should have pasted it into a text editor.)
         ![image of dynamic groups create page](/../images/dynamic-groups-create-example.png)
         &nbsp;
