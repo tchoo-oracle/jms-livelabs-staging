@@ -127,8 +127,6 @@ In this lab, you will:
     ![image of java sdk example code](/../images/java-sdk-own.png)
 
 
-
-
 5. Run the program. You should see the response in output.
 
      ![image of java sdk output](/../images/java-sdk-response.png)

@@ -16,9 +16,6 @@ In this lab, you will:
   *  Understand various specifications of Java Runtimes
 
 
-
-
-
 ### Prerequisites
 
  * You have signed up for an account with Oracle Cloud Infrastructure and have received your sign-in credentials.
