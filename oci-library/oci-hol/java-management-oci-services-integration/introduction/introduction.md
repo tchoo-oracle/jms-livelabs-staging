@@ -8,7 +8,7 @@ In addition to core JMS functions on the Oracle Cloud console, customers can per
 
 Watch the video below for an introduction to Java Management Service and a brief demo.
 
-[](youtube:YCgJxqvglCI)
+[video of introduction to Java Management Service](youtube:YCgJxqvglCI)
 
 As a customer, you can:
 
@@ -32,26 +32,27 @@ This workshop is a follow up workshop to the [Manage Java Runtimes with Java Man
 This workshop will walk you through the process of setting up and using various Oracle Cloud Infrastructure (OCI) services for use with Java Management Service (JMS) on OCI. It will first walk you through the set up and use of the OCI Command Line Interface (CLI) to access JMS APIs. It will then walk you through the set up and use of JMS Software Development Kits (SDKs) and Postman to use the JMS APIs.
 
 
-_Estimated Time:_ 30 minutes
+Estimated Time: 45 minutes
 
 ### Objectives
-
-- Access API via SDK for JMS (Java and Python Examples)
-- Access REST API via Postman for JMS
+* Access REST API via OCI CLI
+* Access REST API via Cloud Shell
+* Access API via SDK for JMS (Java and Python Examples)
+* Access REST API via Postman for JMS
 
 ### Prerequisites
 
-- An Oracle Cloud Infrastructure account with valid credentials
-- A host(desktop/laptop/server/virtual machine) with Linux/Windows Operating System
-- Completion of the [Manage Java Runtimes with Java Management Service](../../java-management/workshops/freetier/index.html?lab=introduction/introduction) workshop
+* An Oracle Cloud Infrastructure account with valid credentials
+* A host(desktop/laptop/server/virtual machine) with Linux/Windows Operating System
+* Completion of the [Manage Java Runtimes with Java Management Service](../../java-management/workshops/freetier/index.html?lab=introduction/introduction) workshop
 
 ## Learn More
 
-- [Oracle Cloud Infrastructure APIs](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/usingapi.htm)
-- [Command Line Interface](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/cliconcepts.htm)
-- [Software Development Kits](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm)
+* [Oracle Cloud Infrastructure APIs](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/usingapi.htm)
+* [Command Line Interface](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/cliconcepts.htm)
+* [Software Development Kits](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdks.htm)
 
 ## Acknowledgements
 
-- **Author** - Xin Yi Tay, Java Management Service
-- **Last Updated By/Date** - Xin Yi Tay, March 2022
+* **Author** - Xin Yi Tay, Java Management Service
+* **Last Updated By/Date** - Xin Yi Tay, March 2022

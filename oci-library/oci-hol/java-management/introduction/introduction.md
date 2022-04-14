@@ -6,7 +6,7 @@ Java Management Service (JMS) is a reporting and management infrastructure integ
 
 Watch the video below for an introduction to Java Management Service and a brief demo.
 
-[](youtube:YCgJxqvglCI)
+[video of introduction to Java Management Service](youtube:YCgJxqvglCI)
 
 
 

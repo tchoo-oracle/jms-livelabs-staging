@@ -216,7 +216,9 @@ In this workshop, you will:
 4. Go to the File option and click the Save button to save the file. Close the notepad window. Move to the command prompt window again.
 
 
+
 ## Task 4: Shutdown the Instance
+
 
 Do remember to stop your Compute Instance after you are done running it to conserve resources and reduce charges. If you are using an always free tier Compute Instance, there are no associated charges.
 

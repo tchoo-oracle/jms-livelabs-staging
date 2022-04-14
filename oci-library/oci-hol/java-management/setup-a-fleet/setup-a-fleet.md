@@ -66,6 +66,9 @@ In this lab, you will:
 
 * If the problem still persists or if the problem you are facing is not listed, please refer to the [Getting Help and Contacting Support](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/contactingsupport.htm) section or you may open a a support service request using the **Help** menu in the OCI console.
 
+You may now **proceed to the next lab**.
+
+
 ## Acknowledgements
 
 * **Author** - Esther Neoh, Java Management Service

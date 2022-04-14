@@ -5,7 +5,7 @@
 Before you can start using Lifecycle Management operations, you must ensure that your Oracle Cloud Infrastructure environment is set up correctly by following [Set up Oracle Cloud Infrastructure for Java Management Service, Lab from Workshop 1](../../java-management/workshops/freetier/index.html?lab=set-up-oci-for-jms/set-up-oci-for-jms#Introduction). These OCI Resources allow the communication between all the required components and cloud services.
 
 
-<em>Estimated Time:</em> 30 minutes
+Estimated Time:30 minutes
 
 ### Objectives
 
@@ -14,9 +14,6 @@ In this lab, you will:
   *  Configure an existing OCI or non-OCI host to enable LCM operations.
   *  View and identify installed Java Runtimes
   *  Understand various specifications of Java Runtimes
-
-
-
 
 
 ### Prerequisites
@@ -123,55 +120,6 @@ If you are using a non-OCI Host and it has the Management Agent installation don
 
 
 
-
-
-
-## Task 2: View and identify installed Java Runtimes
-
-1. Sign in to the Oracle Cloud Console as an administrator using the credentials provided by Oracle, as described in [Signing into the Console](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/signingin.htm).
-
-2. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Fleets** under Java Management.
-
-  ![image of oci console to navigate to fleet](/../images/oci-console-navigation-fleet.png)
-
-3. Select the compartment created for JMS resources in [Workshop 1: Manage Java Runtimes, Applications and Managed Instances Inventory with JMS](../../java-management/workshops/freetier/index.html?lab=setup-a-fleet/setup-a-fleet). In this case, it should be Fleet_Compartment, and then click on the fleet name.
-
-  ![image of fleet dashboard where user is instructed to select compartment and then appropriate fleet](/../images/fleet-selection-page.png)
-
-  You will be able to view the detailed fleet page.
-
-4. Now, click in **Java Runtimes** option under **Resources**.
-  ![image of fleet page with all the fleet metrics](/../images/fleet-details-page.png)
-
-   You will be able to see details of all the **Java Runtimes** in a table form.
-  ![image of Java Runtimes table](/../images/java-runtimes-viewtable.png)
-
-
-  The information available in Java Runtimes Table:
-    * Version, such as 1.8.0_322
-    * Name of distribution to which it belongs, such as OpenJDK Runtime Environment
-    * Security state, one of: Unknown, Upgrade Required, Update Available, or Up to Date
-    * Vendor, such as Oracle Corporation
-    * Date and time when it was first reported
-    * Date and time when it was last reported
-
-5. If you want to learn more about the available Java Runtimes in detail, you can click on one of them.
-  ![image of selection of one of the available Java RunTimes](/../images/individual-java-runtimes-details.png)
-
-    You will be able to see a new page with details of selected Java Runtime.
-
-    ![image of details of selected Java Runtime](/../images/java-runtime-mertics.png)
-
-<!--
-  A brief definition of various details available for **Java Runtime**:
-
-    * **Java Runtime metrics:** Provides you with an insight into the behavior of the Java Runtime during a specified time period.  
-
-    * **Java Runtime Installations:** The Java Runtime installations data is aggregated daily and presented in a table.
-
-    * **Applications:** Presents a list of applications that have been started and run for more than one second during a specified time period.
-
-    * **Managed Instances:** Presents a list of managed instances that have reported the presence of a Java installation or the start of a Java application. -->
 
 
 

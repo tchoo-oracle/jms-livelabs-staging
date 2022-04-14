@@ -127,8 +127,6 @@ In this lab, you will:
     ![image of java sdk example code](/../images/java-sdk-own.png)
 
 
-
-
 5. Run the program. You should see the response in output.
 
      ![image of java sdk output](/../images/java-sdk-response.png)
@@ -313,4 +311,4 @@ The steps above can be applied for the Typescript, .NET, Ruby and GO SDKs.
 ## Acknowledgements
 
 * **Author** - Esther Neoh, Java Management Service
-* **Last Updated By** - Xin Yi Tay, February 2022
+* **Last Updated By** - Bhuvesh Kumar, April 2022
