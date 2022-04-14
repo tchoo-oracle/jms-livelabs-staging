@@ -43,7 +43,7 @@ In this workshop, you will:
     * **Name**: `<name-for-the-instance>`
     * **Create in compartment**: `<your-compartment>`
 
-     > **Note:** It is important for Compute Instance to be created in the Compartment with correct set of Policies. So, select the `Fleet_Compartment` Compartment if you selected Onboarding Wizard option in Lab 1, otherwise select the Compartment that you have created.
+      It is important for Compute Instance to be created in a Compartment with correct set of Policies. So, select the `Fleet_Compartment` Compartment if you selected Onboarding Wizard option in Lab 1, otherwise select the Compartment that you have created.
      
       ![image of selecting correct compartment for the Compute Instance](/../images/select-correct-compartment.png)
 

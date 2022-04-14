@@ -15,7 +15,7 @@ Java Management Service (JMS) is a reporting and management infrastructure integ
 
 In order to perform these LCM operations almost no or minor configuration changes are required. This workshop will walk you through the steps to enable LCM operations in OCI and non-OCI Hosts. Next, you will learn how to remove a Java Runtime using OCI console and cancel or view a work request. You will also get to view status and logs related to delete work requests. Finally, the workshop will show you how to view and monitor Lifecycle Management requests.
 
-Estimated Time: 60 minutes
+_Estimated Time:_ 60 minutes
 
 ### Objectives
 

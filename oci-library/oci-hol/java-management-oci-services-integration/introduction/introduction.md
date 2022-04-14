@@ -32,7 +32,7 @@ This workshop is a follow up workshop to the [Manage Java Runtimes with Java Man
 This workshop will walk you through the process of setting up and using various Oracle Cloud Infrastructure (OCI) services for use with Java Management Service (JMS) on OCI. It will first walk you through the set up and use of the OCI Command Line Interface (CLI) to access JMS APIs. It will then walk you through the set up and use of JMS Software Development Kits (SDKs) and Postman to use the JMS APIs.
 
 
-Estimated Time: 45 minutes
+_Estimated Time:_ 45 minutes
 
 ### Objectives
 * Access REST API via OCI CLI
