@@ -209,7 +209,7 @@ If successful, the following will be returned, with xx as your unique namespace.
 
  Alternatively, you can use OCI **Cloud Shell**. It is a web browser-based terminal accessible from the Oracle Cloud Console. Cloud Shell provides access to a Linux shell, with a pre-authenticated Oracle Cloud Infrastructure CLI, and other useful pre-installed tools like SQL command line. We are going to access REST API via Cloud shell CLI.
 
- 1. Login to the Console. 
+ 1. Login to the OCI Console. 
 
  2. Click the Cloud Shell icon in the Console header. This icon is accessible from mostly all the OCI Console pages.
 
