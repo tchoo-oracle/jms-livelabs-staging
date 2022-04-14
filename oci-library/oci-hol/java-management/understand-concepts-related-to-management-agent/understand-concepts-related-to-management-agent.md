@@ -1,11 +1,11 @@
-# Understand Concepts Related to Management Agent Installation
+# Understand Concepts related to Management Agent installation
 
 ## Introduction
 
 This lab walks you through the key concepts that need to be understood before installing a management agent on your compute instance host as part of the set up for Java Management Service (JMS).
 
 If you are using **non-OCI hosts** such as on-premises hosts, or hosts in the Cloud, the management agent can be installed using the RPM (Red Hat Package Manager) only. Please refer to the following segments:
- * [Task 1: Understand Concepts Related To Management Agent Installation on non-OCI hosts](?lab=understand-concepts-related-to-management-agent#task1understandconceptsrelatedtomanagementagentinstallationonnonocihosts)
+ * [Task 1: Understand concepts related To Management Agent installation on non-OCI hosts](?lab=understand-concepts-related-to-management-agent#task1understandconceptsrelatedtomanagementagentinstallationonnonocihosts)
  * [Install Management Agent on non-OCI Hosts - Linux](?lab=set-up-of-management-agent-linux)
  * [Install Management Agent on non-OCI Hosts - Windows](?lab=set-up-of-management-agent-windows)
 
@@ -30,7 +30,7 @@ In this lab, you will:
 * Access to the cloud environment and resources configured in Lab 2
 
 
-## Task 1: Understand Concepts Related to Management Agent Installation on non-OCI hosts
+## Task 1: Understand concepts related to Management Agent installation on non-OCI hosts
 
 Before the set up of the Management Agent, it is important to understand the concepts behind the Java Management Service:
 
@@ -48,7 +48,7 @@ This key has been automatically created for you in Lab 2, where the "Create New 
 
   ![image of input rsp file](/../images/input-rsp-updated.png)
 
-## Task 2: Understand Concepts Related to Management Agent Installation on OCI Compute Instance hosts
+## Task 2: Understand concepts related to Management Agent installation on OCI Compute Instance hosts
 
 Before the set up of the Management Agent, it is important to understand the concepts behind the Java Management Service:
 
@@ -65,3 +65,6 @@ Before the set up of the Management Agent, it is important to understand the con
 
 * **Java Usage Tracking service plugin**: A Service Plugin allows Management Agents to interact with data sources and send the data back to the cloud service. In the case of the Java Usage Tracking service plugin, data about Java Applications, Java Runtimes and Installations is collected from the host which can be either on-premises or in the Cloud. It is important to note that this is a service plugin that is deployed to interact with the Management Agent, and is different from OCA plugins.
   ![image of java usage tracking service plugin](/../images/java-usage-tracking-service-plugin.png)
+
+You may now **proceed to the next lab**.
+

@@ -354,6 +354,7 @@ You may now **proceed to the next lab.**
     ```
     You may be connected to proxies or VPNs. Disconnect any connection or resolve any issues related to your proxy or VPN and try again.
 
+
 ## Want to Learn More?
 
 * You may also find more Oracle resources for your containers at the Oracle Github repository [here](https://github.com/oracle/docker-images).
