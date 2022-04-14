@@ -5,7 +5,7 @@
 Before you can start using Lifecycle Management operations, you must ensure that your Oracle Cloud Infrastructure environment is set up correctly by following [Set up Oracle Cloud Infrastructure for Java Management Service, Lab from Workshop 1](../../java-management/workshops/freetier/index.html?lab=set-up-oci-for-jms/set-up-oci-for-jms#Introduction). These OCI Resources allow the communication between all the required components and cloud services.
 
 
-Estimated Time:30 minutes
+Estimated Time: 30 minutes
 
 ### Objectives
 
@@ -64,7 +64,7 @@ If you have verified that both the **Oracle Java Management Service OCA plugin**
     <copy>
     rpm -qa | grep oracle-cloud-agent
 
-    yum update oracle-cloud-agent -y
+    sudo yum update oracle-cloud-agent -y
     </copy>
     ```
     
