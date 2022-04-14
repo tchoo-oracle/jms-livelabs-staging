@@ -21,7 +21,7 @@ In this lab, you will:
 
 * You have signed up for an account with Oracle Cloud Infrastructure and have received your sign-in credentials.
 * You are using an Oracle Linux image on your host machine or compute instance for this workshop.
-* Access to the cloud environment and resources configured in Lab 2
+* Access to the cloud environment and resources configured in [Lab 2](?lab=setup-a-fleet).
 
 ## Task 1: Prepare agent software for Management Agent installation
 
@@ -206,10 +206,12 @@ Install Management Agent (If your host is Linux, skip to skip to Lab 5: Install 
 
 1. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Agents** under **Management Agent**.
 
-  ![image of console navigation to access management agent overview](/../images/agents-main-page-new.png)
+  ![image of console navigation to access management agent overview](/../images/management-agent-overview.png)
 
 
-2. From the Agents list, look for the agent that was recently installed.
+  2. From the Agents list, look for the agent that was recently installed. This Agent should be in the compartment created in [Lab 1](?lab=set-up-oci-for-jms).
+
+      ![image of agents main page](/../images/agents-main-page-new.png)
 
 
 ## Task 4: Configure Java Usage Tracker
@@ -315,7 +317,7 @@ Install Management Agent (If your host is Linux, skip to skip to Lab 5: Install 
 For the logging of applications to be visible, Java applications must be run again after the installation of the Management Agent. Now that the Management Agent has been set up in your compute instance, it will be able to detect new Java applications that have been executed. This can be observed in the Oracle Cloud Console.
 
 We shall demonstrate the detection of the Java compiler and HelloWorld application created in Lab 2.
-1. First, re-compile the HelloWorld.java file:
+1. First, compile the HelloWorld.java file:
 
     ```
     <copy>
