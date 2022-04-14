@@ -211,39 +211,6 @@ In this workshop, you will:
 
 4. Go to the File option and click the Save button to save the file. Close the notepad window. Move to the command prompt window again.
 
-<!-- ### **For All Operating Systems:**
-
-5. Run your Java application.
-
-  To compile the program, type the following command and hit enter:
-    ```
-    <copy>
-    javac HelloWorld.java
-    </copy>
-    ```
-
-  To run the program, type the following command and hit enter:
-    ```
-    <copy>
-    java HelloWorld
-    </copy>
-    ```
-
-  If all goes well, you will see the following response:
-    ```
-    This is my first program in java
-    List of even numbers from 1 to 15
-    2
-    4
-    6
-    8
-    10
-    12
-    14
-    ```
-
-6. The Java application is now deployed in your compute instance. -->
-
 ## Task 4: Shutdown Compute
 
 Do remember to stop your compute instance after you are done running it to conserve resources and reduce charges. If you are using an always free tier compute instance, there are no associated charges.
