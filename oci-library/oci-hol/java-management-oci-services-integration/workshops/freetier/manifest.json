@@ -18,11 +18,11 @@
       "filename": "https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/cloud-login/pre-register-free-tier-account.md"
     },
     {
-      "title": "Lab 1: Access and Utilise REST API",
+      "title": "Lab 1: Access and utilise REST API via OCI CLI and Cloud Shell",
       "filename": "../../access-and-utilise-rest-api-via-oci-cli/access-and-utilise-rest-api-via-oci-cli.md"
     },
     {
-      "title": "Lab 2: Access and Utilise REST API via JMS SDKs and Postman",
+      "title": "Lab 2: Access and utilise REST API via JMS SDKs and Postman",
       "filename": "../../access-and-utilise-rest-api-via-jms-sdk-postman/access-and-utilise-rest-api-via-jms-sdk-postman.md"
     },
     {
