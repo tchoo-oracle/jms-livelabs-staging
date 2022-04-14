@@ -11,9 +11,8 @@ Estimated Time:30 minutes
 
 In this lab, you will:
 
-  *  Configure an existing OCI or non-OCI host to enable LCM operations.
-  *  View and identify installed Java Runtimes
-  *  Understand various specifications of Java Runtimes
+  *  Configure an existing OCI Host to enable LCM operations.
+  *  Configure an existing non-OCI Host to enable LCM operations.
 
 
 ### Prerequisites
