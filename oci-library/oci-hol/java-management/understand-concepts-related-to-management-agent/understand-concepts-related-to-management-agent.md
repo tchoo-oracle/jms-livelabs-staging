@@ -4,16 +4,19 @@
 
 This lab walks you through the key concepts that need to be understood before installing a management agent on your compute instance host as part of the set up for Java Management Service (JMS).
 
-If you are using **non-OCI hosts** such as on-premises hosts, or hosts in the Cloud, the management agent can be installed using the RPM (Red Hat Package Manager) only. Please refer to the following segments:
+If you are using **non-OCI hosts** such as on-premises hosts, or hosts from other cloud providers, the management agent can be installed using the management agent software only. Please refer to the following segments:
 
-- [Task 1: Understand concepts related To Management Agent installation on non-OCI hosts](?lab=understand-concepts-related-to-management-agent#task1understandconceptsrelatedtomanagementagentinstallationonnonocihosts)
+- [Task 1: Understand Concepts Related To Management Agent Installation on non-OCI hosts](?lab=understand-concepts-related-to-management-agent#task1understandconceptsrelatedtomanagementagentinstallationonnonocihosts)
 - [Install Management Agent on non-OCI Hosts - Linux](?lab=set-up-of-management-agent-linux)
 - [Install Management Agent on non-OCI Hosts - Windows](?lab=set-up-of-management-agent-windows)
 
-If you are using **OCI Compute Instance hosts**, the management agent can be installed using either the RPM or the Oracle Cloud Agent (OCA). For installation using OCA, please refer to the following segments:
+If you are using **OCI Compute Instance hosts**, the management agent can be installed using either the management agent software or the Oracle Cloud Agent (OCA). For installation using OCA, please refer to the following segments:
 
 - [Task 2: Understand Concepts Related To Management Agent Installation on OCI Compute Instance hosts](?lab=understand-concepts-related-to-management-agent#task2understandconceptsrelatedtomanagementagentinstallationonocicomputeinstancehosts)
 - [Install Management Agent on OCI-computes - Oracle Cloud Agent (OCA)](?lab=install-management-agent-oca)
+
+* [Task 2: Understand Concepts Related To Management Agent Installation on OCI Compute Instance hosts](?lab=understand-concepts-related-to-management-agent#task2understandconceptsrelatedtomanagementagentinstallationonocicomputeinstancehosts)
+* [Install Management Agent on OCI-computes - Oracle Cloud Agent (OCA)](?lab=install-management-agent-oca)
 
 Estimated Time: 15 minutes
 
@@ -21,7 +24,7 @@ Estimated Time: 15 minutes
 
 In this lab, you will:
 
-- Understand important concepts in preparation for installation of Management agents on non-OCI hosts that are either on-premises or in the Cloud
+- Understand important concepts in preparation for installation of Management agents on non-OCI hosts that are either on-premises or from other cloud providers
 - Understand important concepts in preparation for installation of Management agents on OCI Compute Instance hosts
 
 ### Prerequisites
@@ -36,14 +39,14 @@ Before the set up of the Management Agent, it is important to understand the con
 
 - **Java Management Service (JMS)**: A reporting and management infrastructure integrated with Oracle Cloud Infrastructure Platform services to observe and manage your use of Java SE (on-premises or in the Cloud). It enables you to observe and manage the use of Java in your enterprise.
 
-- **Management Agents**: Can be installed on a host to allow a service plug-in to collect data from the host where you installed the Management Agent. In the case of JMS, the management agent allows the JMS plug-in to collect data about Java Applications, Java Runtimes and Installations from the host which can be either on-premises or in the Cloud. If you are using a **non-OCI compute instance**, we will need a **response file** to set up a Management Agent. This response file contains an **install key**.
+- **Management Agents**: Can be installed on a host to allow a service plug-in to collect data from the host where you installed the Management Agent. In the case of JMS, the management agent allows the JMS plug-in to collect data about Java Applications, Java Runtimes and Installations from the host which can be either on-premises or from other cloud providers. If you are using a **non-OCI compute instance**, we will need a **response file** to set up a Management Agent. This response file contains an **install key**.
 
-- **Install Key**: A token required by the **Management Agent** installation. It authorises the Management Agent to communicate with the Oracle Cloud Infrastructure. You can use a single agent install key for multiple Management Agent installations.
+* **Install Key**: A token required by the **Management Agent** installation. It authorises the Management Agent to communicate with the Oracle Cloud Infrastructure. You can use a single agent install key for multiple Management Agent installations.
   This key has been automatically created for you in [Lab 2](?lab=setup-a-fleet), where the "Create New Management Agent Configuration" box was checked during Fleet creation.
 
   ![image of create fleet options page](/../images/create-fleet.png)
 
-- **Response File**: For Management Agent installation to take place, a response file is also required. In [Lab 2](?lab=setup-a-fleet), we clicked **Download Install Key** during the creation of our fleet. The file that we downloaded is the response file which contains the install key, as observed in the `ManagementAgentInstallKey` field. The line in our response file `Service.plugin.jms.download=true` will help to download and enable the JMS plugin for Java runtime discovery and reporting.
+* **Response File**: For Management Agent installation to take place, a response file is also required. In [Lab 2](?lab=setup-a-fleet), we clicked **Download Install Key** during the creation of our fleet. The file that we downloaded is the response file which contains the install key, as observed in the `ManagementAgentInstallKey` field. The line in our response file `Service.plugin.jms.download=true` will help to download and enable the JMS plugin for Java runtime discovery and reporting.
 
   The line `Service.plugin.jm.download=true` will also help to download and enable the JMS plugin for Java runtime Lifecycle Management. Lifecycle Management is an advanced feature of JMS, and you may refer to the [Java Lifecycle Management with Java Management Service](../../java-management-lifecycle-management/workshops/freetier/index.html?lab=introduction/introduction) workshop to learn more about it.
 
@@ -65,8 +68,16 @@ Before the set up of the Management Agent, it is important to understand the con
 
 - **Management Agent OCA plugin**: Helps to collect data from resources such as OSs, applications, and infrastructure resources for Oracle Cloud Infrastructure services that are integrated with Management Agent. Data can include observability, log, configuration, capacity, and health data.
 
-- **Java Usage Tracking service plugin**: A Service Plugin allows Management Agents to interact with data sources and send the data back to the cloud service. In the case of the Java Usage Tracking service plugin, data about Java Applications, Java Runtimes and Installations is collected from the host which can be either on-premises or in the Cloud. It is important to note that this is a service plugin that is deployed to interact with the Management Agent, and is different from OCA plugins.
-  ![image of java usage tracking service plugin](/../images/java-usage-tracking-service-plugin.png)
+<<<<<<< HEAD
+
+- # **Java Usage Tracking service plugin**: A Service Plugin allows Management Agents to interact with data sources and send the data back to the cloud service. In the case of the Java Usage Tracking service plugin, data about Java Applications, Java Runtimes and Installations is collected from the host which can be either on-premises or in the Cloud. It is important to note that this is a service plugin that is deployed to interact with the Management Agent, and is different from OCA plugins.
+
+* **Management Agent OCA plugin**: Helps to collect data from resources such as OSs, applications, and infrastructure resources for Oracle Cloud Infrastructure services that are integrated with Management Agent. Data can include observability, log, configuration, capacity, and health data.
+
+* **Java Usage Tracking service plugin**: A Service Plugin allows Management Agents to interact with data sources and send the data back to the cloud service. In the case of the Java Usage Tracking service plugin, data about Java Applications, Java Runtimes and Installations is collected from the host which can be either on-premises or from other cloud providers. It is important to note that this is a service plugin that is deployed to interact with the Management Agent, and is different from OCA plugins.
+
+  > > > > > > > update prereqs of lab 8 and 9 and rename hosts in the cloud to hosts to other providers
+  > > > > > > > ![image of java usage tracking service plugin](/../images/java-usage-tracking-service-plugin.png)
 
   You may now **proceed to the next lab.**
 
