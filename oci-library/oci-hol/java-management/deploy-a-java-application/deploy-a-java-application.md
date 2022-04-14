@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This workshop walks you through the steps to deploy a simple Java application in a compute instance.
+This workshop walks you through the steps to deploy a simple Java Application in a Compute Instance. 
 
 Estimated Time: 10 minutes
 
@@ -10,6 +10,8 @@ Estimated Time: 10 minutes
 
 In this workshop, you will:
 
+* Create a Compute Instance
+* Install Java on Compute Instance
 * Deploy a simple Java application
 
 ### Prerequisites
@@ -18,16 +20,18 @@ In this workshop, you will:
 * You are using an Oracle Linux image on your host machine or compute instance for this workshop.
 * Access to the cloud environment and resources configured in the previous workshop
 
-## Task 1: Deploy a simple Java application
+## Task 1: Create a Compute Instance
 
-1. Install your Oracle Linux Instance.
+1. Sign in to the Oracle Cloud Console as an administrator using the credentials provided by Oracle, as described in [Signing into the Console](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/signingin.htm). 
+&nbsp;
 
-2. Use the Create a VM Instance wizard to create a new compute instance. The wizard does several things when installing the instance.
-* Creates and installs a compute instance running Oracle Linux.
+2. Use the **Create a VM Instance** wizard to create a new compute instance. The wizard does several things when installing the instance.
+* Creates and installs a Compute Instance running Oracle Linux.
 * Creates a VCN with the required subnet and components needed to connect your Oracle Linux instance to the internet.
 * Creates an `ssh` key pair you use to connect to your instance.
-<!--  -->
-3. To get started installing your instance with the **Create a VM Instance** wizard, follow these steps:
+
+
+3. To get started installing your Compute Instance with the **Create a VM Instance** wizard, follow these steps:
   From the main landing page, select **Create a VM Instance** wizard.
     ![image of quick actions menu on the main landing page](/../images/action-menu.png)
 
@@ -84,15 +88,15 @@ In this workshop, you will:
 
 5. You have successfully created an Oracle Linux instance.
 
-## Task 2: Access instance via SSH
+## Task 2: Access Instance via SSH
 
 1. Open the navigation menu and click **Compute**. Under **Compute**, click **Instances**.
 
   ![image of console navigation to instance](/../images/console-navigation-instance.png)
 
-2. Click the link to the instance you created in the previous step.
+2. Click the link to the Instance you created in the previous step.
 
-3. From the **Instance Details** page look under the **Instance Access** section. Write down the public IP address the system created for you. You use this IP address to connect to your instance.
+3. From the **Instance Details** page look under the **Instance Access** section. Write down the public IP address the system created for you. You use this IP address to connect to your Instance.
 
 4. Open a **Terminal** or **Command Prompt** window.
   Change into the directory where you stored the ssh encryption keys you created.
@@ -102,13 +106,13 @@ In this workshop, you will:
     ssh -i <your-private-key-file> opc@<x.x.x.x>
     </copy>
     ```    
-5. Since you identified your public key when you created the instance, this command logs you into your instance. You can now issue commands to install and start your server.
+5. Since you identified your public key when you created the instance, this command logs you into your Instance. 
 
-## Task 3: Install Java 8 
+## Task 3: Install Java 8 and Create a Simple Java Application
 
 ### For **Linux**
 
-1. Install JDK 8 (64-bit) in your instance.
+1. Install JDK 8 (64-bit) in your Instance.
   Install Oracle JDK 8 using `yum`.
     ```
     <copy>
@@ -211,9 +215,12 @@ In this workshop, you will:
 
 4. Go to the File option and click the Save button to save the file. Close the notepad window. Move to the command prompt window again.
 
-## Task 4: Shutdown Compute
 
-Do remember to stop your compute instance after you are done running it to conserve resources and reduce charges. If you are using an always free tier compute instance, there are no associated charges.
+
+## Task 4: Shutdown the Instance
+
+
+Do remember to stop your Compute Instance after you are done running it to conserve resources and reduce charges. If you are using an always free tier Compute Instance, there are no associated charges.
 
 You may now **proceed to the next lab.**
 
@@ -231,7 +238,7 @@ You may now **proceed to the next lab.**
 
     ```
     <copy>
-    chmod 600 ./<your-private-key-file>
+    chmod 400 ./<your-private-key-file>
     </copy>
     ```
 

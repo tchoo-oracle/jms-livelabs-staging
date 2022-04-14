@@ -49,7 +49,7 @@ In this lab, you will:
     </copy>
     ```
 
-    Copy and paste the contents of the previously downloaded response file into the editor, and enter an Agent name under the **AgentDisplayName** field.
+    Copy and paste the contents of the response file downloaded in [Set Up Fleet lab](?lab=setup-a-fleet) into the editor, and enter an Agent name under the **AgentDisplayName** field.
 
     ![image of input rsp file with agent display name](/../images/input-rsp-add-agent-display-name.png " ")
 
