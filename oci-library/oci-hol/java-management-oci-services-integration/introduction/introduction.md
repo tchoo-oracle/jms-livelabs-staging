@@ -8,7 +8,7 @@ In addition to core JMS functions on the Oracle Cloud console, customers can per
 
 Watch the video below for an introduction to Java Management Service and a brief demo.
 
-[](youtube:YCgJxqvglCI)
+[video of introduction to Java Management Service](youtube:YCgJxqvglCI)
 
 As a customer, you can:
 
