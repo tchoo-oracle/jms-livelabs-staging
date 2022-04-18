@@ -21,7 +21,7 @@ In this lab, you will:
 
 * You have signed up for an account with Oracle Cloud Infrastructure and have received your sign-in credentials.
 * You are using an Oracle Linux image on your host machine or compute instance for this workshop.
-* Access to the cloud environment and resources configured in Lab 2
+* Access to the cloud environment and resources configured in [Lab 2](?lab=setup-a-fleet).
 
 ## Task 1: Prepare agent software and response file for Management Agent installation
 
@@ -129,11 +129,14 @@ Install Management Agent (If your host is Windows, skip to Lab 6: Install Manage
     	Generating communication wallet
     	Generating security artifacts
     	Registering Management Agent
-    		Found service plugin(s): [jms]
+    		Found service plugin(s): [jms, jm]
 
     Starting agent...
     Agent started successfully
 
+    Starting plugin deployment for: [jm]
+    Deploying service plugin(s)...Done.
+    	jm : Successfully deployed external plugin
     Starting plugin deployment for: [jms]
     Deploying service plugin(s)...Done.
     	jms : Successfully deployed service plugin
@@ -158,7 +161,7 @@ Install Management Agent (If your host is Windows, skip to Lab 6: Install Manage
 
   ![image of console navigation to access management agent overview](/../images/management-agent-overview.png)
 
-2. From the Agents list, look for the agent that was recently installed.
+2. From the Agents list, look for the agent that was recently installed. This Agent should be in the compartment created in [Lab 1](?lab=set-up-oci-for-jms).
 
     ![image of agents main page](/../images/agents-main-page-new.png)
 
@@ -231,8 +234,8 @@ Install Management Agent (If your host is Windows, skip to Lab 6: Install Manage
 ## Task 6: Verify detection of Java applications and runtimes
 For the logging of applications to be visible, Java applications must be run again after the installation of the Management Agent. Now that the Management Agent has been set up in your compute instance, it will be able to detect new Java applications that have been executed. This can be observed in the Oracle Cloud Console.
 
-We shall demonstrate the detection of the Java compiler and HelloWorld application created in Lab 2.
-1. First, re-compile the HelloWorld.java file:
+We shall demonstrate the detection of the Java compiler and HelloWorld application created in [Lab 3](?lab=deploy-a-java-application).
+1. First, compile the HelloWorld.java file:
 
     ```
     <copy>
@@ -256,7 +259,7 @@ We shall demonstrate the detection of the Java compiler and HelloWorld applicati
 
 4. Click **Java Runtimes** under **Resources**. If tagging and installation of management agents is successful, Java Runtimes will be indicated on the Fleet Main Page after 5 minutes.
 
-  You should see only one Java Runtime. This corresponds to the Java 8 installation from Lab 3.
+  You should see only one Java Runtime. This corresponds to the Java 8 installation from [Lab 3](?lab=deploy-a-java-application).
 
   ![image of successful installation](/../images/successful-installation.png)
 

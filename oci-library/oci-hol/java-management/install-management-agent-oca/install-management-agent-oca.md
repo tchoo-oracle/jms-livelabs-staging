@@ -20,7 +20,7 @@ In this lab, you will:
 
 * You have signed up for an account with Oracle Cloud Infrastructure and have received your sign-in credentials.
 * You are using an Oracle Linux image on your host machine or compute instance for this workshop.
-* Access to the cloud environment and resources configured in Lab 2
+* Access to the cloud environment and resources configured in [Lab 2](?lab=setup-a-fleet).
 
 ## Task 1: Enable Management Agent Plugin on Compute Instances
 
@@ -104,7 +104,7 @@ Do not disturb the setup in this time and only proceed after the status of the M
 For the logging of applications to be visible, Java applications must be run again after the installation of the Management Agent. Now that the Management Agent has been set up in your compute instance, it will be able to detect new Java applications that have been executed. This can be observed in the Oracle Cloud Console.
 
 We shall demonstrate the detection of the Java compiler and HelloWorld application created in Lab 2.
-1. First, re-compile the HelloWorld.java file:
+1. First, compile the HelloWorld.java file:
 
     ```
     <copy>

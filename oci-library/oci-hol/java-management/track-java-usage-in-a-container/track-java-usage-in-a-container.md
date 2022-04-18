@@ -19,11 +19,11 @@ In this lab, you will:
 ### Prerequisites
 
 * An Oracle Free Tier, Always Free, Paid or LiveLabs Cloud Account
-* A compute instance with the resources configured in Lab 1 to Lab 4 (Management Agent, Fleet, Compartments, SSH key pair login). The compute instance should also have **Oracle JDK 8** installed.
+* A compute instance with the resources configured in [Lab 1](?lab=set-up-oci-for-jms) to [Lab 7](?lab=install-management-agent-oca) (Management Agent, Fleet, Compartments, SSH key pair login). The compute instance should also have **Oracle JDK 8** installed.
 
 ## Task 1: Install Docker on your compute instance
 
-The following steps will describe installation of Docker on a compute instance running Oracle Linux 7, which was covered in Lab 2.
+The following steps will describe installation of Docker on a compute instance running Oracle Linux 7, which was covered in [Lab 2](?lab=setup-a-fleet).
 
 1. Perform an SSH login into your OCI compute instance.
 
