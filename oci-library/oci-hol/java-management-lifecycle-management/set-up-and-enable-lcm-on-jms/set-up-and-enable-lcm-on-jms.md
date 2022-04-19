@@ -11,8 +11,8 @@ Estimated Time: 30 minutes
 
 In this lab, you will:
 
-  *  Configure an existing OCI Host to enable LCM operations.
-  *  Configure an existing non-OCI Host to enable LCM operations.
+  *  Configure an OCI Host to enable LCM operations.
+  *  Configure a non-OCI Host to enable LCM operations.
 
 
 ### Prerequisites
@@ -21,18 +21,18 @@ In this lab, you will:
  * You are using an Oracle Linux image on your host machine or compute instance for this workshop.
  * You have successfully completed the installation of the Management Agent on your OCI or non-OCI hosts following steps in [Workshop 1: Manage Java Runtimes, Applications and Managed Instances Inventory with JMS](../../java-management/workshops/freetier/index.html?lab=understand-concepts-related-to-management-agent/understand-concepts-related-to-management-agent).
 
-## Task 1: Configure an existing OCI or non-OCI host to enable LCM operations
+## Task 1: Configure an OCI or non-OCI host to enable LCM operations
 
-After you have installed the Management Agent, follow the steps below to verify and enable LCM operations.
+After you have installed the Management Agent, follow the steps below to verify required plugins and enable LCM operations.
 
-### **Existing OCI Compute Instance host**
-If you are using an OCI compute instance and it already has the Management Agent installation using OCA and plugin deployed, then follow the steps to verify the OCA installation package version and update it, if an update is available, and enable Oracle Java Management plugin.
+### **OCI Compute Instance host**
+If you are using an OCI compute instance and it already has the Management Agent installed using OCA and `Java Usage Tracking` plugin deployed, then follow the steps to enable Oracle Java Management plugin and Verify the OCA installation package version.
 
   1. In the Oracle Cloud console, click **Instances** under **Compute**, and select the instance that you are interested in.
 
   ![image of navigate from OCI console menu to computer instances](/../images/navigate-to-computer-instance.png)
 
-  Click the **Oracle Cloud Agent** tab. The list of plugins is displayed. Verify that the **Oracle Java Management Service** OCA plugin is enabled. If it is disabled, toggle the Enabled switch for the Oracle Java Management Service plugin and ensure that the status is set to **Running**. This may take 5 to 10 minutes. Do not disturb the set up in the meantime. This will enable the LCM operations for chosen OCI Compute Instance.
+  Click the **Oracle Cloud Agent** tab. The list of plugins is displayed. Verify that the **Oracle Java Management Service** OCA plugin is enabled. If it is disabled, toggle the switch for the Oracle Java Management Service plugin and ensure that the status is set to **Running**. This may take 5 to 10 minutes. This will enable the LCM operations for the chosen OCI Compute Instance.
 
   ![image of disabled oracle java management service oca plugin](/../images/oracle-jms-oca-plugin-disabled.png)
 
@@ -69,7 +69,7 @@ If you have verified that both the **Oracle Java Management Service OCA plugin**
     ```
     
 
-### **Existing non-OCI Host**
+### **Non-OCI Host**
 If you are using a non-OCI Host and it has the Management Agent installation done following the steps in the [Workshop 1](../../java-management/workshops/freetier/index.html?lab=understand-concepts-related-to-management-agent/understand-concepts-related-to-management-agent), then you just need to make a few changes to start using LCM features.
 
 
