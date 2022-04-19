@@ -46,6 +46,9 @@ _Estimated Time:_ 45 minutes
 * A host(desktop/laptop/server/virtual machine) with Linux/Windows Operating System
 * Completion of the [Manage Java Runtimes with Java Management Service](../../java-management/workshops/freetier/index.html?lab=introduction/introduction) workshop
 
+>**Note:** If you have a **Free Trial** account, when your Free Trial expires, your account will be converted to an **Always Free** account. You will not be able to conduct Free Tier workshops unless the Always Free environment is available.
+**[Click here for the Free Tier FAQ page.](https://www.oracle.com/cloud/free/faq.html)**
+
 ## Learn More
 
 * [Oracle Cloud Infrastructure APIs](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/usingapi.htm)

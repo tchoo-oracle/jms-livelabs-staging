@@ -33,6 +33,9 @@ _Estimated Time:_ 60 minutes
   * Access to the cloud environment and resources configured in [Workshop 1](../../java-management/workshops/freetier/index.html?lab=set-up-oci-for-jms/set-up-oci-for-jms).
 
 
+>**Note:** If you have a **Free Trial** account, when your Free Trial expires, your account will be converted to an **Always Free** account. You will not be able to conduct Free Tier workshops unless the Always Free environment is available.
+**[Click here for the Free Tier FAQ page.](https://www.oracle.com/cloud/free/faq.html)**
+
 
 ## Learn More
 
