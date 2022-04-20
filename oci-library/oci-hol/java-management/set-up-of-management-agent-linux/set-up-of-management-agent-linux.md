@@ -1,4 +1,4 @@
-# Install Management Agent on non-OCI Hosts - Linux
+# Install Management Agent on non-OCI hosts - Linux
 
 ## Introduction
 
@@ -194,7 +194,7 @@ Install Management Agent (If your host is Windows, skip to Lab 6: Install Manage
 
 - Select the Fleet created in [Lab 2](?lab=setup-a-fleet).
 
-3. Take note of the fleet ocid for steps 2-4.
+3. Take note of the fleet ocid.
 
 - Take note of the fleet ocid for steps 2-4.
 
