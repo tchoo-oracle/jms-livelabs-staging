@@ -29,7 +29,7 @@ In this lab, you will:
 
 2. Enter the following command to download the management agent software file via wget into the remote host compute instance.
 
-Download the management agent software using wget:
+  Download the management agent software using wget:
 
     ```
     <copy>
@@ -39,11 +39,11 @@ Download the management agent software using wget:
 
 3. Create an input.rsp response file on your instance. This will be used by the Management Agent installation script to read the agent parameters specific to your environment.
 
-   ```
-   <copy>
-   nano /tmp/input.rsp
-   </copy>
-   ```
+     ```
+     <copy>
+     nano /tmp/input.rsp
+     </copy>
+     ```
 
    Copy and paste the contents of the response file downloaded in [Lab 2](?lab=setup-a-fleet) into the editor, and enter an Agent name under the **AgentDisplayName** field.
 
@@ -59,104 +59,104 @@ Install Management Agent (If your host is Windows, skip to Lab 6: Install Manage
 
 2. Navigate to the directory where you have downloaded the management agent software RPM file and run the following commands to install the `RPM` file:
 
-   ```
-   <copy>
-   JDK_DIR=$(find /usr/java/ -name "jdk1.8*" -type d)
-   sudo JAVA_HOME="${JDK_DIR}" rpm -ivh <rpm_file_name.rpm>
-   </copy>
-   ```
+     ```
+     <copy>
+     JDK_DIR=$(find /usr/java/ -name "jdk1.8*" -type d)
+     sudo JAVA_HOME="${JDK_DIR}" rpm -ivh <rpm_file_name.rpm>
+     </copy>
+     ```
 
 3. The output will look similar to the following:
 
-   ```
-   Preparing... ################################# [100%]
+     ```
+     Preparing... ################################# [100%]
 
-   Checking pre-requisites
-     Checking if any previous agent service exists
-     Checking if OS has systemd or initd
-     Checking available disk space for agent install
-     Checking if /opt/oracle/mgmt_agent directory exists
-     Checking if 'mgmt_agent' user exists
-       'mgmt_agent' user already exists, the agent will proceed installation without creating a new one.
-     Checking Java version
-       Trying /usr/java/jdk1.8.0_321-amd64
-       Java version: 1.8.0_321 found at /usr/java/jdk1.8.0_321-amd64/bin/java
-     Checking agent version
-   Updating / installing...
-     1:oracle.mgmt_agent-<VERSION>  ################################# [100%]
+     Checking pre-requisites
+       Checking if any previous agent service exists
+       Checking if OS has systemd or initd
+       Checking available disk space for agent install
+       Checking if /opt/oracle/mgmt_agent directory exists
+       Checking if 'mgmt_agent' user exists
+         'mgmt_agent' user already exists, the agent will proceed installation without creating a new one.
+       Checking Java version
+         Trying /usr/java/jdk1.8.0_321-amd64
+         Java version: 1.8.0_321 found at /usr/java/jdk1.8.0_321-amd64/bin/java
+       Checking agent version
+     Updating / installing...
+       1:oracle.mgmt_agent-<VERSION>  ################################# [100%]
 
-   Executing install
-     Unpacking software zip
-     Copying files to destination dir (/opt/oracle/mgmt_agent)
-     Initializing software from template
-     Checking if JavaScript engine is available to use
-     Creating 'mgmt_agent' daemon
-     Agent Install Logs: /opt/oracle/mgmt_agent/installer-logs/installer.log.0
+     Executing install
+       Unpacking software zip
+       Copying files to destination dir (/opt/oracle/mgmt_agent)
+       Initializing software from template
+       Checking if JavaScript engine is available to use
+       Creating 'mgmt_agent' daemon
+       Agent Install Logs: /opt/oracle/mgmt_agent/installer-logs/installer.log.0
 
-     Setup agent using input response file (run as any user with 'sudo' privileges)
-     Usage:
-       sudo /opt/oracle/mgmt_agent/agent_inst/bin/setup.sh opts=[FULL_PATH_TO_INPUT.RSP]
+       Setup agent using input response file (run as any user with 'sudo' privileges)
+       Usage:
+         sudo /opt/oracle/mgmt_agent/agent_inst/bin/setup.sh opts=[FULL_PATH_TO_INPUT.RSP]
 
-   Agent install successful
-   ```
+     Agent install successful
+     ```
 
 4. The agent installation process does the following:
 
-- A new user called `mgmt_agent` is created. This will be the management agent user. If `mgmt_agent` user already exists, the agent installation process will use it to install the agent software.
+    - A new user called `mgmt_agent` is created. This will be the management agent user. If `mgmt_agent` user already exists, the agent installation process will use it to install the agent software.
 
-- When `mgmt_agent` daemon is created, the hard and soft nofile ulimit are set to 5000.
+    - When `mgmt_agent` daemon is created, the hard and soft nofile ulimit are set to 5000.
 
-* All agent files are copied and installed by mgmt_agent user. The agent install base directory is the directory where the agent is installed. The directory is created as part of the agent installation process under `/opt/oracle/mgmt_agent` directory.
-  By default, the `mgmt_agent` service is enabled and started automatically after the agent installation.
+    - All agent files are copied and installed by mgmt_agent user. The agent install base directory is the directory where the agent is installed. The directory is created as part of the agent installation process under `/opt/oracle/mgmt_agent` directory.
+    By default, the `mgmt_agent` service is enabled and started automatically after the agent installation.
 
 5. Configure the management agent by running the `setup.sh` script using a response file.
 
-   ```
-   <copy>
-   sudo /opt/oracle/mgmt_agent/agent_inst/bin/setup.sh opts=/tmp/input.rsp
-   </copy>
-   ```
+       ```
+       <copy>
+       sudo /opt/oracle/mgmt_agent/agent_inst/bin/setup.sh opts=/tmp/input.rsp
+       </copy>
+       ```
 
    Sample output:
 
-   ```
-   Executing configure
+     ```
+     Executing configure
 
-   	Parsing input response file
-   	Validating install key
-   	Generating communication wallet
-   	Generating security artifacts
-   	Registering Management Agent
-   		Found service plugin(s): [jms, jm]
+     	Parsing input response file
+     	Validating install key
+     	Generating communication wallet
+     	Generating security artifacts
+     	Registering Management Agent
+     		Found service plugin(s): [jms, jm]
 
-   Starting agent...
-   Agent started successfully
+     Starting agent...
+     Agent started successfully
 
-   Starting plugin deployment for: [jm]
-   Deploying service plugin(s)...Done.
-   	jm : Successfully deployed external plugin
-   Starting plugin deployment for: [jms]
-   Deploying service plugin(s)...Done.
-   	jms : Successfully deployed service plugin
+     Starting plugin deployment for: [jm]
+     Deploying service plugin(s)...Done.
+     	jm : Successfully deployed external plugin
+     Starting plugin deployment for: [jms]
+     Deploying service plugin(s)...Done.
+     	jms : Successfully deployed service plugin
 
-   Agent setup completed and the agent is running.
-   In the future agent can be started by directly running: sudo systemctl start mgmt_agent
+     Agent setup completed and the agent is running.
+     In the future agent can be started by directly running: sudo systemctl start mgmt_agent
 
-   Please make sure that you delete /tmp/input.rsp or store it in secure location.
-   ```
+     Please make sure that you delete /tmp/input.rsp or store it in secure location.
+     ```
 
 6. Delete the input.rsp file after successful configuration.
-   ```
-   <copy>
-   rm /tmp/input.rsp
-   </copy>
-   ```
+     ```
+     <copy>
+     rm /tmp/input.rsp
+     </copy>
+     ```
 
 ## Task 3: Verify Management Agent Installation
 
 1. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Agents** under **Management Agent**.
 
-![image of console navigation to access management agent overview](/../images/management-agent-overview.png)
+  ![image of console navigation to access management agent overview](/../images/management-agent-overview.png)
 
 2. From the Agents list, look for the agent that was recently installed. This agent should be in the compartment created in [Lab 1](?lab=set-up-oci-for-jms).
 
@@ -166,68 +166,65 @@ Install Management Agent (If your host is Windows, skip to Lab 6: Install Manage
 
 1. Execute the following commands:
 
-   ```
-   <copy>
-   VERSION=$(sudo ls /opt/oracle/mgmt_agent/agent_inst/config/destinations/OCI/services/jms/)
-   </copy>
-   ```
+     ```
+     <copy>
+     VERSION=$(sudo ls /opt/oracle/mgmt_agent/agent_inst/config/destinations/OCI/services/jms/)
+     </copy>
+     ```
 
-   ```
-   <copy>
-   sudo bash /opt/oracle/mgmt_agent/agent_inst/config/destinations/OCI/services/jms/"${VERSION}"/scripts/setup.sh
-   </copy>
-   ```
+     ```
+     <copy>
+     sudo bash /opt/oracle/mgmt_agent/agent_inst/config/destinations/OCI/services/jms/"${VERSION}"/scripts/setup.sh
+     </copy>
+     ```
 
 2. This script creates the file `/etc/oracle/java/usagetracker.properties` with appropriate permissions. By default, the file contains the following lines:
-   ```
-   com.oracle.usagetracker.logToFile = /var/log/java/usagetracker.log
-   com.oracle.usagetracker.additionalProperties = java.runtime.name
-   ```
+     ```
+     com.oracle.usagetracker.logToFile = /var/log/java/usagetracker.log
+     com.oracle.usagetracker.additionalProperties = java.runtime.name
+     ```
 
 ## Task 5: Check that management agent is tagged with the Fleet OCID
 
 1. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**.
 
-![image of console navigation to java management service](/../images/console-navigation-jms.png)
+  ![image of console navigation to java management service](/../images/console-navigation-jms.png)
 
 2. Select the Fleet created in [Lab 2](?lab=setup-a-fleet).
 
-- Select the Fleet created in [Lab 2](?lab=setup-a-fleet).
 
 3. Take note of the fleet ocid.
 
-- Take note of the fleet ocid for steps 2-4.
-
-![image of fleet ocid](/../images/check-fleet-ocid.png)
+  ![image of fleet ocid](/../images/check-fleet-ocid.png)
 
 4. In the Oracle Cloud Console, open the navigation menu and click **Observability & Management**, and then click **Agents**.
    ![image of console navigation to management agents](/../images/console-navigation-agents.png)
 
 5. Select the compartment that the management agent is contained in.
 
-![image of agents main page](/../images/agents-main-page-new.png)
+  ![image of agents main page](/../images/agents-main-page-new.png)
 
 6. Select the management agent to view more details
 
 7. Under **Tags**, the `jms` tag will be indicated to show that the management agent is linked to that fleet. The fleet ocid under the jms tag should be the same fleet ocid noted in Step 3.
 
-![image of agents details page](/../images/tagged-mgmt-agent.png)
+  ![image of agents details page](/../images/tagged-mgmt-agent.png)
 
 8. JMS has been linked to the management agent and will collect information on your Java runtimes. As the management agent will scan the instance periodically, the information may not appear immediately. The scanning frequency can also be changed in the Oracle Cloud Console.
 
 9. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**.
 
-![image of console navigation to java management](/../images/console-navigation-jms.png)
+  ![image of console navigation to java management](/../images/console-navigation-jms.png)
 
 10. Select the compartment that the fleet is in and click the fleet.
 
 11. Click on **Modify Agent Settings**.
 
-![image of fleet details page](/../images/fleet-details-page-new.png)
+  ![image of fleet details page](/../images/fleet-details-page-new.png)
 
 12. Change the **Java Runtime Discovery** and **Java Runtime Usage** to the desired value. For this example, change **Java Runtime Discovery** to **3 hours**, and **Java Runtime Usage** to **5 minutes**.
 
-![image of modify agent settings page](/../images/fleet-modify-agent-settings-new.png)
+  ![image of modify agent settings page](/../images/fleet-modify-agent-settings-new.png)
 
 ## Task 6: Verify detection of Java applications and runtimes
 
@@ -237,35 +234,35 @@ We shall demonstrate the detection of the Java compiler and HelloWorld applicati
 
 1. First, compile the HelloWorld.java file:
 
-   ```
-   <copy>
-   javac HelloWorld.java
-   </copy>
-   ```
+     ```
+     <copy>
+     javac HelloWorld.java
+     </copy>
+     ```
 
    Then execute the HelloWorld application:
 
-   ```
-   <copy>
-   java HelloWorld
-   </copy>
-   ```
+     ```
+     <copy>
+     java HelloWorld
+     </copy>
+     ```
 
 2. In the Oracle Cloud Console, open the navigation menu, click **Observability & Management**, and then click **Fleets** under **Java Management**.
 
-![image of console navigation to java management](/../images/console-navigation-jms.png)
+  ![image of console navigation to java management](/../images/console-navigation-jms.png)
 
 3. Select the compartment that the fleet is in and click the fleet.
 
 4. Click **Java Runtimes** under **Resources**. If tagging and installation of management agents is successful, Java Runtimes will be indicated on the Fleet Main Page after 5 minutes.
 
-You should see only one Java Runtime. This corresponds to the Java 8 installation from [Lab 3](?lab=deploy-a-java-application).
+  You should see only one Java Runtime. This corresponds to the Java 8 installation from [Lab 3](?lab=deploy-a-java-application).
 
-![image of runtimes after successful installation](/../images/successful-installation.png)
+  ![image of runtimes after successful installation](/../images/successful-installation.png)
 
 12. Click **Applications** under **Resources**. You should now see two applications. The first is from the javac compiler command and the second is from the HelloWorld application.
 
-![image of applications after successful installation](/../images/successful-installation-applications.png)
+  ![image of applications after successful installation](/../images/successful-installation-applications.png)
 
 You may now **proceed to the next lab.**
 
@@ -285,11 +282,11 @@ You may now **proceed to the next lab.**
 - Open up a **Terminal** window in the local machine where the management agent software file is saved.
 - Enter the following command to transfer the management agent software file via scp into the remote host compute instance.
 
-  ```
-  <copy>
-  scp <full_path_of_file_to_be_transferred_on_local_host> opc@<public_IP_Address>:<full_path_of_remote_directory_transferred_to>
-  </copy>
-  ```
+    ```
+    <copy>
+    scp <full_path_of_file_to_be_transferred_on_local_host> opc@<public_IP_Address>:<full_path_of_remote_directory_transferred_to>
+    </copy>
+    ```
 
   - In your compute instance, verify that the file transfer is successful by entering the following. You should see your management agent software file.
     ```
