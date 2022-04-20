@@ -1,8 +1,8 @@
-# Remove Java Runtimes
+# View and monitor Lifecycle Management requests
 
 ## Introduction
 
-This lab walks you through the steps to viewing and understanding the Lifecycle Management Work Requests you have created.
+This lab walks you through the steps to view and understand the Lifecycle Management Work Requests you have created.
 
 Estimated Time: 20 minutes
 
@@ -66,7 +66,7 @@ In this lab, you will:
 
 
 ## Task 2: View status and logs related to Delete Work Request
-1. In the **Java Management** page, under **Resources**, select **Work Requests**. Click on the Delete Work Request you are interested in to view its details.
+1. In the **Fleet** page, under **Resources**, select **Work Requests**. Click on the Delete Work Request you are interested in to view its details.
  ![image of work request summary page](/../images/work-request-summary-page.png)
 
 2. If your request was successful, you should see that the **Status** of the request is marked as **Succeeded** and **Completed without errors**.
@@ -90,4 +90,4 @@ In this lab, you will:
 ## Acknowledgements
 
 * **Author** - Xin Yi Tay, Java Management Service
-* **Last Updated By** - Xin Yi Tay, April 2022
+* **Last Updated By** - Bhuvesh Kumar, April 2022
