@@ -1,4 +1,4 @@
-# Access and utilize REST API via JMS SDKs and Postman
+# Access and utilise REST API via JMS SDKs and Postman
 
 ## Introduction
 
