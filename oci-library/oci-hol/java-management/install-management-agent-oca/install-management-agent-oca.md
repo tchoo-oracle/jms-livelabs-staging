@@ -24,8 +24,7 @@ In this lab, you will:
 
 ## Task 1: Enable Management Agent Plugin on Compute Instances
 
-1. In the Oracle Cloud Console, open the navigation menu, click **Compute**, and then click **Instances**.
-Select the instance that you are interested in.
+1. In the Oracle Cloud Console, open the navigation menu, click **Compute**, and then click **Instances**. Select the instance that you are interested in. This instance should be in the compartment created in [Lab 1](?lab=set-up-oci-for-jms).
 
   ![image of console navigation to compute instances](/../images/console-navigation-instance.png)
 
@@ -41,7 +40,8 @@ Do not disturb the setup in this time and only proceed after the status of the M
 
   ![image of console navigation to access management agent overview](/../images/management-agent-overview.png)
 
-6. Ensure that your agent is in the list of agents. The name of the Agent should be of the form of  `Agent(<YOUR-INSTANCE-NAME>)`.
+6. Ensure that your agent is in the list of agents. The name of the Agent should be of the form of  `Agent(<YOUR-INSTANCE-NAME>)`. This Agent should also be in the compartment created in [Lab 1](?lab=set-up-oci-for-jms).
+
   ![image of agent in agent overview list](/../images/agent-overview-list.png)
 
 
@@ -103,7 +103,7 @@ Do not disturb the setup in this time and only proceed after the status of the M
 ## Task 5: Verify detection of Java applications and runtimes
 For the logging of applications to be visible, Java applications must be run again after the installation of the Management Agent. Now that the Management Agent has been set up in your compute instance, it will be able to detect new Java applications that have been executed. This can be observed in the Oracle Cloud Console.
 
-We shall demonstrate the detection of the Java compiler and HelloWorld application created in Lab 2.
+We shall demonstrate the detection of the Java compiler and HelloWorld application created in [Lab 3](?lab=deploy-a-java-application).
 1. First, compile the HelloWorld.java file:
 
     ```
@@ -128,7 +128,7 @@ We shall demonstrate the detection of the Java compiler and HelloWorld applicati
 
 4. Click **Java Runtimes** under **Resources**. If tagging and installation of management agents is successful, Java Runtimes will be indicated on the Fleet Main Page after 5 minutes.
 
-  You should see only one Java Runtime. This corresponds to the Java 8 installation from Lab 3.
+  You should see only one Java Runtime. This corresponds to the Java 8 installation from [Lab 3](?lab=deploy-a-java-application).
 
   ![image of successful installation](/../images/successful-installation.png)
 
@@ -149,4 +149,4 @@ We shall demonstrate the detection of the Java compiler and HelloWorld applicati
 ## Acknowledgements
 
 * **Author** - Xin Yi Tay, Java Management Service
-* **Last Updated By** - Xin Yi Tay, March 2022
+* **Last Updated By** - Xin Yi Tay, April 2022

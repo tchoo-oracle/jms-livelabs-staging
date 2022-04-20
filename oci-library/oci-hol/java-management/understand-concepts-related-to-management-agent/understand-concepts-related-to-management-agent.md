@@ -25,10 +25,6 @@ In this lab, you will:
 - Understand important concepts in preparation for installation of Management agents on OCI Compute Instance hosts
 
 ### Prerequisites
-- An Oracle Cloud Account - Please view this workshop's LiveLabs landing page to see which environments are supported. 
->**Note:** If you have a **Free Trial** account, when your Free Trial expires, your account will be converted to an **Always Free** account. You will not be able to conduct Free Tier workshops unless the Always Free environment is available.
-**[Click here for the Free Tier FAQ page.](https://www.oracle.com/cloud/free/faq.html)**
-
 - You have signed up for an account with Oracle Cloud Infrastructure and have received your sign-in credentials.
 - You are using an Oracle Linux image on your host machine or compute instance for this workshop.
 - Access to the cloud environment and resources configured in [Lab 2](?lab=setup-a-fleet).

@@ -35,15 +35,15 @@
             "filename": "../../understand-concepts-related-to-management-agent/understand-concepts-related-to-management-agent.md"
         },
         {
-            "title": "Lab 5: Install Management Agent on non-OCI Hosts - Linux ",
+            "title": "Lab 5: Install Management Agent on non-OCI hosts - Linux ",
             "filename": "../../set-up-of-management-agent-linux/set-up-of-management-agent-linux.md"
         },
         {
-            "title": "Lab 6: Install Management Agent on non-OCI Hosts - Windows ",
+            "title": "Lab 6: Install Management Agent on non-OCI hosts - Windows ",
             "filename": "../../set-up-of-management-agent-windows/set-up-of-management-agent-windows.md"
         },
         {
-            "title": "Lab 7: Install Management Agent on OCI-computes - Oracle Cloud Agent (OCA)",
+            "title": "Lab 7: Install Management Agent on OCI computes - Oracle Cloud Agent (OCA)",
             "filename": "../../install-management-agent-oca/install-management-agent-oca.md"
         },
         {
