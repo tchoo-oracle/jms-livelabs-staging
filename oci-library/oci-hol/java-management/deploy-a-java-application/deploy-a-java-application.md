@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This workshop walks you through the steps to deploy a simple Java Application in a Compute Instance. 
+This workshop walks you through the steps to deploy a simple Java Application in a Compute Instance.
 
 Estimated Time: 10 minutes
 
@@ -22,13 +22,13 @@ In this workshop, you will:
 
 ## Task 1: Create a Compute Instance
 
-1. Sign in to the Oracle Cloud Console as an administrator using the credentials provided by Oracle, as described in [Signing into the Console](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/signingin.htm). 
+1. Sign in to the Oracle Cloud Console as an administrator using the credentials provided by Oracle, as described in [Signing into the Console](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/signingin.htm).
 &nbsp;
 
 2. Use the **Create a VM Instance** wizard to create a new compute instance. The wizard does several things when installing the instance.
-* Creates and installs a Compute Instance running Oracle Linux.
-* Creates a VCN with the required subnet and components needed to connect your Oracle Linux instance to the internet.
-* Creates an `ssh` key pair you use to connect to your instance.
+    * Creates and installs a Compute Instance running Oracle Linux.
+    * Creates a VCN with the required subnet and components needed to connect your Oracle Linux instance to the internet.
+    * Creates an `ssh` key pair you use to connect to your instance.
 
 
 3. To get started installing your Compute Instance with the **Create a VM Instance** wizard, follow these steps:
@@ -44,7 +44,7 @@ In this workshop, you will:
     * **Create in compartment**: `<your-compartment>`
 
       It is important for Compute Instance to be created in a Compartment with correct set of Policies. So, select the `Fleet_Compartment` Compartment if you selected Onboarding Wizard option in Lab 1, otherwise select the Compartment that you have created.
-     
+
       ![image of selecting correct compartment for the Compute Instance](/../images/select-correct-compartment.png)
 
     Enter a value for the name or leave the system supplied default.
@@ -106,9 +106,9 @@ In this workshop, you will:
     ssh -i <your-private-key-file> opc@<x.x.x.x>
     </copy>
     ```    
-5. Since you identified your public key when you created the instance, this command logs you into your Instance. 
+5. Since you identified your public key when you created the instance, this command logs you into your Instance.
 
-## Task 3: Install Java 8 and Create a Simple Java Application
+## Task 3: Install Java 8 and create a simple Java application
 
 ### For **Linux**
 
@@ -224,7 +224,7 @@ Do remember to stop your Compute Instance after you are done running it to conse
 
 You may now **proceed to the next lab.**
 
-## Troubleshoot Java Application Deployment Issues
+## Troubleshoot Java application deployment issues
 
 **For Task 2**
 
@@ -252,4 +252,4 @@ You may now **proceed to the next lab.**
 ## Acknowledgements
 
 * **Author** - Esther Neoh, Java Management Service
-* **Last Updated By** - Bhuvesh Kumar, April 2022
+* **Last Updated By** - Xin Yi Tay, April 2022

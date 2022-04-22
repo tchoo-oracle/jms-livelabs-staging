@@ -266,7 +266,7 @@ We shall demonstrate the detection of the Java compiler and HelloWorld applicati
 
 You may now **proceed to the next lab.**
 
-## Troubleshoot Management Agent Installation Issues
+## Troubleshoot Management Agent installation issues
 
 **For Task 1**
 

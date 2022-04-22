@@ -301,7 +301,7 @@ The same output of odd numbers should appear.
 &nbsp;
 
 
-## Task 4: Configure Java Usage Tracker Location
+## Task 4: Configure Java Usage Tracker location
 
 You should now have a compute instance with Docker installed and a Docker image using Oracle JDK.
 
@@ -322,7 +322,7 @@ You should now have a compute instance with Docker installed and a Docker image 
   Check for the "Mounts" section, which should not be empty.
     ![image of inspect container](/../images/bind-mounts.png)
 
-## Task 5: Verify Configuration
+## Task 5: Verify configuration
 
 1. You may wish to check the log files for your Java application. Start by running this command to display the log file content.
 
@@ -342,7 +342,7 @@ You should now have a compute instance with Docker installed and a Docker image 
 
 You may now **proceed to the next lab.**
 
-## Troubleshoot Docker Issues
+## Troubleshoot Docker issues
 
 **For Task 1**
 * If you encounter a timeout error similar to the following:

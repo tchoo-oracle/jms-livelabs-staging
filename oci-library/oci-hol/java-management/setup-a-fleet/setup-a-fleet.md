@@ -56,7 +56,7 @@ In this lab, you will:
 
   ![image of page to download management agent software](/../images/download-management-agent-software-new.png)
 
-  Click **Done** once the download is complete. The downloaded file will be used in the [Install Management Agent on non-OCI Hosts - Linux, Lab](?lab=set-up-of-management-agent-linux) to install the Management Agent.
+  Click **Done** once the download is complete. The downloaded file will be used in [Lab 5: Install Management Agent on non-OCI Hosts - Linux](?lab=set-up-of-management-agent-linux) to install the Management Agent.
 
 You may now **proceed to the next lab**.
 
@@ -73,4 +73,4 @@ You may now **proceed to the next lab**.
 ## Acknowledgements
 
 * **Author** - Esther Neoh, Java Management Service
-* **Last Updated By** - Xin Yi Tay, February 2022
+* **Last Updated By** - Xin Yi Tay, April 2022
