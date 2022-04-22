@@ -11,8 +11,8 @@ Estimated Time: 30 minutes
 
 In this lab, you will:
 
-  *  Configure an OCI Host to enable LCM operations.
-  *  Configure a non-OCI Host to enable LCM operations.
+  *  Configure an OCI host to enable LCM operations.
+  *  Configure a non-OCI host to enable LCM operations.
 
 
 ### Prerequisites
@@ -183,8 +183,8 @@ If you are using an OCI compute instance and it already has the Management Agent
 ## Task 2: Configure a non-OCI host to enable LCM operations
 
 
-### **Non-OCI Host**
-If you are using a non-OCI Host and it has the Management Agent installed following the steps in the [Workshop 1](../../java-management/workshops/freetier/index.html?lab=understand-concepts-related-to-management-agent/understand-concepts-related-to-management-agent), then you just need to make a few changes to start using LCM features.
+### **Non-OCI host**
+If you are using a non-OCI host and it has the Management Agent installed following the steps in the [Workshop 1](../../java-management/workshops/freetier/index.html?lab=understand-concepts-related-to-management-agent/understand-concepts-related-to-management-agent), then you just need to make a few changes to start using LCM features.
 
 
 1. Open the `/etc/sudoers` file.

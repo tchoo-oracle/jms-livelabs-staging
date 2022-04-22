@@ -23,7 +23,7 @@ In this lab, you will:
 
 ## Task 1: Install Docker on your compute instance
 
-The following steps will describe installation of Docker on a compute instance running Oracle Linux 7, which was covered in [Lab 2](?lab=setup-a-fleet).
+The following steps will describe installation of Docker on a compute instance running Oracle Linux 7, which was covered in [Lab 3](?lab=deploy-a-java-application#Task1:CreateaComputeInstance).
 
 1. Perform an SSH login into your OCI compute instance.
 
