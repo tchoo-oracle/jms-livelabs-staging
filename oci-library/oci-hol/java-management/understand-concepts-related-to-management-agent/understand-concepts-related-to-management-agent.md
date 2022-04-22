@@ -4,16 +4,21 @@
 
 This lab walks you through the key concepts that need to be understood before installing a management agent on your compute instance host as part of the set up for Java Management Service (JMS) on Oracle Cloud Infrastructure (OCI).
 
-If you are using **non-OCI hosts** such as on-premises hosts, or hosts from other cloud providers, the management agent can be installed using the management agent software only. Please refer to the following segments:
+If you are using **non-OCI hosts** such as on-premises hosts, or hosts from other cloud providers, the management agent can be installed using the management agent software only. Please refer to the segment related to installation using the **management agent software**.
 
+If you are using **OCI Compute Instance hosts**, the management agent can be installed using either the management agent software or the Oracle Cloud Agent (OCA).
+* If you have previously installed the Management Agent using the management agent software, the instructions for non-OCI hosts will also work on your Compute Instance host. Please refer to the segment related to installation using the **management agent software**.
+* If you opt to install a new Management Agent using OCA, please refer to the segment related to installation using **OCA**.
+
+Installation using management agent software:
 - [Task 1: Understand concepts Related To Management Agent Installation on non-OCI hosts](?lab=understand-concepts-related-to-management-agent#task1understandconceptsrelatedtomanagementagentinstallationonnonocihosts)
 - [Install Management Agent on non-OCI Hosts - Linux](?lab=set-up-of-management-agent-linux)
 - [Install Management Agent on non-OCI Hosts - Windows](?lab=set-up-of-management-agent-windows)
 
-If you are using **OCI Compute Instance hosts**, the management agent can be installed using either the management agent software or the Oracle Cloud Agent (OCA). For installation using OCA, please refer to the following segments:
-
+Installation using OCA:
 - [Task 2: Understand concepts Related To Management Agent Installation on OCI Compute Instance hosts](?lab=understand-concepts-related-to-management-agent#task2understandconceptsrelatedtomanagementagentinstallationonocicomputeinstancehosts)
-- [Install Management Agent on OCI-computes - Oracle Cloud Agent (OCA)](?lab=install-management-agent-oca)
+- [Install Management Agent on OCI computes - Oracle Cloud Agent (OCA)](?lab=install-management-agent-oca)
+
 
 Estimated Time: 15 minutes
 
