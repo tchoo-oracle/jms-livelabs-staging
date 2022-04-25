@@ -1,5 +1,5 @@
 {
-  "workshoptitle": "Integrating OCI Services with Java Management Service",
+  "workshoptitle": "Integrate OCI Services with Java Management Service",
   "include": {
     "starter-file.sql": "../../data-load/files/starter-file.sql",
     "sample.json": "../../data-load/files/sample.json",
