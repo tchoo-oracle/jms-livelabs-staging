@@ -1,4 +1,4 @@
-# Understand concepts related to Management Agent installation
+# Understand Concepts related to Management Agent installation
 
 ## Introduction
 
@@ -11,12 +11,12 @@ If you are using **OCI Compute Instance hosts**, the management agent can be ins
 * If you opt to install a new Management Agent using OCA, please refer to the segment related to installation using **OCA**.
 
 Installation using management agent software:
-- [Task 1: Understand concepts Related To Management Agent Installation on non-OCI hosts](?lab=understand-concepts-related-to-management-agent#task1understandconceptsrelatedtomanagementagentinstallationonnonocihosts)
+- [Task 1: Understand Concepts related to Management Agent Installation on non-OCI hosts](?lab=understand-concepts-related-to-management-agent#task1understandconceptsrelatedtomanagementagentinstallationonnonocihosts)
 - [Install Management Agent on non-OCI Hosts - Linux](?lab=set-up-of-management-agent-linux)
 - [Install Management Agent on non-OCI Hosts - Windows](?lab=set-up-of-management-agent-windows)
 
 Installation using OCA:
-- [Task 2: Understand concepts Related To Management Agent Installation on OCI Compute Instance hosts](?lab=understand-concepts-related-to-management-agent#task2understandconceptsrelatedtomanagementagentinstallationonocicomputeinstancehosts)
+- [Task 2: Understand Concepts related to Management Agent Installation on OCI Compute Instance hosts](?lab=understand-concepts-related-to-management-agent#task2understandconceptsrelatedtomanagementagentinstallationonocicomputeinstancehosts)
 - [Install Management Agent on OCI computes - Oracle Cloud Agent (OCA)](?lab=install-management-agent-oca)
 
 
@@ -34,11 +34,11 @@ In this lab, you will:
 - You are using an Oracle Linux image on your host machine or compute instance for this workshop.
 - Access to the cloud environment and resources configured in [Lab 2](?lab=setup-a-fleet).
 
-## Task 1: Understand concepts related to Management Agent installation on non-OCI hosts
+## Task 1: Understand Concepts related to Management Agent installation on non-OCI hosts
 
 Before the set up of the Management Agent, it is important to understand the concepts behind the Java Management Service:
 
-- **Java Management Service (JMS)**: A reporting and management infrastructure integrated with Oracle Cloud Infrastructure Platform services to observe and manage your use of Java SE (on-premises or in the Cloud). It enables you to observe and manage the use of Java in your enterprise.
+- **Java Management Service (JMS)**: A reporting and management infrastructure integrated with Oracle Cloud Infrastructure Platform services to observe and manage your use of Java SE (on-premises or in the Cloud) in your enterprise.
 
 - **Management Agents**: Can be installed on a host to allow a service plug-in to collect data from the host where you installed the Management Agent. In the case of JMS, the management agent allows the JMS plug-in to collect data about Java Applications, Java Runtimes and Installations from the host which can be either on-premises or from other cloud providers. If you are using a **non-OCI compute instance**, we will need a **response file** to set up a Management Agent. This response file contains an **install key**.
 
@@ -53,7 +53,7 @@ Before the set up of the Management Agent, it is important to understand the con
 
   ![image of response file](/../images/input-rsp-updated.png)
 
-## Task 2: Understand concepts related to Management Agent installation on OCI Compute Instance hosts
+## Task 2: Understand Concepts related to Management Agent installation on OCI Compute Instance hosts
 
 Before the set up of the Management Agent, it is important to understand the concepts behind the Java Management Service:
 
