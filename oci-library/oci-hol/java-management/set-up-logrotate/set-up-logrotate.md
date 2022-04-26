@@ -55,7 +55,7 @@ In this lab, you will:
 
 4. To save the file, press **CTRL+x**. Before exiting, nano will ask you if you wish to save the file: Type **y** to save and exit, type **n** to abandon your changes and exit.
 
-## Want to Learn More?
+## Learn More
 
 * Refer to [How to Create a Custom Log File Rotation by logrotate](https://support.oracle.com/knowledge/Oracle%20Linux%20and%20Virtualization/2087525_1.html) for more details.
 

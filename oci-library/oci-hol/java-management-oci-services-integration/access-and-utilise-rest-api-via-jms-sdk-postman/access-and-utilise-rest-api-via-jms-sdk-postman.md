@@ -290,7 +290,7 @@ The steps above can be applied for the Typescript, .NET, Ruby and GO SDKs.
   ![image of postman pre-request script commented](/../images/postman-pre-request-script-code-comment.png)
 
 
-## Want to Learn More?
+## Learn More
 
 * If you encounter further issues, review the [Troubleshooting](https://docs.oracle.com/en-us/iaas/jms/doc/troubleshooting.html#GUID-2D613C72-10F3-4905-A306-4F2673FB1CD3) page.
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Before you can start using Lifecycle Management operations, you must ensure that your Oracle Cloud Infrastructure environment is set up correctly by following [Set up Oracle Cloud Infrastructure for Java Management Service, Lab from Workshop 1](../../java-management/workshops/freetier/index.html?lab=set-up-oci-for-jms/set-up-oci-for-jms#Introduction). These OCI Resources allow the communication between all the required components and cloud services.
+Before you can start using Lifecycle Management operations, you must ensure that your Oracle Cloud Infrastructure environment is set up correctly by following the workshop [Manage Java Runtimes, Applications and Managed Instances Inventory with Java Management Service](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=912). These OCI Resources allow the communication between all the required components and cloud services.
 
 
 Estimated Time: 30 minutes
@@ -19,7 +19,7 @@ In this lab, you will:
 
  * You have signed up for an account with Oracle Cloud Infrastructure and have received your sign-in credentials.
  * You are using an Oracle Linux image on your host machine or compute instance for this workshop.
- * You have successfully completed the installation of the Management Agent on your OCI or non-OCI hosts following steps in [Workshop 1: Manage Java Runtimes, Applications and Managed Instances Inventory with JMS](../../java-management/workshops/freetier/index.html?lab=understand-concepts-related-to-management-agent/understand-concepts-related-to-management-agent).
+ * You have successfully completed the installation of the Management Agent on your OCI or non-OCI hosts following steps in [Manage Java Runtimes, Applications and Managed Instances Inventory with Java Management Service](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=912).
 
 ## Task 1: Configure an OCI host to enable LCM operations
 
@@ -184,7 +184,7 @@ If you are using an OCI compute instance and it already has the Management Agent
 
 
 ### **Non-OCI host**
-If you are using a non-OCI host and it has the Management Agent installed following the steps in the [Workshop 1](../../java-management/workshops/freetier/index.html?lab=understand-concepts-related-to-management-agent/understand-concepts-related-to-management-agent), then you just need to make a few changes to start using LCM features.
+If you are using a non-OCI host and it has the Management Agent installed following the steps in the workshop [Manage Java Runtimes, Applications and Managed Instances Inventory with Java Management Service](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=912), then you just need to make a few changes to start using LCM features.
 
 
 1. Open the `/etc/sudoers` file.
@@ -239,7 +239,7 @@ If you are using a non-OCI host and it has the Management Agent installed follow
 
 You may now **proceed to the next lab.**
 
-## Want to Learn More?
+## Learn More
 
 * Refer to the [Managing Plugins with Oracle Cloud Agent ](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/manage-plugins.htm#console)
 * Refer to the [Installation of Management Agents ](https://docs.oracle.com/en-us/iaas/management-agents/doc/install-management-agent-chapter.htm). It has details of installation of Management Agent on various Operating Systems.

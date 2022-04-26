@@ -237,6 +237,7 @@ Sign in to the Oracle Cloud Console as an administrator using the credentials pr
         ALLOW DYNAMIC-GROUP JMS_DYNAMIC_GROUP TO MANAGE management-agents IN COMPARTMENT Fleet_Compartment  
         ALLOW SERVICE javamanagementservice TO MANAGE metrics IN COMPARTMENT  Fleet_Compartment WHERE  target.metrics.namespace='java_management_service' 
         ALLOW DYNAMIC-GROUP JMS_DYNAMIC_GROUP TO USE tag-namespaces IN TENANCY
+        ALLOW DYNAMIC-GROUP JMS_DYNAMIC_GROUP TO USE METRICS IN COMPARTMENT Fleet_Compartment
         ALLOW SERVICE javamanagementservice TO MANAGE log-groups IN COMPARTMENT Fleet_Compartment
         ALLOW SERVICE javamanagementservice TO MANAGE log-content IN COMPARTMENT Fleet_Compartment
         ALLOW DYNAMIC-GROUP JMS_DYNAMIC_GROUP TO MANAGE log-content IN COMPARTMENT Fleet_Compartment
@@ -257,7 +258,7 @@ You may now **proceed to the next lab**.
 
 
 
-## Want to Learn More?
+## Learn More
 
 * Refer to the [Getting Started with Java Management Service](https://docs.oracle.com/en-us/iaas/jms/doc/getting-started-java-management-service.html) section of the JMS documentation for more details.
 

@@ -149,7 +149,7 @@ We shall demonstrate the detection of the Java compiler and HelloWorld applicati
 
   You may now **proceed to the next lab.**
 
-## Want to Learn More?
+## Learn More
 * Refer to the [Management Agent Concepts](https://docs.oracle.com/en-us/iaas/management-agents/doc/you-begin.html) and
 [Configuring a Management Agent on an OCI Compute Instance](https://docs.oracle.com/en-us/iaas/jms/doc/agent-management.html) sections of the JMS documentation for more details.
 

@@ -51,9 +51,9 @@ As the stewards of Java, Oracle can provide answers to these questions. Oracle u
 
 
 ## Extension Workshops
-After the completion of this workshop, you may proceed to explore further workshops that demonstrate the advanced features that JMS has to offer with [Java Lifecycle Management with Java Management Service](../../java-management-lifecycle-management/workshops/freetier/index.html?lab=introduction/introduction).
+After the completion of this workshop, you may proceed to explore further workshops that demonstrate the advanced features that JMS has to offer with [Perform Java Lifecycle Management with Java Management Service](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/home).
 
-If you would like to learn more about using JMS together with other OCI services, you may explore [Integrating OCI Services with Java Management Service](../../java-management-oci-services-integration/workshops/freetier/index.html?lab=introduction/introduction).
+If you would like to learn more about using JMS together with other OCI services, you may explore [Integrate OCI Services with Java Management Service](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/home).
 
 
 ## Learn More

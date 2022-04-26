@@ -352,7 +352,7 @@ We shall demonstrate the detection of the Java compiler and HelloWorld applicati
 
 
 
-## Want to Learn More?
+## Learn More
 * Refer to the [Management Agent Concepts](https://docs.oracle.com/en-us/iaas/management-agents/doc/you-begin.html), [Installation of Management Agents](https://docs.oracle.com/en-us/iaas/management-agents/doc/install-management-agent-chapter.html) and
 [JMS Plugin for Management Agents](https://docs.oracle.com/en-us/iaas/jms/doc/installing-management-agent-java-management-service.html) sections of the JMS documentation for more details.
 

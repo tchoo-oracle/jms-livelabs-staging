@@ -259,7 +259,7 @@ Refer to the [Using Cloud Shell](https://docs.oracle.com/en-us/iaas/Content/API/
 
 You may now **proceed to the next lab.**
 
-## Want to Learn More?
+## Learn More
 
 * If you encounter further issues, review the [Troubleshooting](https://docs.oracle.com/en-us/iaas/jms/doc/troubleshooting.html#GUID-2D613C72-10F3-4905-A306-4F2673FB1CD3) page.
 

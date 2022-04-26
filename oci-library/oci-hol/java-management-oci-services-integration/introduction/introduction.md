@@ -27,7 +27,7 @@ As the stewards of Java, Oracle can provide answers to these questions. Oracle u
 
 ## About this Workshop
 
-This workshop is a follow up workshop to the [Manage Java Runtimes with Java Management Service](../../java-management/workshops/freetier/index.html?lab=introduction/introduction) workshop, which we recommend to be completed before beginning this workshop about Integrating OCI Services with Java Management Service.
+This workshop is a follow up workshop to the [Manage Java Runtimes, Applications and Managed Instances Inventory with Java Management Service](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=912) workshop, which we recommend to be completed before beginning this workshop about Integrating OCI Services with Java Management Service.
 
 This workshop will walk you through the process of setting up and using various Oracle Cloud Infrastructure (OCI) services for use with Java Management Service (JMS) on OCI. It will first walk you through the set up and use of the OCI Command Line Interface (CLI) to access JMS APIs. It will then walk you through the set up and use of JMS Software Development Kits (SDKs) and Postman to use the JMS APIs.
 
@@ -44,7 +44,7 @@ _Estimated Time:_ 45 minutes
 
 * An Oracle Cloud Infrastructure account with valid credentials
 * A host(desktop/laptop/server/virtual machine) with Linux/Windows Operating System
-* Completion of the [Manage Java Runtimes with Java Management Service](../../java-management/workshops/freetier/index.html?lab=introduction/introduction) workshop
+* Completion of the [Manage Java Runtimes, Applications and Managed Instances Inventory with Java Management Service](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=912) workshop
 
 >**Note:** If you have a **Free Trial** account, when your Free Trial expires, your account will be converted to an **Always Free** account. You will not be able to conduct Free Tier workshops unless the Always Free environment is available.
 **[Click here for the Free Tier FAQ page.](https://www.oracle.com/cloud/free/faq.html)**

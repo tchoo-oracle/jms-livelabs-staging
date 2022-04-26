@@ -60,7 +60,7 @@ In this lab, you will:
 
 You may now **proceed to the next lab**.
 
-## Want to Learn More?
+## Learn More
 
 * Refer to the [Fleet Management](https://docs.oracle.com/en-us/iaas/jms/doc/fleet-management.html) section of the JMS documentation for more details.
 
